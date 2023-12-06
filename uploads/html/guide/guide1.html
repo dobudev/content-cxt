@@ -1,106 +1,187 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <style>
-      body {
-        font-family: 'Poppins';
-		padding:0.5em;
-      }
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <style>
+          body {
+            font-family: 'Poppins';
+            padding:0.5em;
+          }
 
-      table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 20px;
-}
+          .html-box {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 20px;
+        }
 
-table, th, td {
-    border: 1px solid black;
-}
+        /* Memberi sedikit style agar teks HTML terlihat lebih menarik */
+        code {
+            font-family: 'Courier New', monospace;
+            color: #333;
+        }
 
-th, td {
-    padding: 10px;
-    text-align: left;
-}
+        #frame {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+        }
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
 
-    </style>
-  </head>
-  <body>
-    <p>Apa itu HTMl ? mungkin pertanyaan inilah yang terbersit pada benak anda yang baru mulai masuk kedalam dunia web programming. HTML merupakan bahasa pemrograman dasar yang wajib di kuasai bagi seorang web developer. karena HTML merupakan unsur dasar dari pembangunan sebuah website. jika di ibaratkan HTML menjadi pondasi pada sebuah rumah atau bangunan. karena bentuk pada halaman website di buat menggunakan HTML. pada judul “Belajar HTML Dasar : Pengertian HTML” ini akan di jelaskan tentang pengertian dari HTML dan sekilas tentang sejarah HTML dan perkembangannya.</p>
-    <h2>Pengertian HTML</h2>
-    <p>HTML <em>(Hyper Text Markup Language)</em> adalah sebuah bahasa formatting yang digunakan untuk membuat sebuah halaman website. Di dalam dunia pemrograman berbasis website(Web Programming), HTML menjadi pondasi dasar pada halaman website. sebuah file HTML di di simpan dengan ekstensi <strong>.html</strong> (dot html). dan dapat di eksekusi atau diakses menggunakan web browser(Google Chrome, Mozilla Firefox, Opera, Safari dan lain-lain). seperti yang sudah di jelaskan, HTML adalah dasar dari sebuah website. untuk membuat sebuah website tidak cukup hanya menggunakan HTML, kita memerlukan bantuan CSS, JavaScript dan PHP untuk membuat sebuah website yang dinamis. jika halaman website dibuat hanya menggunakan HTML saja maka halaman website tersebut di sebut halaman statis karena tidak memiliki aksi atau fungsi-fungsi yang dapat mengelola website. tentu developer akan sangat di sibukkan dengan harus mengubah lagi file HTML setiap ingin mengupdate artikel.</p>
-    <p>HTML memiliki beberapa element yang tersusun dari tag-tag yang memiliki fungsi nya masing-masing. seperti tag heading, paragraf, pembuatan form, tombol, list, membuat hyperlink atau link yang menghubungkan antar halaman website dan banyak lagi lainnya yang akan kita bahas pada buku ini.</p>
-    <h2>Kegunaan HTML</h2>
-    <p>HTML berfungsi sebagai pondasi sebuah halaman website. adapun yang dapat di lakukan dengan HTML adalah sebagai berikut :</p>
-    <li>Membungkus element-element tertentu sesuai kebutuhan.</li>
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
 
-    <ul>
-        <li>Membungkus element-element tertentu sesuai kebutuhan.</li>
-        <li>Membuat heading atau format judul.</li>
-        <li>Membuat Tabel.</li>
-        <li>Membuat List.</li>
-        <li>Membuat Paragraf.</li>
-        <li>Membuat Form.</li>
-        <li>Membuat Tombol.</li>
-        <li>Membuat huruf tebal.</li>
-        <li>Membuat huruf miring.</li>
-        <li>Menampilkan gambar.</li>
-        <li>Menampilkan video.</li>
-       
-    </ul>
-    <p>Dan banyak lainnya yang akan kita pelajari pada penjelasan selanjutnya</p>
-    <br>
-    <p>Sampai saat ini HTML sudah sampai pada versi 5. HTML5 sudah memiliki banyak sekali fitur tambahan salah satunya, dengan HTML5 memungkinkan kita untuk membuat streaming video tanpa bantuan adobe flash. untuk tutorial cara membuat streaming video dengan HTML5 juga akan kita bahas pada buku tutorial belajar HTML dasar ini.</p>
-    <p>jadi kesimpulan dari pengertian HTML ini adalah HTML merupakan pondasi dasar dari pembuatan sebuah website. untuk mengeksekusi atau menjalankan file html harus menggunakan web browser dan file html di simpan dengan ekstensi <strong>.html</strong> (dot html).</p>
-    <br>
-    
-    <h2><strong>Belajar HTML Dasar : Memilih Text Editor</strong></h2>
-    <p>Untuk anda yang baru mau belajar bahasa pemrograman, disini khususnya pemrograman web, tentulah berfikir bagaimana saya membuat, dan apa yang harus saya gunakan untuk membuat program ? berikut kami sediakan jawaban yang mungkin terbesit dalam hati/pikiran anda yang baru mau belajar bahasa pemrograman web. sebelum kita memulai cara penulisan HTML terlebih dahulu yang harus anda sediakan adalah text editor dan browser.</p>
-    <p>Text Editor merupakan aplikasi yang digunakan untuk menulis syntax atau kode program, disini khususnya untuk penulisan kode program HTML itu sendiri. Text editor sendiri sangatlah banyak yang bisa digunakan untuk penulisan kode HTML, contohnya seperti Notepad yang disediakan oleh sistem operasi windows, Textedit yang disediakan oleh sistem operasi Mac dan Nano yang disediakan oleh sistem operasi linux. Text editor berbeda dengan Word Processor (Microsoft Word, King Soft, WordPerfect). Itu dikarenakan text editor tidak bisa digunakan untuk mengatur format document serta tidak disediakan fitur-fitur yang bisa digunakan untuk desktop publishing.</p>
-    <p>Browser merupakan aplikasi yang akan kita gunakan untuk menjalankan code program html yang sudah kita tulis. browser ini ialah syarat yang harus anda penuhi jika anda belajar web programing. untuk browser itu sendiri bisa digunakan yang sudah disediakan oleh sistem operasi langsung ataupun bisa juga digunakan aplikasi browser yang lain seperti: Mozilla Firefox, Opera, Chrome dan sebagainya.</p>
-    <h2><strong>Memilih text editor yang sesuai dengan keinginan</strong></h2>
-    <p>berikut beberapa text editor yang kami sarankan untuk digunakan dalam penulisan code program bagi anda yang baru belajar bahasa pemrograman.</p>
-    <h3><strong>Sublime Text Editor</strong></h3>
-    <p>Sublime Text editor adalah text editor yang paling banyak digunakan oleh programer, text editor ini memiliki tampilan yang elegan, yang khas dengan warna kecoklatannya. Text Editor ini tersedia untuk windows, Mac, dan Linux. Untuk anda yang ingin menggunakan sublime bisa di download dari situs resminya langsung.</p>
-    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/bab1-sublimetext.jpg" width="100%" height="" /></p> <br>
-    
-    <h3><strong>Notepad ++</strong></h3> 
-    <p>Text editor ini bisa digunakan untuk windows dan free licence (dalam artian bebas digunakan tanpa mengeluarkan biaya). Text Editor ini memiliki ciri khas tersendiri dan banyak fitur-fitur yang bisa diinstal di text editor ini. untuk anda yang ingin menggunakan text editor notepad++ bida di download pada situs resminya, yaitu <strong>https://notepad-plus-plus.org/.</strong></p>
-    <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p> <br>
-    <h3><strong>Atom</strong></h3>
-    <p>Text editor ini hampir sama dengan sublime namun text ini agak sedikit lebih berat jika dibandingkan dengan sublime. Text Editor ini bisa digunakan oleh platform Mac, Windows, dan Linux. Untuk anda yang ingin menggunakan text editor ini bisa di download di <strong>https://atom.io</strong>/</p>
-    <p><img alt="" src="https://2.bp.blogspot.com/-KxPdv1MZSyo/WW9EcjahqXI/AAAAAAAAIfM/gHN1Eye-hvgDjErxMl0iAUhw3B4m8S4jQCLcBGAs/s1920/atom-1.jpg" width="100%" height="" /></p> <br>
+    th {
+        background-color: #f2f2f2; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #cef1f3;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+          
+         
+        </style>
+        <body>
+            <h2><strong>Format Text Pada HTML</strong></h2>
+            <p>Ada beberapa format text yang umumnya di gunakan, di antaranya adalah:</p>
+            <br>
 
-    <h3>Brackets<strong></strong></h3>
-    <p>Text editor ini memiliki kriteria tersendiri dan hampir sama dengan Atom. Text editor ini bisa digunakan untuk Platform Mac, Windows dan Linux. untuk anda yang ingin bergelut dengan brackest bisa di download di http://brackets.io/</p>
-    <p><img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFJFJk4o0u0TNspZopcjsrRxbAqIO2YqURQ&usqp=CAU" width="100%" height="" /></p> <br>
-    <br>
-    <br>
-    <h3><strong>Netbeans</strong></h3>
-    <p>Text editor ini merupakan salah satu favorit programer. namun text editor ini bisa di kategorikan lebih berat dari text editor lain yang disebutkan di atas. kemudahan text editor ini adalah tampilan kode program yang ditulis lebih rapi. untuk anda yang ingin menikmati editor ini bias di download di situs resmi netbeans, yaitu di https://netbeans.org/</p>
-    <p><img alt="" src="https://blog.desdelinux.net/wp-content/uploads/2020/12/NetBeans.png" width="100%" height="" /></p> <br>
+            <h3><strong>Membuat huruf tebal (bold) pada HTML</strong></h3>
+            <p>Untuk membuat teks menjadi tebal pada tampilan halaman web, bisa menggunakan tag &lt;b&gt; berikut contoh syntax HTML untuk membuat format text tebal :</p>
 
-    <p>Nah, itulah beberapa list text editor yang bisa versi www.malasngoding.com yang bisa digunakan untuk menulis kode HTML. Text editor ini selain bisa digunakan untuk menulis kode html bisa juga untuk menulis kode program lainnya seperti PHP,CSS, JavaScript, dan beberapa kode program untuk dektop.</p>
-    <p>jadi kesimpulannya, sebelum memulai penulisan kode program, yang harus anda penuhi terlebih dahulu adalah memilih salah satu text editor yang akan anda digunakan dan browser untuk menjalankan code program.</p>
-    <br><br><br>
-    <h3><strong>Belajar HTML Dasar : Mengenal Tag, Element, Atribut HTML</strong></h3>
-    <p>Tag merupakan kode yang digunakan untuk memperkenalkan pada web browser untuk apa text HTML yang ditulis. HTML membutuhkan cara memperkenalkan text yang ditulis didalamnya kepada web browser. baik text itu berupa list, paragraf, link dan sebagainya. disinilah di gunakan tag. dalam penulisan tag, hampir semua menggunakan pembuka dan penutup tag, dimana objek yang di maksudkan berada diantara pembuka dan penutup tag. berikut penulisan tag yang digunakan dalam HTML</p>
-   
-   
-    <table>
-        <tr>
-            <th>&lt;tag&gt; Objek yang diisi &lt;/tag&gt;</th>
-        </tr>
-    </table>
-   
+            <div class="html-box">
+              <code>
+                &lt;b&gt;ini text tebal&lt;/b&gt;
+              </code>
+            </div>
+
+            <h3><strong>Membuat huruf miring (italic) pada HTML</strong></h3>
+            <p>untuk membuat teks miring pada HTML, kita bisa menggunakan tag &lt;i&gt;. contohnya:</p>
+            <div class="html-box">
+              <code>
+                &lt;i&gt;ini text miring&lt;/i&gt;
+              </code>
+            </div>
+
+            <h3><strong>Membuat huruf bergaris bawah (underline) pada HTML</strong></h3>
+            <p>untuk membuat teks underline/garis bawah pada HTML kita bias menggunakan tag &lt;u&gt;.contohnya :</p>
+            <div class="html-box">
+              <code>
+                &lt;u&gt;ini text underline&lt;/u&gt;
+              </code>
+            </div>
+
+            <p>berikut format text yang sering digunanakan dalam HTML.</p>
 
 
+            <table>
+              <thead>
+                  <tr>
+                      <th><strong>Tag</strong></th>
+                      <th><strong>Description</strong></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>&lt;b&gt;</td>
+                      <td>format text bold/tebal</td>
+                  </tr>
+                  <!-- Tambahkan baris lainnya sesuai kebutuhan -->
+                  <tr>
+                      <td>&lt;i&gt;</td>
+                      <td>format text italic/miring</td>
+                  </tr>
+                  <tr>
+                      <td>&lt;i&gt;</td>
+                      <td>format text underline/garis bawah</td>
+                  </tr>
+          
+                  <tr>
+                      <td>&lt;small&gt;</td>
+                      <td>format text kecil</td>
+                  </tr>
+          
+                  <tr>
+                      <td>&lt;strong&gt;</td>
+                      <td>format text yang hampir sama dengan format bold</td>
+                  </tr>
+                  <tr>
+                      <td>&lt;sub&gt;</td>
+                      <td>format subscripted teks</td>
+                  </tr>
+                  <tr>
+                      <td>&lt;sup&gt;</td>
+                      <td>format superscripted teks</td>
+                  </tr>
+                  <tr>
+                      <td>&lt;small&gt;</td>
+                      <td>mendefinisikan body/isi dokument html</td>
+                  </tr>
+                  <tr>
+                      <td>&lt;ins&gt;</td>
+                      <td>format text garis bawah</td>
+                  </tr>
+                  <tr>
+                      <td>&lt;del&gt;</td>
+                      <td>format text dengan garis di tengah</td>
+                  </tr>
+                  <tr>
+                      <td>&lt;mark&gt;</td>
+                      <td>format text yang berwarna</td>
+                  </tr>
 
+              </tbody>
+          </table>
 
-  </body>
-  </html>
+          <p><strong>Berikut contoh penulisan tag/element format text di yang sudah di pelajari di atas :</strong></p>
+
+          <div class="html-box">
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                <br>
+                &lt;head&gt;<br>
+                    &lt;title&gt;belajar format text html&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                <br>
+                &lt;body&gt;<br>
+                <br>
+                    &lt;b&gt;ini text tebal&lt;/b&gt;&lt;br/&gt;<br>
+                    &lt;i&gt;ini text italic&lt;/i&gt;&lt;br/&gt;<br>
+                    &lt;u&gt;ini text underline&lt;/u&gt;&lt;br/&gt;<br>
+                    &lt;em&gt;ini text em&lt;/em&gt;&lt;br/&gt;<br>
+                    &lt;small&gt;ini text small&lt;/small&gt;&lt;br/&gt;<br>
+                    &lt;strong&gt;ini text strong&lt;/strong&gt;&lt;br/&gt;<br>
+                    &lt;sub&gt;ini text sub&lt;/sub&gt;&lt;br/&gt;<br>
+                    &lt;sup&gt;ini text sup&lt;/sup&gt;&lt;br/&gt;<br>
+                    &lt;ins&gt;ini text ins&lt;/ins&gt;&lt;br/&gt;<br>
+                    &lt;del&gt;ini text del&lt;/del&gt;&lt;br/&gt;<br>
+                    &lt;mark&gt;ini text mark&lt;/mark&gt;&lt;br/&gt;<br>
+                <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+        </div>
+        <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p> <br>
+
+  
+        
+        </body>
+
+      </head>
+
+</html>
