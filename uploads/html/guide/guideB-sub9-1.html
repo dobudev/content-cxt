@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+      body {
+        font-family: 'Poppins';
+		padding:0.5em;
+      }
+
+      table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.html-box {
+            border: 1px solid #31343f; /* Warna border */
+            background-color: #282c34; /* Warna background */
+            padding: 10px;
+            margin: 0,5px;
+            white-space: pre-line;
+            font-family: 'Courier New', monospace;
+            color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px; 
+        }
+
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
+        }
+
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
+
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
+
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
+
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h2><strong>Belajar CSS Dasar : Mengubah border dengan CSS</strong></h2>
+    <p>Pada tutorial ini kita akan membahas tentang manipulasi border dengan menggunakan CSS .CSS memungkinkan kita untuk memanipulasi atau mengubah ukuran, warna, dan gaya atau bentuk pada border. Misalnya border yang berbentuk titik-titik, strip dan yang bermodel biasa saja.</p> 
+    <p>untuk contoh mengubah border dengan CSS silahkan simak penjelasan berikut ini.</p>
+    <h4>Mengubah Border Style</h4>
+    <p>Pada CSS terdapat banyak gaya atau model untuk membuat garis. Ada yang berbentuk titik-titik, berbentuk garis yang putus-putus, garis ganda dan banyak lagi style/gaya yang bisa di gunakan pada garis dengan CSS . untuk membuat garis sekaligus memberikan value style yang kita inginkan kita bisa menggunakan property css border-style. silahkan perhatikan contoh di bawah ini.</p>
+    <p>index.html</p>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/imageB-bab-awal-main.png" width="100%" height="" /></p>
+    <br>
+    <p>style.css</p>
+    <div class="html-box">
+      <span class="tag">#garis_1</span><span class="attribute">{</span>
+      &nbsp;&nbsp;&nbsp;<span class="attribute">border-style:</span>solid;
+      <span class="attribute">}</span>
+      <span class="tag">#garis_2</span><span class="attribute">{</span>
+        &nbsp;&nbsp;&nbsp;<span class="attribute">border-style:</span>dotted;
+        <span class="attribute">}</span>
+        <span class="tag">#garis_3</span><span class="attribute">{</span>
+          &nbsp;&nbsp;&nbsp;<span class="attribute">border-style:</span>dashed;
+          <span class="attribute">}</span>
+          <span class="tag">#garis_4</span><span class="attribute">{</span>
+            &nbsp;&nbsp;&nbsp;<span class="attribute">border-style:</span>double;
+            <span class="attribute">}</span>
+            <span class="tag">#garis_5</span><span class="attribute">{</span>
+              &nbsp;&nbsp;&nbsp;<span class="attribute">border-style:</span>groove;
+              <span class="attribute">}</span>
+              <span class="tag">#garis_6</span><span class="attribute">{</span>
+                &nbsp;&nbsp;&nbsp;<span class="attribute">border-style:</span>inset;
+                <span class="attribute">}</span>
+                <span class="tag">#garis_7</span><span class="attribute">{</span>
+                  &nbsp;&nbsp;&nbsp;<span class="attribute">border-style:</span>outset;
+                  <span class="attribute">}</span>
+                  <span class="tag">#garis_8</span><span class="attribute">{</span>
+                    &nbsp;&nbsp;&nbsp;<span class="attribute">border-style:</span>ridge;
+                    <span class="attribute">}</span>
+      </div>
+      <br>
+      <p>Berikut adalah contoh border-style saat di jalankan pada browser</p>
+      <br>
+      <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/imageB-bab-awal-main.png" width="100%" height="" /></p>
+
+  </body>
+  </html>

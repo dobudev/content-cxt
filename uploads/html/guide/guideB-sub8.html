@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+      body {
+        font-family: 'Poppins';
+		padding:0.5em;
+      }
+
+      table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.html-box {
+            border: 1px solid #31343f; /* Warna border */
+            background-color: #282c34; /* Warna background */
+            padding: 10px;
+            margin: 0,5px;
+            white-space: pre-line;
+            font-family: 'Courier New', monospace;
+            color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px; 
+        }
+
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
+        }
+
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
+
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
+
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
+
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h2><strong>Belajar CSS Dasar : Mengenal Position CSS</strong></h2>
+    <p>Position pada CSS di gunakan untuk mengatur posisi sebuah element HTML. terkadang kita ingin membuat atau menetapkan posisi sebuah element dengan element yang lain. maka dengan menggunakan property position CSS ini kita dapat menentukan posisi sebuah element HTML sesuai dengan yang kita inginkan. belajar css mengenal position css.</p>
+    <p>Adapun beberapa property CSS yang dapat digunakan untuk menentukan posisi sebuah element HTML adalah :</p>
+    <ul>
+      <li><strong>static</strong></li>
+      <li><strong>relative</strong></li>
+      <li><strong>fixed</strong></li>
+      <li><strong>absolute</strong></li>
+    </ul>
+
+    <p>secara umum untuk membuat posisi atau menetapkan posisi sebuah element kita pasti menggunakan property css lainnya seperti mengatur top, left, bottom, right untuk menetapan posisi sebuah element. tetapi property tersebut tidak akan bekerja jika position belum di atur terlebih dahulu. karena property lain tergantung dengan position yang di tetapkan.</p>
+    <h3><strong>Static</strong></h3>
+    <p>Position static digunakan untuk mengatur element menjadi statis secara default. element akan mengikuti posisi normal secara default.</p>
+    <p>contoh penggunaan position static</p>
+    <p>index.html</p>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/imageB-bab-awal-main.png" width="100%" height="" /></p>
+    <br>
+    <p>style.css</p>
+    <div class="html-box">
+      <span class="tag">.kotak</span><span class="attribute">{</span>
+      &nbsp;&nbsp;&nbsp;<span class="attribute">background:</span>blue;
+      &nbsp;&nbsp;&nbsp;<span class="attribute">position:</span>static;
+      <span class="attribute">}</span>
+      </div>
+      <br>
+      <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/imageB-bab-awal-main.png" width="100%" height="" /></p>
+      <br>
+      <h3><strong>Relative</strong></h3>
+      <p>Sebuah element HTML yang menggunakan position relative akan terletak pada posisi normal.</p>
+      <p>index.html</p>
+      <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/imageB-bab-awal-main.png" width="100%" height="" /></p>
+      <br>
+      <p>style.css</p>
+      <div class="html-box">
+        <span class="tag">.kotak</span><span class="attribute">{</span>
+        &nbsp;&nbsp;&nbsp;<span class="attribute">background:</span>blue;
+        &nbsp;&nbsp;&nbsp;<span class="attribute">position:</span>relative;
+        &nbsp;&nbsp;&nbsp;<span class="attribute">left:</span>40px;
+        &nbsp;&nbsp;&nbsp;<span class="attribute">padding:</span>10px;
+        <span class="attribute">}</span>
+        </div>
+        <br>
+        <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/imageB-bab-awal-main.png" width="100%" height="" /></p>
+        <br>
+
+        <h3><strong>Fixed</strong></h3>
+        <p>Sebuah element HTML yang di setting dengan position fixed akan memiliki sifat tetap. tanpa ada perubahan bahkan jika halaman website di scroll. berlaku pengaturan left, bottom, top dan right pada position fixed.</p>
+        <p>index.html</p>
+        <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/imageB-bab-awal-main.png" width="100%" height="" /></p>
+        <br>
+        <p>style.css</p>
+        <div class="html-box">
+          <span class="tag">.kotak</span><span class="attribute">{</span>
+          &nbsp;&nbsp;&nbsp;<span class="attribute">background:</span>blue;
+          &nbsp;&nbsp;&nbsp;<span class="attribute">position:</span>fixed;
+          &nbsp;&nbsp;&nbsp;<span class="attribute">left:</span>40px;
+          &nbsp;&nbsp;&nbsp;<span class="attribute">padding:</span>10px;
+          <span class="attribute">}</span>
+          </div>
+          <br>
+          <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/imageB-bab-awal-main.png" width="100%" height="" /></p>
+          <br>
+          <h3><strong>Absolute</strong></h3>
+          <p>Element HTML yang menggunakan position absolute akan tertimpa dengan element lain. position adalah salah satu propertyposition css yang sangat berguna. salah satunya adalah untuk membuat menu dropdown dengan HTML dan CSS.</p>
+          <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/post/imageB-bab-awal-main.png" width="100%" height="" /></p>
+          <br><br><br>
+
+
+  </body>
+  </html>

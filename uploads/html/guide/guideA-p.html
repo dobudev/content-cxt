@@ -1,0 +1,278 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <style>
+          body {
+            font-family: 'Poppins';
+            padding:0.5em;
+          }
+          
+          #frame {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #cef1f3;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    .html-box {
+            border: 1px solid #31343f; /* Warna border */
+            background-color: #282c34; /* Warna background */
+            padding: 10px;
+            margin: 0,5px;
+            white-space: pre-line;
+            font-family: 'Courier New', monospace;
+            color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px; 
+        }
+
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
+        }
+
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
+
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
+
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
+
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+
+
+        </style>
+
+        <body>
+            
+        
+            <h1><strong>Belajar HTML Dasar : Membuat Symbol pada HTML</strong></h1>
+            <p>Selain menyediakan kode warna, HTML juga menyediakan kode untuk membuat symbol. langsung saja pada kode html yang di sediakan html untuk membuat simbol dengan html. ada dua jenis kode simbol html yaitu number dan entity, berikut ini adalah beberapa kode html yang bisa di gunakan untuk membuat simbol.</p>
+            <h4 align="center"><strong>Daftar beberapa kode simbol HTML</strong></h4> 
+           <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Number</th>
+                    <th>Entity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>∀</td>
+                    <td>&amp;#8704;</td>
+                    <td>&amp;forall;</td>
+                </tr>
+                <tr>
+                    <td>∂</td>
+                    <td>&amp;#8706;</td>
+                    <td>&amp;part;</td>
+                </tr>
+                <tr>
+                    <td>∃</td>
+                    <td>&amp;#8707;</td>
+                    <td>&amp;exist;</td>
+                </tr>
+                <tr>
+                    <td>∅</td>
+                    <td>&amp;#8709;</td>
+                    <td>&amp;empty;</td>
+                </tr>
+                <tr>
+                    <td>∇</td>
+                    <td>&amp;#8711;</td>
+                    <td>&amp;nabla;</td>
+                </tr>
+                <tr>
+                    <td>∈</td>
+                    <td>&amp;#;8712</td>
+                    <td>&amp;isin;</td>
+                </tr>
+                <tr>
+                    <td>∉</td>
+                    <td>&amp;#8713;</td>
+                    <td>&amp;notin;</td>
+                </tr>
+                <tr>
+                    <td>∋</td>
+                    <td>&amp;#8715;</td>
+                    <td>&amp;ni;q;</td>
+                </tr>
+                <tr>
+                    <td>∏</td>
+                    <td>&amp;#8719;</td>
+                    <td>&amp;prod;</td>
+                </tr>
+                <tr>
+                    <td>∑</td>
+                    <td>&amp;#8721;</td>
+                    <td>&amp;sum;</td>
+                </tr>
+                <tr>
+                    <td>Α</td>
+                    <td>&amp;#913;</td>
+                    <td>&amp;Alpha;</td>
+                </tr>
+                <tr>
+                    <td>Β</td>
+                    <td>&amp;#914;</td>
+                    <td>&amp;Beta;</td>
+                </tr>
+                <tr>
+                    <td>Γ</td>
+                    <td>&amp;#915;</td>
+                    <td>&amp;Gamma;</td>
+                </tr>
+                <tr>
+                    <td>Δ</td>
+                    <td>&amp;#916;</td>
+                    <td>&amp;Delta;</td>
+                </tr>
+                <tr>
+                    <td>Ε</td>
+                    <td>&amp;#917;</td>
+                    <td>&amp;Epsilon;</td>
+                </tr>
+                <tr>
+                    <td>Ζ</td>
+                    <td>&amp;#918;</td>
+                    <td>&amp;Zeta;</td>
+                </tr>
+                <tr>
+                    <td>©</td>
+                    <td>&amp;#169;</td>
+                    <td>&amp;copy;</td>
+                </tr>
+                <tr>
+                    <td>®</td>
+                    <td>&amp;#174;</td>
+                    <td>&amp;reg;</td>
+                </tr>
+                <tr>
+                    <td>€</td>
+                    <td>&amp;#8364;</td>
+                    <td>&amp;euro;</td>
+                </tr>
+                <tr>
+                    <td>™</td>
+                    <td>&amp;#8482;</td>
+                    <td>&amp;trade;</td>
+                </tr>
+                <tr>
+                    <td>&leftarrow;</td>
+                    <td>&amp;#8592;</td>
+                    <td>&amp;larr;</td>
+                </tr>
+                <tr>
+                    <td>&uparrow;</td>
+                    <td>&amp;#8593;</td>
+                    <td>&amp;uarr;</td>
+                </tr>
+                <tr>
+                    <td>&rightarrow;</td>
+                    <td>&amp;#8594;</td>
+                    <td>&amp;rarr;</td>
+                </tr>
+                <tr>
+                    <td>&downarrow;</td>
+                    <td>&amp;#8595;</td>
+                    <td>&amp;darr;</td>
+                </tr>
+                <tr>
+                    <td>♠</td>
+                    <td>&amp;#9824;</td>
+                    <td>&amp;spades;</td>
+                </tr>
+                <tr>
+                    <td>♣</td>
+                    <td>&amp;#9827;</td>
+                    <td>&amp;clubs;</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td>&amp;#9829;</td>
+                    <td>&amp;hearts;</td>
+                </tr>
+                <tr>
+                    <td>♦</td>
+                    <td>&amp;#9830;</td>
+                    <td>&amp;diams;</td>
+                </tr>
+               
+            </tbody>
+        </table>
+        <br>
+        <p>Untuk membuat symbol html anda bisa menggunakan kode yang berbentuk number atau entity. Perhatikan contoh membuat symbol dengan html berikut ini. Belajar HTML Membuat symbol pada HTML</p>
+        <br>
+        <p>index.html</p>
+
+        <div class="html-box">
+            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+            <span class="tag">&lt;html&gt;</span><br>
+            <span class="tag">&lt;head&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;title&gt;</span>Membuat symbol pada HTML | www.belajarhtmlcssdasar.com<span class="tag">&lt;/title&gt;</span><br>
+            <span class="tag">&lt;/head&gt;</span><br>
+            <span class="tag">&lt;body&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span>Membuat symbol pada HTML&lt;br/&gt;www.belajarhtmlcssdasar.com<span class="tag">&lt;/h1&gt;</span>
+            &nbsp;&nbsp;<span class="tag">&lt;p&gt;</span>&amp;#9824;<span class="tag">&lt;/p&gt;</span>
+            &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attribute">href="#"&gt;</span>Simbol panah &amp;#8594;<span class="tag">&lt;/a&gt;</span>
+            &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attribute">href="#"&gt;</span>Simbol panah &amp;rarr;<span class="tag">&lt;/a&gt;</span><br>
+            &nbsp;&nbsp;&amp;#8704; &lt;br&gt; 
+            &nbsp;&nbsp;&amp;#8711; &lt;br&gt;
+            &nbsp;&nbsp;&amp;#8719; &lt;br&gt;
+            &nbsp;&nbsp;&amp;#174;  &lt;br&gt;
+            &nbsp;&nbsp;&amp;#9829; &lt;br&gt;
+            &nbsp;&nbsp;&amp;#8594; &lt;br&gt;
+            &nbsp;&nbsp;&amp;#8593; &lt;br&gt;
+            &nbsp;&nbsp;&amp;#8592; &lt;br&gt;
+            &nbsp;&nbsp;&amp;#8482; &lt;br&gt;
+            <br>
+            <span class="tag">&lt;/body&gt;</span><br>
+            <span class="tag">&lt;/html&gt;</span><br>
+        </div>
+        <br>
+        <p>Dan jika di jalankan pada browser maka hasilnya</p>
+        <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p>
+
+        <p>Dapat di lihat pada contoh di atas, simbol html pun terbentuk sesuai dengan kode symbol html yang di gunakan. Belajar HTML Membuat symbol pada HTML.</p>
+        
+        </body>
+
+      </head>
+
+</html>

@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <style>
+          body {
+            font-family: 'Poppins';
+            padding:0.5em;
+          }
+          
+          #frame {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #cef1f3;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    .html-box {
+            border: 1px solid #31343f; /* Warna border */
+            background-color: #282c34; /* Warna background */
+            padding: 10px;
+            margin: 0,5px;
+            white-space: pre-line;
+            font-family: 'Courier New', monospace;
+            color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px; 
+        }
+
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
+        }
+
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
+
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
+
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
+
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+
+
+        </style>
+            <h1><strong>Belajar HTML Dasar : Membuat Form pada HTML</strong></h1>
+            <p><strong>Form</strong> merupakan tempat penginputan data sebelum diproses oleh sistem. salah satunya adalah form login, form comment, form data user, dan lain sebagainya. untuk proses penginputan data dari form akan kita bahas di materi PHP, MYSQL, dan JavaScript. tag yang digunakan untuk membuat form ini adalah tag &lt;form&gt; yang didalamnya bisa berupa &lt;input&gt;, &lt;textarea&gt;, &lt;opstion&gt; dan &lt;select&gt;</p>
+            
+            <h3>Tag &lt;form&gt;</h3>
+            <p>Dalam tag &lt;form&gt; ini dibutuhkan beberapa atribut untuk memproses data yang akan dikirim. dan biasanya nilai yang di kirim berupa alamat dari sebuah halaman untuk memproses data inputan. dan atribut yang kedua berupa method. method ini menjelaskan bagaimana data yang akan dikirim oleh web browser. nilai dari method ini biasanya get atau post.</p>
+            <h3>Tag &lt;input&gt;</h3>
+            <p>Tag input merupakan tag yang akan digunakan dalam form pengisian. tag input ini memiliki banyak sekali bentuk yang bisa digunakan misalkan isian teks, password, checkbox, radio button, sampai dengan tombol submit berada dalam tag &lt;input&gt;</p>
+
+            <p>Berikut beberapa bentuk dalam tag &lt;input&gt; yang di kategorikan berdasarkan atribut :</p>
+
+           <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Fungsi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;input type="text"&gt;</td>
+                    <td>Form ini bersifat menerima inputan text misalkan: username, nama, tempat lahir atau berupa inputan text yang pendek.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="password"&gt;</td>
+                    <td>Form ini bersifat menerima inputan password. Setiap text yang di input akan di tampilkan sebagai tanda titik(di samarkan), textbox ini biasanya digunakan untuk membuat inputan password.</td>
+                </tr> 
+                <tr>
+                    <td>&lt;input type="submit"&gt;</td>
+                    <td>inputan ini berupa tombol submit untuk memproses data inputan dari form.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="checkbox"&gt;</td>
+                    <td>inputan berupa checkbox yang dapat di ceklis oleh user. Inputan ini memungkinan user untuk men-checklist banyak pilihan sekaligus.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="radio"&gt;</td>
+                    <td>inputan ini berupa radio grup, dimana user dapat memilih salah satu dari pilihan yang disediakan dengan menggunakan form radio.contoh nya adalah form pemilihan jenis kelamin.</td>
+                </tr>
+               
+            </tbody>
+        </table>
+        <br>
+
+        <h3>Tag &lt;textarea&gt;</h3>
+            <p> Tag &lt;textarea&gt; adalah tag yang sama fungsinya dengan inputan text, hanya saja pada textarea ini dapat diisikan dengan lebih banyak teks didalamnya secara sekaligus. Contoh nya untuk pengisian alamat lengkap.</p>
+            <p>berikut contoh penulisan textarea :</p>
+            <div class="html-box">
+                <span class="tag">&lt;textarea&gt; &lt;/textarea&gt;</span>
+            </div>
+
+            <h3>Tag &lt;select&gt;</h3>
+            <p> Tag &lt;select&gt; merupakan tag yang digunakan user untuk memilih data yang sudah disediakan. Dalam penggunakan &lt;select&gt; selalu diikuti oleh &lt;option&gt; yang digunakan untuk membuat pilihan.</p>
+            <p>berikut contoh penulisan &lt;select&gt; pada HTML :</p>
+            <div class="html-box">
+                <span class="tag">&lt;select&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option&gt;</span>Semarang<span class="tag">&lt;/option&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option&gt;</span>Bandung<span class="tag">&lt;/option&gt;</span><br>
+                <span class="tag">&lt;/select&gt;</span><br>
+            </div>
+            <p>Untuk lebih memberikan pemahaman lebih tentang cara membuat form pada HTML, silahkan perhatikan contoh berikut ini:</p>
+            <div class="html-box">
+                <span class="tag">&lt;!DOCTYPE html&gt;</span>
+                <span class="tag">&lt;html</span> <span class="attribute">lang="en"&gt;</span><br>
+                <span class="tag">&lt;head&gt;</span>
+                &nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">belajar format text html</span><span class="tag">&lt;/title&gt;</span>
+                <span class="tag">&lt;/head&gt;</span><br>
+                <span class="tag">&lt;body&gt;</span><br>
+                &nbsp;&nbsp;<span class="tag">&lt;form&gt;</span>
+                &nbsp;&nbsp;nama:<span class="tag">&lt;input</span> <span class="attribute">type="text"</span> <span class="attribute">name="nama"&gt;</span> &lt;br/&gt;
+                &nbsp;&nbsp;alamat:<span class="tag">&lt;input</span> <span class="attribute">type="text"</span> <span class="attribute">name="alamat"&gt;</span> &lt;/br/&gt;
+                &nbsp;&nbsp;password:<span class="tag">&lt;input</span> <span class="attribute">type="password"</span> <span class="attribute">name="pass"&gt;</span> &lt;br/&gt;
+                &nbsp;&nbsp;Jenis Kelamin:
+                <span class="tag">&lt;input</span> <span class="attribute">type="radio"</span> <span class="attribute">name="jk"</span> <span class="attribute">value="laki-laki"/&gt;</span> Laki - Laki
+                <span class="tag">&lt;input</span> <span class="attribute">type="radio"</span> <span class="attribute">name="jk"</span> <span class="attribute">value="perempuan" /&gt;</span> Perempuan
+                &nbsp;&nbsp;&lt;br/&gt;<br>
+                &nbsp;&nbsp;bahasa pemrograman yang dikuasai :<br>
+                <span class="tag">&lt;input</span> <span class="attribute">type="checkbox"</span> <span class="attribute">name="web"&gt;</span> Web
+                <span class="tag">&lt;input</span> <span class="attribute">type="checkbox"</span> <span class="attribute">name="mobile"&gt;</span> MOBILE
+                <span class="tag">&lt;input</span> <span class="attribute">type="checkbox"</span> <span class="attribute">name="desk"&gt;</span> DESKTOP
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;kota asal :<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;select&gt;</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option&gt;</span>Semarang<span class="tag">&lt;/option&gt;</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option&gt;</span>Bandung<span class="tag">&lt;/option&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/select&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;pesan anda :<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;textarea&gt;</span><span class="tag">&lt;/textarea&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="attribute">type="submit"</span> <span class="attribute">value="proses"&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
+                &nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div> <br>
+
+            <p>Dan jalankan pada browser untuk melihat hasil nya.</p>
+            <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p> <br>
+            <p>Dari contoh di atas, dapat di perhatikan bahwa ada beberapa jenis form yang terdapat pada HTML.</p>
+            <br><br><br><br><br><br>
+            
+
+            
+
+
+
+
+
+        
+        
+        </body>
+
+      </head>
+
+</html>

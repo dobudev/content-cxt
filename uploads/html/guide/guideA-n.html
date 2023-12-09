@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <style>
+          body {
+            font-family: 'Poppins';
+            padding:0.5em;
+          }
+          
+          #frame {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #cef1f3;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    .html-box {
+            border: 1px solid #31343f; /* Warna border */
+            background-color: #282c34; /* Warna background */
+            padding: 10px;
+            margin: 0,5px;
+            white-space: pre-line;
+            font-family: 'Courier New', monospace;
+            color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px; 
+        }
+
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
+        }
+
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
+
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
+
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
+
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+
+
+         </style>
+         
+
+         <h2><strong>Belajar HTML Dasar : Menghubungkan HTML dengan CSS</strong></h2>
+         <p>Tutorial Menghubungkan HTML dengan CSS ini merupakan tutorial HTML yang bisa di bilang termasuk ke dalam salah satu tutorial HTML yang paling terpenting. karena jika kita tidak mengetahui cara menghubungkan HTML dengan CSS secara otomatis pasti kita tidak mengetahui bagaimana cara untuk mendesign halaman website yang kita buat karena file HTML tidak terhubung dengan CSS. Bukan hanya HTML sebenarnya. tetapi PHP juga sama, PHP yang akan kita gunakan untuk membuat website. Setelah anda selesai mempelajari tutoria-tutorial HTML ini di asumsikan untuk melanjutkan ke tutorial belajar css dan tutorial belajar PHP</p><br>
+         <p>Setelah anda mempelajari tutorial belajar html menghubungkan html dengan css ini selanjutnya akan di jelaskan lagi pada tutorial selanjutnya tentang Class dan id pada html. Pemahaman tentang Class dan Id pada HTML merupakan dasar yang harus di pahami sebelum anda melangkah lebih jauh mempelajari CSS. apalagi bagi anda yang ingin memfokuskan diri pada bagian front-end developer/web designer. silahkan simak penjelasan tentang cara menghubungkan HTML dengan CSS berikut ini. dan untuk penjelasan class dan id akan di bahas pada tutorial selanjutnya.</p>
+         <br>
+         
+         <h3><strong>Cara Menghubungkan HTML dengan CSS</strong></h3>
+         <p>Untuk Cara menghubungkan HTML dengan CSS caranya sangat mudah. gunakan tag &lt;link&gt; untuk menghubungkan html dengan css. tag link di letakkan pada bagian element head pada struktur HTML. baiklah perhatikan contoh cara menghubungkan html dengan CSS berikut ini.</p>
+         <p>Buat sebuah file html atau php terserah anda. karena ini merupakan tutorial HTML maka saya menggunakan file HTML untuk di hubungkan dengan CSS. di sini saya membuat file html dengan nama index.html. kemudian buat sebuah file css lagi dengan nama terserah anda, di sini saya membuat file css dengan nama style.css. jadi ada dua buah file yang saya buat yaitu file <strong>index.html</strong> dan fiel <strong>style.css</strong>.</p>
+         <div class="html-box">
+            <span class="tag">&lt;!DOCTYPE html&gt;</span>
+            <span class="tag">&lt;html&gt;<br>
+            <span class="tag">&lt;head&gt;</span>
+            &nbsp;<span class="tag">&lt;title&gt;</span><span class="value">Menghubungkan HTML dengan CSS | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/title&gt;</span>
+            <span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
+            <span class="tag">&lt;head&gt;</span>
+
+            <span class="tag">&lt;body&gt;</span> 
+            <br>
+            <span class="tag">&lt;/body&gt;</span><br>
+            <span class="tag">&lt;/html&gt;</span><br>
+            
+        </div> <br>
+        <p>Contoh di atas merupakan cara menghubungkan file html/php dengan CSS. pada contoh di atas saya membuat tag link yang berfungsi untuk menghubungkan file html/php dengan file css yang kita inginkan.</p>
+        <div class="html-box">
+            <span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
+        </div> <br>
+        <p>atribut rel=”stylesheet” dan type=”text/css” merupakan deklarasi untuk menjelaskan bahwa file yang kita panggil atau hubungkan adalah file stylesheet atau css. dan pada atribut href digunakan untuk meletakkan lokasi dan nama file css yang ingin kita hubungkan. pada contoh ini saya menghubungkan file html saya dengan file css yang sudah saya berinama dengan style.css.</p>
+        <p>Jika di jalankan pada browser maka tidak akan muncul apa-apa karena pada file html masih kosong belum berisi element apapun selain struktur dasar html. untuk mencoba apakah file css sudah berhasil terhubung dengan file html maka akan kita cek dengan cara berikut ini. kita buat contoh sederhana dulu dengan cara membuat sebuah element heading 1, dan kemudian kita beri warna text heading 1 tersebut dengan warna orange.</p>
+        <br>
+        <p>index.html</p>
+        <div class="html-box">
+            <span class="tag">&lt;!DOCTYPE html&gt;</span>
+            <span class="tag">&lt;html&gt;<br>
+            <span class="tag">&lt;head&gt;</span>
+            &nbsp;<span class="tag">&lt;title&gt;</span><span class="value">Menghubungkan HTML dengan CSS | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/title&gt;</span>
+            <span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
+            <span class="tag">&lt;/head&gt;</span>
+
+            <span class="tag">&lt;body&gt;</span> 
+            <br>
+            &lt;h1&gt;Belajar HTML menghubungkan html dengan css&lt;/h1&gt; 
+            <br>
+            <span class="tag">&lt;/body&gt;</span><br>
+            <span class="tag">&lt;/html&gt;</span><br>
+        </div> <br>
+        <p>style.css</p>
+        <div class="html-box">
+            <span class="tag">h1</span> {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute">color:</span> <span class="value">orange;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute">font-family:</span> <span class="value">sans-serif;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute">text-align:</span> <span class="value">center;</span><br>
+            }
+        </div>
+
+        <br>
+        <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p>
+        <p>File html berhasil di hubungkan dengan css terbukti dengan berhasilnya syntax css yang kita buat untuk mengatur element heading 1 html di atas. syntax color pada css di atas merupakan perintah untuk menetapkan warna font/text, font-family untuk mengatur font yang digunakan dan text-align untuk mengatur rata text. syntax css di atas merupakan syntax css yang paling dasar yang akan kita pelajari juga pada tutorial selanjutnya tentang pengertian dan pengenalan dasar css pada www.belajarhtmlcssdasar.com.</p>
+
+
+        </body>
+
+      </head>
+
+</html>
