@@ -1,65 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <style>
-      body {
-        font-family: 'Poppins';
-		padding:0.5em;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Box with Copy Button</title>
+  <style>
+    .html-box {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 0.5px;
+      color: #abb2bf;
+      font-size: 14px;
+      line-height: 1.5;
+      word-wrap: break-word;
+      border-radius: 8px;
+      position: relative;
+    }
 
-      table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 20px;
-}
+    .html-box code {
+      color: #abb2bf;
+    }
 
-table, th, td {
-    border: 1px solid black;
-}
+    .tag {
+      color: #e06c75;
+    }
 
-th, td {
-    padding: 10px;
-    text-align: left;
-}
+    .attribute {
+      color: #d19a66;
+    }
 
+    .value {
+      color: #98c379;
+    }
 
-    </style>
-  </head>
-  <body>
-    <p> <strong>Apa itu HTMl ?</strong> mungkin pertanyaan inilah yang terbersit pada benak anda yang baru mulai masuk kedalam dunia web programming. HTML merupakan bahasa pemrograman dasar yang wajib di kuasai bagi seorang web developer. karena HTML merupakan unsur dasar dari pembangunan sebuah website. jika di ibaratkan HTML menjadi pondasi pada sebuah rumah atau bangunan. karena bentuk pada halaman website di buat menggunakan HTML. pada judul “Belajar HTML Dasar : Pengertian HTML” ini akan di jelaskan tentang pengertian dari HTML dan sekilas tentang sejarah HTML dan perkembangannya.</p>
-    <h2>Pengertian HTML</h2>
-    <p>HTML <em>(Hyper Text Markup Language)</em> adalah sebuah bahasa formatting yang digunakan untuk membuat sebuah halaman website. Di dalam dunia pemrograman berbasis website(Web Programming), HTML menjadi pondasi dasar pada halaman website. sebuah file HTML di di simpan dengan ekstensi <strong>.html</strong> (dot html). dan dapat di eksekusi atau diakses menggunakan web browser(Google Chrome, Mozilla Firefox, Opera, Safari dan lain-lain). seperti yang sudah di jelaskan, HTML adalah dasar dari sebuah website. untuk membuat sebuah website tidak cukup hanya menggunakan HTML, kita memerlukan bantuan CSS, JavaScript dan PHP untuk membuat sebuah website yang dinamis. jika halaman website dibuat hanya menggunakan HTML saja maka halaman website tersebut di sebut halaman statis karena tidak memiliki aksi atau fungsi-fungsi yang dapat mengelola website. tentu developer akan sangat di sibukkan dengan harus mengubah lagi file HTML setiap ingin mengupdate artikel.</p>
-    <p>HTML memiliki beberapa element yang tersusun dari tag-tag yang memiliki fungsi nya masing-masing. seperti tag heading, paragraf, pembuatan form, tombol, list, membuat hyperlink atau link yang menghubungkan antar halaman website dan banyak lagi lainnya yang akan kita bahas pada buku ini.</p>
-    <h2>Kegunaan HTML</h2>
-    <p>HTML berfungsi sebagai pondasi sebuah halaman website. adapun yang dapat di lakukan dengan HTML adalah sebagai berikut :</p>
+    .comment {
+      color: #5c6370;
+      font-style: italic;
+    }
 
-    <ul>
-        <li>Membungkus element-element tertentu sesuai kebutuhan.</li>
-        <li>Membuat heading atau format judul.</li>
-        <li>Membuat Tabel.</li>
-        <li>Membuat List.</li>
-        <li>Membuat Paragraf.</li>
-        <li>Membuat Form.</li>
-        <li>Membuat Tombol.</li>
-        <li>Membuat huruf tebal.</li>
-        <li>Membuat huruf miring.</li>
-        <li>Menampilkan gambar.</li>
-        <li>Menampilkan video.</li>
-       
-    </ul>
-    <p>Dan banyak lainnya yang akan kita pelajari pada penjelasan selanjutnya</p>
+    .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #61dafb;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="html-box" id="htmlBox">
+  <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+  <span class="tag">&lt;html&gt;</span><br>
+  <span class="tag">.table1</span><span class="tag">{</span><br/>
+    &nbsp;&nbsp;<span class="property">font-family</span>: <span class="value">sans-serif Ada empat status yang di miliki oleh hyperlink html dan bisa di manipulasi dengan menggunakan css</span>; <br/>
+    &nbsp;&nbsp;<span class="property">color</span>: <span class="value">#232323</span>; <br/>
+    &nbsp;&nbsp;<span class="property">text-align</span>: <span class="value">center</span>; <br/>
+    &nbsp;&nbsp;<span class="property">border-collapse</span>: <span class="value">collapse</span>; <br/>
+    <span class="tag">}</span><br/>
     <br>
-    <p>Sampai saat ini HTML sudah sampai pada versi 5. HTML5 sudah memiliki banyak sekali fitur tambahan salah satunya, dengan HTML5 memungkinkan kita untuk membuat streaming video tanpa bantuan adobe flash. untuk tutorial cara membuat streaming video dengan HTML5 juga akan kita bahas pada buku tutorial belajar HTML dasar ini.</p>
-    <p>jadi kesimpulan dari pengertian HTML ini adalah HTML merupakan pondasi dasar dari pembuatan sebuah website. untuk mengeksekusi atau menjalankan file html harus menggunakan web browser dan file html di simpan dengan ekstensi <strong>.html</strong> (dot html).</p>
+    <span class="tag">.table1, th, td</span><span class="tag">{</span><br/>
+      &nbsp;&nbsp;<span class="property">border</span>: <span class="value">1px solid #999</span>; <br/>
+      &nbsp;&nbsp;<span class="property">color</span>: <span class="value">#232323</span>; <br/>
+      &nbsp;&nbsp;<span class="property">padding</span>: <span class="value">8px 20px</span>; <br/>
+      <span class="tag">}
+  <span class="tag">&lt;/html&gt;</span><br>
+  <button class="copy-button" onclick="copyHtmlBox()">Copy</button>
+</div>
+
+<script>
+  function copyHtmlBox() {
+    // Get the HTML box element
+    var htmlBox = document.getElementById("htmlBox");
+
+    // Create a range to select the text within the element
+    var range = document.createRange();
+    range.selectNode(htmlBox);
+
+    // Select the range
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    // Execute the copy command
+    document.execCommand("copy");
+
+    // Deselect the text
+    window.getSelection().removeAllRanges();
+
+    // Alert or provide feedback to the user (you can customize this)
+    alert("HTML code copied!");
+  }
+</script>
+<p> hghasgdfgjfjaf</p>
+<div class="html-box" id="htmlBox">
+  <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+  <span class="tag">&lt;html&gt;</span><br>
+  <span class="tag">.table1</span><span class="tag">{</span><br/>
+    &nbsp;&nbsp;<span class="property">font-family</span>: <span class="value">sans-serif Ada empat status yang di miliki oleh hyperlink html dan bisa di manipulasi dengan menggunakan css</span>; <br/>
+    &nbsp;&nbsp;<span class="property">color</span>: <span class="value">#232323</span>; <br/>
+    &nbsp;&nbsp;<span class="property">text-align</span>: <span class="value">center</span>; <br/>
+    &nbsp;&nbsp;<span class="property">border-collapse</span>: <span class="value">collapse</span>; <br/>
+    <span class="tag">}</span><br/>
     <br>
-    
-   
+    <span class="tag">.table1, th, td</span><span class="tag">{</span><br/>
+      &nbsp;&nbsp;<span class="property">border</span>: <span class="value">1px solid #999</span>; <br/>
+      &nbsp;&nbsp;<span class="property">color</span>: <span class="value">#232323</span>; <br/>
+      &nbsp;&nbsp;<span class="property">padding</span>: <span class="value">8px 20px</span>; <br/>
+      <span class="tag">}
+  <span class="tag">&lt;/html&gt;</span><br>
+  <button class="copy-button" onclick="copyHtmlBox()">Copy</button>
+</div>
 
+<script>
+  function copyHtmlBox() {
+    // Get the HTML box element
+    var htmlBox = document.getElementById("htmlBox");
 
-  </body>
-  </html>
+    // Create a range to select the text within the element
+    var range = document.createRange();
+    range.selectNode(htmlBox);
+
+    // Select the range
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    // Execute the copy command
+    document.execCommand("copy");
+
+    // Deselect the text
+    window.getSelection().removeAllRanges();
+
+    // Alert or provide feedback to the user (you can customize this)
+    alert("HTML code copied!");
+  }
+</script>
+
+</body>
+</html>
