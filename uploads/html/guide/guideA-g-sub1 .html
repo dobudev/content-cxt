@@ -11,12 +11,6 @@
             padding:0.5em;
           }
 
-          .html-box {
-            border: 1px solid #000;
-            padding: 10px;
-            margin: 20px;
-        }
-
         /* Memberi sedikit style agar teks HTML terlihat lebih menarik */
         code {
             font-family: 'Courier New', monospace;
@@ -52,94 +46,166 @@
     tr:nth-child(even) {
         background-color: #ffffff;
     }
-          
-         
-        </style>
+        
+.html-box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0,5px;
+	  color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px;
+            overflow-x: auto;
+             white-space: nowrap;
+
+        }
+
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
+        }
+
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
+
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
+
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
+
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+        .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #61dafb;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+
+      
+
+    }
+        .tag {
+    color: #569cd6;
+}
+
+.attribute {
+    color: #9cdcfe;
+}
+
+.text {
+    color: #d4d4d4;
+}
+
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.keyword {
+    color: #dcdcaa;
+}
+
+.operator {
+    color: #d4d4d4;
+}
+
+.selector {
+    color: #d7ba7d;
+}
+
+.punctuation {
+    color: #d4d4d4;
+}
+
+.string {
+    color: #ce9178;
+}
+
+    </style>
         <body>
             <h2><strong>Belajar HTML Dasar : Membuat Paragraf Pada HTML</strong></h2>
-            <p>Untuk memahami pembuatan paragraf &lt;p&gt; pada HTML, diharapkan anda terlebih dahulu sudah memahami penulisan dan apa itu tag, element, atribut. paragraf disini merupakan suatu tag untuk membuat penulisan dalam bentuk paragraf. tag paragraf ini terdapat 3 atribut/tag yang bisa dikombinasikan langsung dengan tag paragraf &lt;p&gt;. atribut tag tersebut yaitu :</p>
-            <br>
-
+            <p>Untuk memahami pembuatan paragraf &lt;p&gt; pada HTML, diharapkan anda terlebih dahulu sudah memahami penulisan dan apa itu tag, element, atribut. paragraf disini merupakan suatu tag untuk membuat penulisan dalam bentuk paragraf. tag paragraf ini terdapat 3 atribut/tag yang bisa dikombinasikan langsung dengan tag paragraf &lt;p&gt;. atribut tag tersebut yaitu :</p><br>
             <ul>
                 <li>Membuat paragraf rata kiri menggunakan &lt;p align=”left”&gt; .. isi paragraph &lt;/p&gt;</li>
                 <li>Membuat paragraf rata kanan menggunakan &lt;p align=”right”&gt; .. isi paragraph &lt;/p&gt;</li>
                 <li>Membuat paragraf rata tengah menggunakan &lt;p align=”center”&gt; .. isi paragraph &lt;/p&gt;</li>
                 <li>Membuat paragraf rata kiri kanan menggunaan &lt;p align=”justify”&gt; .. isi paragraph &lt;/p&gt;</li>
-               
             </ul>
             <p><strong>perhatikan contoh berikut :</strong></p>
             <p>Paragraf menggunakan &lt;p&gt;. berikut inplementasi &lt;p&gt; dalam dokumen HTML :</p>
-
-          <div class="html-box">
-            <code>
-                &lt;!DOCTYPE html&gt;<br>
-                &lt;html&gt;<br>
+            <div class="html-box" id="htmlBox">
+                <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+                <span class="tag">&lt;html&gt;</span><br>
                 <br>
-                &lt;head&gt;<br>
-                    &lt;title&gt;belajar membuat paragraf&lt;/title&gt;<br>
-                &lt;/head&gt;<br>
+                &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">belajar membuat paragraf<span class="tag">&lt;/title&gt;</span><br>
+                &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
                 <br>
-                &lt;body&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p&gt;</span><span class="value">ini merupakan penulisan paragraf pertama dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p&gt;</span><span class="value">ini merupakan penulisan paragraf kedua dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
                 <br>
-                    &lt;p&gt;ini merupakan penulisan paragraf pertama dalam dokument HTML&lt;/p&gt;<br>
-                    &lt;p&gt;ini merupakan penulisan paragraf kedua dalam dokument HTML&lt;/p&gt;<br>
-                <br>
-                &lt;/body&gt;<br>
-                &lt;/html&gt;
-            </code>
-        </div>
-        <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p> <br>
-
+                <span class="tag">&lt;/html&gt;</span><br>
+              </div>
+        <br>
+        <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p>
+        <br>
         <p>Dari contoh di atas dapat anda lihat bahwa penulisan paragraf pertama dan paragraf kedua di pisahkan. untuk memisahkan antara paragraf satu dan dua ini menggunakana &lt;p&gt;.</p>
         <h4><strong>Jenis paragraph</strong></h4>
         <p>Berikut ini adalah beberapa contoh jenis paragraf pada HTML.</p>
         <p>Paragraf rata kiri</p>
-        <div class="html-box">
-            <code>
-                &lt;p align="left"&gt;1. ini merupakan penulisan paragraf rata kiri dalam dokument HTML&lt;/p&gt;
-            </code>
+        <div class="html-box" id="htmlBox">
+           <span class="tag">&lt;p align=</span><span class="attribute">"left"</span><span class="tag">&gt;</span><span class="value">1. ini merupakan penulisan paragraf rata kiri dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
         </div>
+        <br>
         <p>Paragraf rata kanan</p>
-        <div class="html-box">
-            <code>
-                &lt;p align="right"&gt;2. ini merupakan penulisan paragraf rata kanan dalam dokument HTML&lt;/p&gt;
-            </code>
-        </div>
+        <div class="html-box" id="htmlBox">
+            <span class="tag">&lt;p align=</span><span class="attribute">"right"</span><span class="tag">&gt;</span><span class="value">2. ini merupakan penulisan paragraf rata kiri dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
+         </div>
+        <br>
         <p>Paragraf rata tengah</p>
-        <div class="html-box">
-            <code>
-                &lt;p align="center"&gt;3. ini merupakan penulisan paragraf rata tengah dalam dokument HTML&lt;/p&gt;
-            </code>
-        </div>
+        <div class="html-box" id="htmlBox">
+            <span class="tag">&lt;p align=</span><span class="attribute">"center"</span><span class="tag">&gt;</span><span class="value">3. ini merupakan penulisan paragraf rata kiri dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
+         </div>
+         <br>
         <p>Paragraf rata kiri kanan</p>
-        <div class="html-box">
-            <code>
-                &lt;p align="justify"&gt;4. ini merupakan penulisan paragraf rata kiri kanan dalam dokument HTML&lt;/p&gt;
-            </code>
-        </div>
+        <div class="html-box" id="htmlBox">
+            <span class="tag">&lt;p align=</span><span class="attribute">"justify"</span><span class="tag">&gt;</span><span class="value">4. ini merupakan penulisan paragraf rata kiri dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
+         </div>
+         <br>
         <p><strong>berikut contoh lengkapnya</strong></p>
-
-        <div class="html-box">
-            <code>
-                &lt;!DOCTYPE html&gt;<br>
-                &lt;html&gt;<br>
-                <br>
-                &lt;head&gt;<br>
-                    &lt;title&gt;belajar membuat paragraf&lt;/title&gt;<br>
-                &lt;/head&gt;<br>
-                <br>
-                &lt;body&gt;<br>
-                <br>
-                &lt;p align="left"&gt;1. ini merupakan penulisan paragraf rata kiri dalam dokument HTML&lt;/p&gt; <br>
-                &lt;p align="right"&gt;2. ini merupakan penulisan paragraf rata kanan dalam dokument HTML&lt;/p&gt;<br>
-                &lt;p align="center"&gt;3. ini merupakan penulisan paragraf rata tengah dalam dokument HTML&lt;/p&gt;<br>
-                &lt;p align="justify"&gt;4. ini merupakan penulisan paragraf rata kiri kanan dalam dokument HTML&lt;/p&gt;<br>
-
-                <br>
-                &lt;/body&gt;<br>
-                &lt;/html&gt;
-            </code>
-        </div>
+        <div class="html-box" id="htmlBox">
+            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+            <span class="tag">&lt;html&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">belajar membuat paragraf<span class="tag">&lt;/h1&gt;</span><span class="tag">&lt;/title&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p align=</span><span class="attribute">"left"</span><span class="tag">&gt;</span><span class="value">1. ini merupakan penulisan paragraf rata kiri dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p align=</span><span class="attribute">"right"</span><span class="tag">&gt;</span><span class="value">2. ini merupakan penulisan paragraf rata kanan dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p align=</span><span class="attribute">"center"</span><span class="tag">&gt;</span><span class="value">3. ini merupakan penulisan paragraf rata tengah dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p align=</span><span class="attribute">"justify"</span><span class="tag">&gt;</span><span class="value">4. ini merupakan penulisan paragraf rata kiri kanan dalam dokument HTML<span class="tag">&lt;p&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+            <br>
+            <span class="tag">&lt;/html&gt;</span><br>
+          </div>
+          <br>
         <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p> <br>
 
   
