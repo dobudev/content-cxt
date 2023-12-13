@@ -1,29 +1,122 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <style>
-          body {
-            font-family: 'Poppins';
-            padding:0.5em;
-          }
-          .html-box {
-            border: 1px solid #000;
-            padding: 10px;
-            margin: 20px;
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.css">
+
+    <style>
+      body {
+        font-family: 'Poppins';
+		padding:0.5em;
+      }
+
+      table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.html-box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0,5px;
+	  color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px;
+            overflow-x: auto;
+             white-space: nowrap;
+
         }
 
-        /* Memberi sedikit style agar teks HTML terlihat lebih menarik */
-        code {
-            font-family: 'Courier New', monospace;
-            color: #333;
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
         }
-          
-         
-        </style>
+
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
+
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
+
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
+
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+        .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #61dafb;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+
+      
+
+    }
+        .tag {
+    color: #569cd6;
+}
+
+.attribute {
+    color: #9cdcfe;
+}
+
+.text {
+    color: #d4d4d4;
+}
+
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.keyword {
+    color: #dcdcaa;
+}
+
+.operator {
+    color: #d4d4d4;
+}
+
+.selector {
+    color: #d7ba7d;
+}
+
+.punctuation {
+    color: #d4d4d4;
+}
+
+.string {
+    color: #ce9178;
+}
+
+    </style>
         <body>
             <h2><strong>Belajar HTML Dasar : Heading Pada HTML</strong></h2>
             <p>Heading merupakan element atau tag HTML yang berfungsi untuk menunjukkan bagian penting pada halaman web. element tag heading ini memiliki 6 tingkatan yang berurutan yaitu <strong>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</strong> yang bisa digunakan untuk menambah ke struktur halaman web. perbedaan masing-masing heading yaitu besar hingga kecil teks. contohnya tag/element &lt;h1&gt; lebih besar dari element/tag &lt;h2&gt; dan seterusnya.</p>
@@ -34,74 +127,66 @@
             <p>untuk penggunaan <strong>&lt;h3&gt;&lt;h4&gt;&lt;h5&gt;&lt;h6&gt;</strong> tergantung programmer sendiri untuk memperindah halaman web sesuai keperluan.</p>
             <p>berikut contoh penerapan masing-masing element/tag heading :</p>
 
-            <div class="html-box">
-                <code>
-                    &lt;!DOCTYPE html&gt;<br>
-                    &lt;html&gt;<br>
-                    <br>
-                    &lt;head&gt;<br>
-                        &lt;title&gt;&lt;/title&gt;<br>
-                    &lt;/head&gt;<br>
-                    <br>
-                    &lt;body&gt;<br>
-                      &lt;h1&gt;ini adalah heading 1 &lt;/h1&gt;<br>
-                    &lt;/body&gt;<br>
-                    &lt;/html&gt;
-                </code>
+            <div class="html-box" id="htmlBox">
+              <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+              <span class="tag">&lt;html&gt;</span><br>
+              <br>
+              &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="tag">&lt;title&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span></span><span class="value">Ini adalah heading 1</span><span class="tag">&lt;/h1&gt;</span> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+              <br>
+              <span class="tag">&lt;/html&gt;</span><br>
             </div>
             <p><strong>hasilnya saat di jalankan pada browser:</strong></p>
             <p><img alt="" src="" width="100%" height="" /></p>
             <p>contoh heading lainya</p>
 
-             <div class="html-box">
-                <code>
-                    &lt;!DOCTYPE html&gt;<br>
-                    &lt;html&gt;<br>
-                    <br>
-                    &lt;head&gt;<br>
-                        &lt;title&gt;&lt;/title&gt;<br>
-                    &lt;/head&gt;<br>
-                    <br>
-                    &lt;body&gt;<br>
-                      &lt;h1&gt;ini adalah heading 1 &lt;/h1&gt;<br>
-                      &lt;h2&gt;ini adalah heading 2 &lt;/h2&gt;<br>
-                      &lt;h3&gt;ini adalah heading 3 &lt;/h3&gt;<br>
-                      &lt;h4&gt;ini adalah heading 4 &lt;/h4&gt;<br>
-                      &lt;h5&gt;ini adalah heading 5 &lt;/h5&gt;<br>
-                      &lt;h6&gt;ini adalah heading 6 &lt;/h6&gt;<br>
-                    &lt;/body&gt;<br>
-                    &lt;/html&gt;
-                </code>
-              </div>
+            <div class="html-box" id="htmlBox">
+              <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+              <span class="tag">&lt;html&gt;</span><br>
+              <br>
+              &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="tag">&lt;title&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span></span><span class="value">Ini adalah heading 1</span><span class="tag">&lt;/h1&gt;</span> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h2&gt;</span></span><span class="value">Ini adalah heading 2</span><span class="tag">&lt;/h2&gt;</span> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h3&gt;</span></span><span class="value">Ini adalah heading 3</span><span class="tag">&lt;/h3&gt;</span> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h4&gt;</span></span><span class="value">Ini adalah heading 4</span><span class="tag">&lt;/h4&gt;</span> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h5&gt;</span></span><span class="value">Ini adalah heading 5</span><span class="tag">&lt;/h5&gt;</span> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h6&gt;</span></span><span class="value">Ini adalah heading 6</span><span class="tag">&lt;/h6&gt;</span> <br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+              <br>
+              <span class="tag">&lt;/html&gt;</span><br>
+            </div>
                 <p><strong>Dan hasilnya saat di jalankan pada browser:</strong></p>
                 <p><img alt="" src="" width="100%" height="" /></p>
                 <p>Dari contoh diatas, dapat anda lihat perbedaan antara masing-masing heading. penulisan heading ini boleh digunakan didalam jenis tag yang lain. berikut contoh penggunaan element heading di dalam tag lain :</p>
 
 
-                <div class="html-box">
-                    <code>
-                        &lt;!DOCTYPE html&gt;<br>
-                        &lt;html&gt;<br>
-                        <br>
-                        &lt;head&gt;<br>
-                            &lt;title&gt;&lt;/title&gt;<br>
-                        &lt;/head&gt;<br>
-                        <br>
-                        &lt;body&gt;<br>
-                        &lt;a href="http://www.belajarhtmlcssdasar.com/"&gt;&lt;h1&gt;ini adalah heading 1 &lt;/h1&gt;&lt;/a&gt; 
-                        <br><br>
-                        &lt;/body&gt;<br>
-                        &lt;/html&gt;
-                    </code>
+                <div class="html-box" id="htmlBox">
+                  <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+                  <span class="tag">&lt;html&gt;</span><br>
+                  <br>
+                  &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="tag">&lt;/title&gt;</span><br>
+                  &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a href=</span> <span class="attribute">"http://www.belajarhtmlcssdasar.com/"</span><span class="tag">&gt;</span><span class="tag">&lt;h1&gt;</span></span><span class="value">Ini adalah heading 1<span class="tag">&lt;/h1&gt;</span><span class="tag">&lt;/a&gt;</span><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+                  <br>
+                  <span class="tag">&lt;/html&gt;</span><br>
                 </div>
                 <p><img alt="" src="" width="100%" height="" /></p>
                 <p>contoh diatas yaitu penggunaan tag heading yang berada dalam tag &lt;a&gt;. sedangkan atribut href digunakan untuk menghubungkan dengan dokumen/link yang lain. ketika diklik pada “ini adalah heading 1” maka halaman akan di alihkan ke halaman http://www.belajarhtmlcssdasar.com.</p>
 
-
-
-        
-           
-        
         </body>
 
       </head>
