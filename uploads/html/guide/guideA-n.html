@@ -41,17 +41,19 @@
         background-color: #ffffff;
     }
     .html-box {
-            border: 1px solid #31343f; /* Warna border */
-            background-color: #282c34; /* Warna background */
-            padding: 10px;
-            margin: 0,5px;
-            white-space: pre-line;
-            font-family: 'Courier New', monospace;
-            color: #abb2bf; /* Warna teks */
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0,5px;
+	  color: #abb2bf; /* Warna teks */
             font-size: 14px; /* Ukuran teks */
             line-height: 1.5; /* Jarak antar baris */
             word-wrap: break-word; /* Pecah kata */
-            border-radius: 8px; 
+            border-radius: 8px;
+            overflow-x: auto;
+             white-space: nowrap;
+
         }
 
         .html-box code {
@@ -74,6 +76,57 @@
             color: #5c6370; /* Warna komentar HTML */
             font-style: italic;
         }
+        .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #61dafb;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+
+      
+
+    }
+        .tag {
+    color: #569cd6;
+}
+
+.attribute {
+    color: #9cdcfe;
+}
+
+.text {
+    color: #d4d4d4;
+}
+
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.keyword {
+    color: #dcdcaa;
+}
+
+.operator {
+    color: #d4d4d4;
+}
+
+.selector {
+    color: #d7ba7d;
+}
+
+.punctuation {
+    color: #d4d4d4;
+}
+
+.string {
+    color: #ce9178;
+}
+
 
 
          </style>
@@ -88,14 +141,15 @@
          <p>Untuk Cara menghubungkan HTML dengan CSS caranya sangat mudah. gunakan tag &lt;link&gt; untuk menghubungkan html dengan css. tag link di letakkan pada bagian element head pada struktur HTML. baiklah perhatikan contoh cara menghubungkan html dengan CSS berikut ini.</p>
          <p>Buat sebuah file html atau php terserah anda. karena ini merupakan tutorial HTML maka saya menggunakan file HTML untuk di hubungkan dengan CSS. di sini saya membuat file html dengan nama index.html. kemudian buat sebuah file css lagi dengan nama terserah anda, di sini saya membuat file css dengan nama style.css. jadi ada dua buah file yang saya buat yaitu file <strong>index.html</strong> dan fiel <strong>style.css</strong>.</p>
          <div class="html-box">
-            <span class="tag">&lt;!DOCTYPE html&gt;</span>
+            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
             <span class="tag">&lt;html&gt;<br>
-            <span class="tag">&lt;head&gt;</span>
-            &nbsp;<span class="tag">&lt;title&gt;</span><span class="value">Menghubungkan HTML dengan CSS | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/title&gt;</span>
-            <span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
-            <span class="tag">&lt;head&gt;</span>
-
-            <span class="tag">&lt;body&gt;</span> 
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">Menghubungkan HTML dengan CSS | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/title&gt;</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+            <br>
+            <span class="tag">&lt;body&gt;</span> <br>
             <br>
             <span class="tag">&lt;/body&gt;</span><br>
             <span class="tag">&lt;/html&gt;</span><br>
@@ -110,19 +164,20 @@
         <br>
         <p>index.html</p>
         <div class="html-box">
-            <span class="tag">&lt;!DOCTYPE html&gt;</span>
+            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
             <span class="tag">&lt;html&gt;<br>
-            <span class="tag">&lt;head&gt;</span>
-            &nbsp;<span class="tag">&lt;title&gt;</span><span class="value">Menghubungkan HTML dengan CSS | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/title&gt;</span>
-            <span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
-            <span class="tag">&lt;/head&gt;</span>
-
-            <span class="tag">&lt;body&gt;</span> 
             <br>
-            &lt;h1&gt;Belajar HTML menghubungkan html dengan css&lt;/h1&gt; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">Menghubungkan HTML dengan CSS | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/title&gt;</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
             <br>
-            <span class="tag">&lt;/body&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span><span class="value">Belajar HTML menghubungkan html dengan css</span><span class="tag">&lt;/h1&gt;</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+            <br>
             <span class="tag">&lt;/html&gt;</span><br>
+            
         </div> <br>
         <p>style.css</p>
         <div class="html-box">
