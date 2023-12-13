@@ -41,17 +41,19 @@
         background-color: #ffffff;
     }
     .html-box {
-            border: 1px solid #31343f; /* Warna border */
-            background-color: #282c34; /* Warna background */
-            padding: 10px;
-            margin: 0,5px;
-            white-space: pre-line;
-            font-family: 'Courier New', monospace;
-            color: #abb2bf; /* Warna teks */
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0,5px;
+	  color: #abb2bf; /* Warna teks */
             font-size: 14px; /* Ukuran teks */
             line-height: 1.5; /* Jarak antar baris */
             word-wrap: break-word; /* Pecah kata */
-            border-radius: 8px; 
+            border-radius: 8px;
+            overflow-x: auto;
+             white-space: nowrap;
+
         }
 
         .html-box code {
@@ -74,6 +76,57 @@
             color: #5c6370; /* Warna komentar HTML */
             font-style: italic;
         }
+        .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #61dafb;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+
+      
+
+    }
+        .tag {
+    color: #569cd6;
+}
+
+.attribute {
+    color: #9cdcfe;
+}
+
+.text {
+    color: #d4d4d4;
+}
+
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.keyword {
+    color: #dcdcaa;
+}
+
+.operator {
+    color: #d4d4d4;
+}
+
+.selector {
+    color: #d7ba7d;
+}
+
+.punctuation {
+    color: #d4d4d4;
+}
+
+.string {
+    color: #ce9178;
+}
+
 
 
          </style>
@@ -87,28 +140,28 @@
          <p>Perbedaan dari class dan id adalah class di panggil pada css atau javascript dengan menggunakan tanda <strong>titik “.”</strong> , dan id di panggil pada css atau javascript dengan tanda pagar <strong>“#”</strong>, ada kelebihan di sini untuk class, yaitu class dapat di berikan pada banyak element html dan dapat di panggil sekaligus, sedangkan id hanya dapat bekerja pada satu penandaan saja, maksudnya satu nama id hanya bisa di berikan pada satu element saja, perhatikan pada contoh berikut untuk memberikan pemahaman lebih tentang class dan id pada html ini.</p>
          <p>index.html</p>
          <div class="html-box">
-                <span class="tag">&lt;!DOCTYPE html&gt;</span>
+                <span class="tag">&lt;!DOCTYPE html&gt;</span> <br>
                 <span class="tag">&lt;html&gt;<br>
-                <span class="tag">&lt;head&gt;</span>
-                &nbsp;<span class="tag">&lt;title&gt;</span><span class="value">Mengenal Class dan Id pada HTML | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/title&gt;</span>
-                &nbsp;<span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
-                <span class="tag">&lt;/head&gt;</span>
-    
-                <span class="tag">&lt;body&gt;</span> 
+                <span class="tag">&lt;head&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">Mengenal Class dan Id pada HTML | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/title&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
+                <span class="tag">&lt;/head&gt;</span><br>
                 <br>
-                &nbsp;<span class="tag">&lt;h1&gt;</span><span class="value">Mengenal Class dan Id pada HTML | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/h1&gt;</span>
-                &lt;!-- contoh penggunaan class --&gt;
-                &lt;div class="kotak"&gt;kotak 1&lt;/div&gt;
-                &lt;div class="kotak"&gt;kotak 2&lt;/div&gt;
-                &lt;div class="kotak"&gt;kotak 3&lt;/div&gt;
+                <span class="tag">&lt;body&gt;</span> <br>
                 <br>
-                &lt;!-- contoh penggunaan id --&gt;
-                &lt;div id="kotak"&gt;Kotak 4&lt;/div&gt;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span><span class="value">Mengenal Class dan Id pada HTML | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/h1&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- contoh penggunaan class --&gt; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="kotak"&gt;kotak 1&lt;/div&gt; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="kotak"&gt;kotak 2&lt;/div&gt; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="kotak"&gt;kotak 3&lt;/div&gt; <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- contoh penggunaan id --&gt; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="kotak"&gt;Kotak 4&lt;/div&gt; <br>
                 <br>
                 <span class="tag">&lt;/body&gt;</span><br>
                 <span class="tag">&lt;/html&gt;</span><br>
         </div>
-
+        <br>
         <p>index.html</p>
 
         <div class="html-box">
