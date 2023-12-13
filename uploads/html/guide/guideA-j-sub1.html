@@ -10,100 +10,207 @@
             font-family: 'Poppins';
             padding:0.5em;
           }
-          .html-box {
-            border: 1px solid #000;
-            padding: 10px;
-            margin: 20px;
-        }
 
         /* Memberi sedikit style agar teks HTML terlihat lebih menarik */
         code {
             font-family: 'Courier New', monospace;
             color: #333;
         }
-          
-         
-        </style>
+
+        #frame {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #cef1f3;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+        
+.html-box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0,5px;
+	  color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px;
+            overflow-x: auto;
+             white-space: nowrap;
+
+        }
+
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
+        }
+
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
+
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
+
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
+
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+        .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #61dafb;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+
+      
+
+    }
+        .tag {
+    color: #569cd6;
+}
+
+.attribute {
+    color: #9cdcfe;
+}
+
+.text {
+    color: #d4d4d4;
+}
+
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.keyword {
+    color: #dcdcaa;
+}
+
+.operator {
+    color: #d4d4d4;
+}
+
+.selector {
+    color: #d7ba7d;
+}
+
+.punctuation {
+    color: #d4d4d4;
+}
+
+.string {
+    color: #ce9178;
+}
+
+    </style>
         <body>
             <h2><strong>Belajar HTML Dasar : Membuat List Pada HTML</strong></h2>
             <p>List atau yang kita kenal dengan daftar berurutan merupakan fungsi dalam HTML yang digunakan untuk menampilkan data secara berurutan ke bawah. Dalam HTML penulisan list menggunakan tag &lt;li&gt;. dalam membuat list pada HTML ini terdapat dua jenis tampilan list yang bisa di gunakan yaitu <strong><i>ordered list</i></strong> dan <strong><i>unordered list</i></strong>.</p>
             <p><u><i>Ordered list</i></u> berfungsi untuk menampilkan daftar list dalam bentuk huruf atau angka. tag yang digunakan dalam ordered list ini yaitu &lt;ol&gt;.</p>
             <p><u><i>unordered list</i></u> berfungsi untuk menampilkan daftar list dalam bentuk bulatan atau kotak di awalnya. tag yang digunakan untuk membuat unordered list yaitu &lt;ul&gt;.</p>
             <p>untuk lebih mudahnya, perhatikan contoh penulisan list dalam HTML berikut ini:</p>
-
-            <div class="html-box">
-              <code>
-                  &lt;!DOCTYPE html&gt;<br>
-                  &lt;html&gt;<br>
-                  <br>
-                  &lt;head&gt;<br>
-                      &lt;title&gt;belajar membuat list&lt;/title&gt;<br>
-                  &lt;/head&gt;<br>
-                  &lt;body&gt;<br>
-                       &lt;ul&gt;<br>
-                       <br>
-                       &lt;li&gt;belajar HTML&lt;/li&gt;<br>
-                       &lt;li&gt;belajar PHP&lt;/li&gt;<br>
-                       <br>
-                       &lt;/ul&gt;<br>
-                      <br>
-                  
-                  &lt;/body&gt;<br>
-                  &lt;/html&gt;
-              </code>
+          <div class="html-box" id="htmlBox">
+            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+            <span class="tag">&lt;html&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">belajar membuat list<span class="tag">&lt;/title&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;ul&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span><span class="value">Belajar HTML<span class="tag">&lt;li&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span><span class="value">Belajar PHP<span class="tag">&lt;li&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/ul&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+            <br>
+            <span class="tag">&lt;/html&gt;</span><br>
           </div>
+          <br>
           <p>contoh di atas menggunakan &lt;li&gt; untuk membuat list pada HTML. dapat anda lihat sendiri bahwa tampilan standar dari list pada HTML di awali dengan tanda titik.</p>
           <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p> <br>
 
           <h3><strong>Ordered List &lt;ol&gt;</strong></h3>
           <p>Menampilkan daftar list dan diawali dengan huruf atau angka, berikut contoh untuk implementasi ordered list pada HTML.</p>
-          <div class="html-box">
-            <code>
-                &lt;!DOCTYPE html&gt;<br>
-                &lt;html&gt;<br>
-                <br>
-                &lt;head&gt;<br>
-                    &lt;title&gt;belajar membuat list&lt;/title&gt;<br>
-                &lt;/head&gt;<br>
-                &lt;body&gt;<br>
-                     &lt;ol&gt;<br>
-                     <br>
-                     &lt;li&gt;belajar HTML&lt;/li&gt;<br>
-                     &lt;li&gt;belajar PHP&lt;/li&gt;<br>
-                     <br>
-                     &lt;/ol&gt;<br>
-                    <br>
-                
-                &lt;/body&gt;<br>
-                &lt;/html&gt;
-            </code>
-        </div>
+          <div class="html-box" id="htmlBox">
+            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+            <span class="tag">&lt;html&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">belajar membuat list<span class="tag">&lt;/title&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;ol&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span><span class="value">Belajar HTML<span class="tag">&lt;li&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span><span class="value">Belajar PHP<span class="tag">&lt;li&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/ol&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+            <br>
+            <span class="tag">&lt;/html&gt;</span><br>
+          </div>
+          <br>
         <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p> <br>
 
         <h3><strong>Unordered List &lt;ul&gt;</strong></h3>
           <p>Unordered list adalah jenis list HTML dalam bentuk titik pada awal list.</p>
           <p>berikut contoh unordered list pada HTML :</p>
-          <div class="html-box">
-            <code>
-                &lt;!DOCTYPE html&gt;<br>
-                &lt;html&gt;<br>
-                <br>
-                &lt;head&gt;<br>
-                    &lt;title&gt;belajar membuat list&lt;/title&gt;<br>
-                &lt;/head&gt;<br>
-                &lt;body&gt;<br>
-                     &lt;ul&gt;<br>
-                     <br>
-                     &lt;li&gt;belajar HTML&lt;/li&gt;<br>
-                     &lt;li&gt;belajar PHP&lt;/li&gt;<br>
-                     <br>
-                     &lt;/ul&gt;<br>
-                    <br>
-                
-                &lt;/body&gt;<br>
-                &lt;/html&gt;
-            </code>
-        </div>
+          <div class="html-box" id="htmlBox">
+            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+            <span class="tag">&lt;html&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">belajar membuat list<span class="tag">&lt;/title&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;ul&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span><span class="value">Belajar HTML<span class="tag">&lt;li&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span><span class="value">Belajar PHP<span class="tag">&lt;li&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/ul&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+            <br>
+            <span class="tag">&lt;/html&gt;</span><br>
+          </div>
+          <br>
         <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p> <br>
           <p>Dari contoh di atas bisa anda lihat perbedaan masing-masing penggunaan jenis list pada HTML. Penggunaan list pada HTML tidak hanya untuk membuat daftar saja. dengan menggabungkan CSS, JavaScript tag list ini bisa di gunakan untuk membuat menu navigasi pada halaman web.</p>
         </body>
