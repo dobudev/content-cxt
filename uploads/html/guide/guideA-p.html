@@ -41,17 +41,19 @@
         background-color: #ffffff;
     }
     .html-box {
-            border: 1px solid #31343f; /* Warna border */
-            background-color: #282c34; /* Warna background */
-            padding: 10px;
-            margin: 0,5px;
-            white-space: pre-line;
-            font-family: 'Courier New', monospace;
-            color: #abb2bf; /* Warna teks */
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0,5px;
+	  color: #abb2bf; /* Warna teks */
             font-size: 14px; /* Ukuran teks */
             line-height: 1.5; /* Jarak antar baris */
             word-wrap: break-word; /* Pecah kata */
-            border-radius: 8px; 
+            border-radius: 8px;
+            overflow-x: auto;
+             white-space: nowrap;
+
         }
 
         .html-box code {
@@ -74,6 +76,57 @@
             color: #5c6370; /* Warna komentar HTML */
             font-style: italic;
         }
+        .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #61dafb;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+
+      
+
+    }
+        .tag {
+    color: #569cd6;
+}
+
+.attribute {
+    color: #9cdcfe;
+}
+
+.text {
+    color: #d4d4d4;
+}
+
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.keyword {
+    color: #dcdcaa;
+}
+
+.operator {
+    color: #d4d4d4;
+}
+
+.selector {
+    color: #d7ba7d;
+}
+
+.punctuation {
+    color: #d4d4d4;
+}
+
+.string {
+    color: #ce9178;
+}
+
 
 
         </style>
@@ -240,31 +293,35 @@
         <p>Untuk membuat symbol html anda bisa menggunakan kode yang berbentuk number atau entity. Perhatikan contoh membuat symbol dengan html berikut ini. Belajar HTML Membuat symbol pada HTML</p>
         <br>
         <p>index.html</p>
-
         <div class="html-box">
-            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
-            <span class="tag">&lt;html&gt;</span><br>
+            <span class="tag">&lt;!DOCTYPE html&gt;</span> <br>
+            <span class="tag">&lt;html&gt;<br>
             <span class="tag">&lt;head&gt;</span><br>
-            &nbsp;&nbsp;<span class="tag">&lt;title&gt;</span>Membuat symbol pada HTML | www.belajarhtmlcssdasar.com<span class="tag">&lt;/title&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">Membuat symbol pada HTML | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/title&gt;</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
             <span class="tag">&lt;/head&gt;</span><br>
-            <span class="tag">&lt;body&gt;</span><br>
-            &nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span>Membuat symbol pada HTML&lt;br/&gt;www.belajarhtmlcssdasar.com<span class="tag">&lt;/h1&gt;</span>
-            &nbsp;&nbsp;<span class="tag">&lt;p&gt;</span>&amp;#9824;<span class="tag">&lt;/p&gt;</span>
-            &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attribute">href="#"&gt;</span>Simbol panah &amp;#8594;<span class="tag">&lt;/a&gt;</span>
-            &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attribute">href="#"&gt;</span>Simbol panah &amp;rarr;<span class="tag">&lt;/a&gt;</span><br>
-            &nbsp;&nbsp;&amp;#8704; &lt;br&gt; 
-            &nbsp;&nbsp;&amp;#8711; &lt;br&gt;
-            &nbsp;&nbsp;&amp;#8719; &lt;br&gt;
-            &nbsp;&nbsp;&amp;#174;  &lt;br&gt;
-            &nbsp;&nbsp;&amp;#9829; &lt;br&gt;
-            &nbsp;&nbsp;&amp;#8594; &lt;br&gt;
-            &nbsp;&nbsp;&amp;#8593; &lt;br&gt;
-            &nbsp;&nbsp;&amp;#8592; &lt;br&gt;
-            &nbsp;&nbsp;&amp;#8482; &lt;br&gt;
+            <br>
+            <span class="tag">&lt;body&gt;</span> <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span><span class="value">Mengenal Class dan Id pada HTML | www.belajarhtmlcssdasar.com</span><span class="tag">&lt;/h1&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p&gt;</span><span class="attribute"> &amp;#9824;</span><span class="tag">&lt;/p&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attribute">href="#"&gt;</span><span class="value">Simbol panah</span><span class="attribute"> &amp;#8594;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;br&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attribute">href="#"&gt;</span><span class="value">Simbol panah</span><span class="attribute"> &amp;rarr;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;br&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute"> &amp;#8704;</span> <span class="tag">&lt;br&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute"> &amp;#8711;</span> <span class="tag">&lt;br&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute"> &amp;#8719;</span> <span class="tag">&lt;br&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute"> &amp;#174;</span> <span class="tag">&lt;br&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute"> &amp;#9829;</span> <span class="tag">&lt;br&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute"> &amp;#8594;</span> <span class="tag">&lt;br&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute"> &amp;#8593;</span> <span class="tag">&lt;br&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute"> &amp;#8592;</span> <span class="tag">&lt;br&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute"> &amp;#8482;</span> <span class="tag">&lt;br&gt;</span><br>
+
             <br>
             <span class="tag">&lt;/body&gt;</span><br>
             <span class="tag">&lt;/html&gt;</span><br>
-        </div>
+    </div>
         <br>
         <p>Dan jika di jalankan pada browser maka hasilnya</p>
         <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p>
