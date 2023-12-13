@@ -41,17 +41,19 @@
         background-color: #ffffff;
     }
     .html-box {
-            border: 1px solid #31343f; /* Warna border */
-            background-color: #282c34; /* Warna background */
-            padding: 10px;
-            margin: 0,5px;
-            white-space: pre-line;
-            font-family: 'Courier New', monospace;
-            color: #abb2bf; /* Warna teks */
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0,5px;
+	  color: #abb2bf; /* Warna teks */
             font-size: 14px; /* Ukuran teks */
             line-height: 1.5; /* Jarak antar baris */
             word-wrap: break-word; /* Pecah kata */
-            border-radius: 8px; 
+            border-radius: 8px;
+            overflow-x: auto;
+             white-space: nowrap;
+
         }
 
         .html-box code {
@@ -74,7 +76,56 @@
             color: #5c6370; /* Warna komentar HTML */
             font-style: italic;
         }
+        .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #61dafb;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
 
+      
+
+    }
+        .tag {
+    color: #569cd6;
+}
+
+.attribute {
+    color: #9cdcfe;
+}
+
+.text {
+    color: #d4d4d4;
+}
+
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.keyword {
+    color: #dcdcaa;
+}
+
+.operator {
+    color: #d4d4d4;
+}
+
+.selector {
+    color: #d7ba7d;
+}
+
+.punctuation {
+    color: #d4d4d4;
+}
+
+.string {
+    color: #ce9178;
+}
 
         </style>
             <h1><strong>Belajar HTML Dasar : Membuat Form pada HTML</strong></h1>
@@ -138,39 +189,46 @@
             </div>
             <p>Untuk lebih memberikan pemahaman lebih tentang cara membuat form pada HTML, silahkan perhatikan contoh berikut ini:</p>
             <div class="html-box">
-                <span class="tag">&lt;!DOCTYPE html&gt;</span>
+                <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
                 <span class="tag">&lt;html</span> <span class="attribute">lang="en"&gt;</span><br>
-                <span class="tag">&lt;head&gt;</span>
-                &nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">belajar format text html</span><span class="tag">&lt;/title&gt;</span>
-                <span class="tag">&lt;/head&gt;</span><br>
-                <span class="tag">&lt;body&gt;</span><br>
-                &nbsp;&nbsp;<span class="tag">&lt;form&gt;</span>
-                &nbsp;&nbsp;nama:<span class="tag">&lt;input</span> <span class="attribute">type="text"</span> <span class="attribute">name="nama"&gt;</span> &lt;br/&gt;
-                &nbsp;&nbsp;alamat:<span class="tag">&lt;input</span> <span class="attribute">type="text"</span> <span class="attribute">name="alamat"&gt;</span> &lt;/br/&gt;
-                &nbsp;&nbsp;password:<span class="tag">&lt;input</span> <span class="attribute">type="password"</span> <span class="attribute">name="pass"&gt;</span> &lt;br/&gt;
-                &nbsp;&nbsp;Jenis Kelamin:
-                <span class="tag">&lt;input</span> <span class="attribute">type="radio"</span> <span class="attribute">name="jk"</span> <span class="attribute">value="laki-laki"/&gt;</span> Laki - Laki
-                <span class="tag">&lt;input</span> <span class="attribute">type="radio"</span> <span class="attribute">name="jk"</span> <span class="attribute">value="perempuan" /&gt;</span> Perempuan
-                &nbsp;&nbsp;&lt;br/&gt;<br>
-                &nbsp;&nbsp;bahasa pemrograman yang dikuasai :<br>
-                <span class="tag">&lt;input</span> <span class="attribute">type="checkbox"</span> <span class="attribute">name="web"&gt;</span> Web
-                <span class="tag">&lt;input</span> <span class="attribute">type="checkbox"</span> <span class="attribute">name="mobile"&gt;</span> MOBILE
-                <span class="tag">&lt;input</span> <span class="attribute">type="checkbox"</span> <span class="attribute">name="desk"&gt;</span> DESKTOP
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;kota asal :<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;select&gt;</span><br>
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option&gt;</span>Semarang<span class="tag">&lt;/option&gt;</span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option&gt;</span>Bandung<span class="tag">&lt;/option&gt;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/select&gt;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;pesan anda :<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;textarea&gt;</span><span class="tag">&lt;/textarea&gt;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="attribute">type="submit"</span> <span class="attribute">value="proses"&gt;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
-                &nbsp;&lt;/body&gt;<br>
-                &lt;/html&gt;
-            </div> <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="value">belajar format text html</span><span class="tag">&lt;/title&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;form&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nama:<span class="tag">&lt;input</span> <span class="attribute">type="text"</span> <span class="attribute">name="nama"&gt;</span><span class="tag">&lt;br/&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alamat:<span class="tag">&lt;input</span> <span class="attribute">type="text"</span> <span class="attribute">name="alamat"&gt;</span><span class="tag">&lt;br/&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password:<span class="tag">&lt;input</span> <span class="attribute">type="password"</span> <span class="attribute">name="pass"&gt;</span><span class="tag">&lt;br/&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jenis Kelamin: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="attribute">type="radio"</span> <span class="attribute">name="jk"</span> <span class="attribute">value="laki-laki"/&gt;</span> Laki - Laki <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="attribute">type="radio"</span> <span class="attribute">name="jk"</span> <span class="attribute">value="perempuan" /&gt;</span> Perempuan <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;br/&gt;</span><br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bahasa pemrograman yang dikuasai :<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="attribute">type="checkbox"</span> <span class="attribute">name="web"&gt;</span> Web <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="attribute">type="checkbox"</span> <span class="attribute">name="mobile"&gt;</span> MOBILE <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="attribute">type="checkbox"</span> <span class="attribute">name="desk"&gt;</span> DESKTOP <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;br/&gt;</span><br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kota asal :<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;select&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option&gt;</span>Semarang<span class="tag">&lt;/option&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option&gt;</span>Bandung<span class="tag">&lt;/option&gt;</span><span class="tag">&lt;br&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/select&gt;</span><br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;br/&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pesan anda :<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;textarea&gt;</span><span class="tag">&lt;/textarea&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;br/&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="attribute">type="submit"</span> <span class="attribute">value="proses"&gt;</span><br>
+                <br>
+                <span class="tag">&lt;/form&gt;</span><br>
+                <span class="tag">&lt;/body&gt;</span><br>
+                <span class="tag">&lt;/html&gt;</span><br>
+            </div>
+            <br>
 
             <p>Dan jalankan pada browser untuk melihat hasil nya.</p>
             <p><img alt="" src="https://assets.awwwards.com/awards/external/2016/11/5835c2fe2f175.jpg" width="100%" height="" /></p> <br>
