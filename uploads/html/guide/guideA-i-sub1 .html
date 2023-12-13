@@ -11,34 +11,102 @@
             padding:0.5em;
           }
           .html-box {
-            border: 1px solid #000;
-            padding: 10px;
-            margin: 20px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0,5px;
+	  color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px;
+            overflow-x: auto;
+             white-space: nowrap;
+
         }
 
-        /* Memberi sedikit style agar teks HTML terlihat lebih menarik */
-        code {
-            font-family: 'Courier New', monospace;
-            color: #333;
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
         }
+
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
+
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
+
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
+
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+        .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #61dafb;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+
+      
+
+    }
+        .tag {
+    color: #569cd6;
+}
+
+.attribute {
+    color: #9cdcfe;
+}
+
+.text {
+    color: #d4d4d4;
+}
+
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.keyword {
+    color: #dcdcaa;
+}
+
+.operator {
+    color: #d4d4d4;
+}
+
+.selector {
+    color: #d7ba7d;
+}
+
+.punctuation {
+    color: #d4d4d4;
+}
+
+.string {
+    color: #ce9178;
+}
           
          
         </style>
         <body>
             <h2><strong>Belajar HTML Dasar : Membuat Hyperlink Pada HTML</strong></h2>
             <p> <strong><i>Hyperlink</i></strong> yang sering di kenal dengan link yaitu menghubungkan antara satu dokumen dengan dokumen yang lain pada HTML. Tujuan dari <i>hyperlink</i> ini membuat sebuah teks atau gambar yang ketika diklik akan di alihkan ke halaman tertentu yang sudah di tetapkan dalam penulisan <i>hyperlink</i> tersebut.</p>
-
             <p><i>Hyperlink</i> sendiri ditulis dengan menggunakan tag &lt;a&gt;. tag <a> ini selalu di ikiti oleh atribut href, dimana didalam href (<i>hypertext reference</i>) ini lah yang akan di isikan alamat yang dituju ketika text atau gambar di klik. berikut cara penulisan untuk membuat <i>hyperlink</i> :</p>
-
-
-            <div class="html-box">
-                <code>
-                  &lt;a href="http://www.belajarhtmlcssdasar.com"&gt;klik disini&lt;/a&gt;
-                </code>
-            </div>
+            <div class="html-box" id="htmlBox">
+              <span class="tag">&lt;a href=</span><span class="attribute">"http://www.belajarhtmlcssdasar.com"</span><span class="tag">&gt;</span>klik disini<span class="tag">&lt;/a&gt;</span><br>
+           </div>
             <p>ketika di klik pada kata “klik disini” maka halaman akan di alihkan ke halaman www.belajarhtmlcssdasar.com. hal ini sesuai dengan ketentuan yang telah kita tetapkan pada atribut href.</p>
-           
-        
         </body>
 
       </head>
