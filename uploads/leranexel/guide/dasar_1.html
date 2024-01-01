@@ -7,171 +7,229 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
-        body {
-            font-family: 'Poppins';
-            padding:0.5em;
+      body {
+        font-family: 'Poppins';
+		padding:0.5em;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #cef1f3;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+.html-box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0,5px;
+	  color: #abb2bf; /* Warna teks */
+            font-size: 14px; /* Ukuran teks */
+            line-height: 1.5; /* Jarak antar baris */
+            word-wrap: break-word; /* Pecah kata */
+            border-radius: 8px;
+            overflow-x: auto;
+             white-space: nowrap;
+
         }
 
-        table {
-                border-collapse: collapse;
-                width: 100%;
-            }
+        .html-box code {
+            color: #abb2bf; /* Warna teks dalam tag <code> */
+        }
 
-            table, th, td {
-                border: 0;
-            }
+        .tag {
+            color: #e06c75; /* Warna tag HTML */
+        }
 
-            th, td {
-                padding: 10px;
-                text-align: left;
-            }
+        .attribute {
+            color: #d19a66; /* Warna atribut HTML */
+        }
 
-            /* Memberikan warna pada kolom "Alamat" */
-            td:nth-child {
-                background-color: lightblue;
-            }
-    
-    .html-box {
-        background-color: #1e1e1e;
-        border: 1px solid #333;
-        border-radius: 5px;
-        padding: 10px;
-        margin: 0,5px;
-        color: #abb2bf; /* Warna teks */
-                font-size: 14px; /* Ukuran teks */
-                line-height: 1.5; /* Jarak antar baris */
-                word-wrap: break-word; /* Pecah kata */
-                border-radius: 8px;
-                overflow-x: auto;
-                white-space: nowrap;
+        .value {
+            color: #98c379; /* Warna nilai atribut HTML */
+        }
 
-            }
+        .comment {
+            color: #5c6370; /* Warna komentar HTML */
+            font-style: italic;
+        }
+        .tag {
+    color: #569cd6;
+}
 
-            .html-box code {
-                color: #abb2bf; /* Warna teks dalam tag <code> */
-            }
+.attribute {
+    color: #9cdcfe;
+}
 
-            .tag {
-                color: #e06c75; /* Warna tag HTML */
-            }
+.text {
+    color: #d4d4d4;
+}
 
-            .attribute {
-                color: #d19a66; /* Warna atribut HTML */
-            }
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
 
-            .value {
-                color: #98c379; /* Warna nilai atribut HTML */
-            }
+.keyword {
+    color: #dcdcaa;
+}
 
-            .comment {
-                color: #5c6370; /* Warna komentar HTML */
-                font-style: italic;
-            }
-            .tag {
-        color: #569cd6;
-    }
+.operator {
+    color: #d4d4d4;
+}
 
-    .attribute {
-        color: #9cdcfe;
-    }
+.selector {
+    color: #d7ba7d;
+}
 
-    .text {
-        color: #d4d4d4;
-    }
+.punctuation {
+    color: #d4d4d4;
+}
 
-    .comment {
-        color: #6a9955;
-        font-style: italic;
-    }
-
-    .keyword {
-        color: #dcdcaa;
-    }
-
-    .operator {
-        color: #d4d4d4;
-    }
-
-    .selector {
-        color: #d7ba7d;
-    }
-
-    .punctuation {
-        color: #d4d4d4;
-    }
-
-    .string {
-        color: #ce9178;
-    }
-
-
-    ol {
-        list-style-type: none;
-        counter-reset: item;
-        padding-left: 0;
-    }
-
-    li::before {
-        content: counter(item);
-        counter-increment: item;
-        background-color: #149ac7; /* Warna biru muda */
-        border-radius: 50%;
-        color: white;
-        display: inline-block;
-        width: 1.2em;
-        height: 1.2em;
-        line-height: 1.2em;
-        text-align: center;
-        margin-right: 0.5em;
-    }
+.string {
+    color: #ce9178;
+}
 
     </style>
-</head>
-<body>
-    <h2><strong>Pengenalan Worksheet dan Workbook di MS Excel</strong></h2>
-    <p>Sebelum membahas lebih lanjut mengenai workbook dan worksheet, apakah kita sudah mengerti tentang perbedaan diantara keduanya? Tidak ada salahnya jika kita mempelajari perbedaannya terlebih dahulu. Sebelum memulai aktifitas untuk belajar menggunakan aplikasi Microsoft Excel. Agar kita tidak bingung saat belajar Microsoft Excel lebih jauh.</p>
-    <h3><strong>Pengertian Worksheet</strong></h3>
-    <p>Worksheet adalah sebuah lembar kerja yang terdiri dari kolom dan baris untuk melakukan pekerjaan mengolah data di dalam Microsoft Excel. Pada umumnya Worksheet memiliki nama default yaitu Sheet1, Sheet2, dan seterusnya. Nama tersebut bisa dilihat pada di sebelah kiri bawah aplikasi MS Excel.</p>
-    <h3><strong>Pengertian Workbook</strong></h3>
-    <p>Workbook adalah buku kerja yang berupa sebuah file MS Excel yang terdiri dari beberapa worksheet. Workbook bisa juga disebut sebagai file Microsoft Excel yang berekstensi xls atau xlsx.</p>
-     <p>Jadi antara workbook dan worksheet masih saling berkaitan. Workbook seperti keseluruhan pada buku berbentuk file Ms Excel. Sedangkan Worksheet adalah tiap-tiap lembaran halaman yang ada pada buku tersebut yang bisa kita edit secara suka-suka. Kita bisa ubah nama, menambahkan halaman dan menghapus worksheet tersebut.</p>
-     <h3><strong>Menambah Worksheet</strong></h3>
-     <p>Kita bisa menambahkan worksheet baru secara satu-persatu jika memang kita menginginkannya.</p>
-     <ol>
-        <li>Klik menu <strong>Home</strong> yang ada pada bagian Ribbon MS Excel.</li>
-        <li>Lihat pada bagian Cells, klik menu Insert sehingga akan muncul beberapa pilihan menu <strong>Insert</strong>.</li>
-        <li>Lalu klik <strong>Insert Sheet</strong> untuk menambahkan worksheet baru, maka otomatis sheet akan bertambah.</li>
-        <li>Cara lainnya yang lebih mudah yaitu kita bisa memanfaatkan tombol keyboard dengan cara menekan tombol <strong>Shift + F11</strong> secara bersamaan untuk menambahkan Worksheet baru.</li>
-        <li>Cara lain yang lebih cepat adalah dengan klik tanda plus di bagian bawah. Letaknya berada tepat disamping nama sheet awal kita sebagai cara alternatif lainnya.</li>
-     </ol>
-     <br>
-     <p><img alt="" src="" width="100%" height="" /></p>
-     <br>
-     <h3><strong>Menghapus Worksheet</strong></h3>
-     <p>Jika kita telah membuat Worksheet baru, adakalanya kita ingin menghapus yang lainnya.</p>
-     <p><strong>Berikut adalah cara menghapus worksheet di MS Excel.</strong></p>
-     <ol>
-        <li>klik menu <strong>Home</strong></li>
-        <li>Pada bagian <strong>Cells</strong>, klik menu <strong>Delete</strong> sehingga akan muncul beberapa pilihan menu <strong>Delete</strong>.</li>
-        <li>Pilih <strong>Delete Sheet</strong> untuk mulai menghapus.</li>
-        <li>Cara lain yang bisa kita lakukan untuk menghapus worksheet yaitu kita tinggal klik kanan pada nama sheet yang ingin kita hapus. sehingga akan muncul beberapa pilihan.</li>
-        <li>Pilih <strong>Delete</strong> dan otomatis Worksheet tersebut akan terhapus.</li>
-     </ol>
-     <br>
-     <p><img alt="" src="" width="100%" height="" /></p>
-     <br>
-     <h3><strong>Mengubah Nama Worksheet</strong></h3>
-     <p>Hal lain yang bisa kita lakukan adalah kita bisa mengubah nama default Worksheet MS Excel. Biasanya secara default adalah bernama <strong>Sheet1, Sheet2,</strong> dan seterusnya.</p>
-     <p><strong>Berikut adalah cara mengubah nama worksheet.</strong></p>
-     <ol>
-        <li>Klik kanan pada Worksheet yang ingin kita ubah namanya.</li>
-        <li>Pilih <strong>Rename</strong> sehingga nama sheet yang lama akan otomatis terblok dan muncul kursor yang menunjukkan bahwa sheet tersebut siap diganti namanya sesuai dengan yang kita inginkan.</li>
-        <li>Ketik nama yang diinginkan dan tekan <strong>Enter</strong> pada keyboard untuk mulai mengaplikasikan nama tersebut.</li>
-        <li>Cara lain yang lebih cepat adalah kita bisa merubah nama Worksheet dengan mengklik dua kali pada nama Worksheet yang ingin kita rubah.</li>
-        <li>Lalu ketika nama yang dinginkan dan tekan <strong>Enter</strong> jika sudah.</li>
-     </ol>
-     <p>Itulah sedikit pengenalan mengenai Workbook dan juga Worksheet yang ada pada MS Excel. Serta beberapa hal yang bisa kita lakukan dengan Worksheet tersebut, seperti menambah, menghapus dan mengubah nama Worksheet.</p>
+  </head>
+  <body>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_pengertian.png" width="100%" height="" /></p>
+    <h2><strong>Pengertian, Fungsi, Sejarah dan Versi Microsoft Excel</strong></h2>
+    <p>Banyak dari kita mungkin sudah tidak asing lagi ketika mendengar Microsoft Excel. Aplikasi ini sering digunakan oleh berbagai kalangan mulai dari siswa, mahasiswa maupun pekerja karena sangat bermanfaat untuk mengolah angka.</p>
+    <p>MS Excel sebenarnya telah hadir sejak lama dan hingga sekarang mempunyai banyak versi yang sudah dikeluarkan. Microsoft sendiri dari waktu ke waktu masih mengembangkan aplikasi tersebut agar kinerjanya semakin baik dengan fitur yang semakin canggih. Sebelum belajar Microsoft Excel secara praktik, mari kita bahas materi ini terlebih dahulu agar kita lebih mengenal tentang aplikasi ini.</p>
+    <h3><strong>Pengertian Microsoft Excel</strong></h3>
+    <p>Microsoft Excel merupakan program aplikasi spreadsheet pengolah angka yang dikembangkan oleh Microsoft digunakan untuk mengolah data dalam bentuk baris dan kolom.</p>
+    <p>Software aplikasi ini biasa dimanfaatkan dalam mengolah data yang membutuhkan perhitungan karena memiliki fitur-fitur khusus baik itu berbentuk formula (rumus) atau fitur pendukung yang lain. Berbeda dengan aplikasi pengolah angka lainnya, MS Excel termasuk aplikasi spreadsheet yang premium atau berbayar. Kita harus membeli lisensi agar dapat menggunakannya secara resmi.</p>
+    <p>Pada versi PC atau laptop, Microsoft Excel tersedia untuk sistem operasi Windows dan macOS. Sedangkan di versi HP, aplikasi ini tersedia untuk Android dan iPhone namun dengan fitur yang tidak selengkap versi PC-nya. Untuk versi HP, aplikasi ini dapat digunakan secara gratis.</p>
+    <h3><strong>Fungsi Microsoft Excel</strong></h3>
+    <p>Fungsi utama program Microsoft Excel adalah untuk mengolah data berupa angka. Selain fungsi utama tersebut aplikasi ini juga memiliki fungsi dan kegunaan lainnya, diantaranya adalah:</p>
+    <ul>
+            <li>Untuk membuat, mengolah dan menyimpan data.</li>
+            <li>Untuk membuat grafik atau diagram dari data yang dimasukkan.</li>
+            <li>Untuk menyelesaikan perhitungan statistika, aritmatika dan logika.</li>
+            <li>Sebagai aplikasi akuntan untuk merekap laporan keuangan.</li>
+            <li>Sebagai alat untuk melakukan analisa data.</li>
+            <li>Untuk melakukan perhitungan keuangan seperti kurs mata uang.</li>
+            <li>Sebagai database sederhana.</li>
+    </ul>
+    <h3><strong>Sejarah Microsoft Excel</strong></h3>
+    <p>Microsoft meluncurkan program aplikasi pertama Microsoft Excel secara resmi pada tahun 1985 untuk sistem operasi Macintosh. Sedangkan aplikasi MS Excel untuk Windows resmi dirilis pada tahun 1987. Saat itu versi MS Excel sudah memasuki versi yang kedua (2.0).</p>
+    <p>Sebelum adanya aplikasi Ms Excel kebanyakan orang saat itu telah mengenal program aplikasi spreadsheet bernama Lotus. Aplikasi Lotus sudah ada sejak tahun 1982 hingga akhirnya Microsoft membuat aplikasi Ms Excel yang mampu menjadi pesaingnya. MS Excel mampu mengalahkan Lotus di era 90-an seiring dengan dirilisnya versi 3.0 pada tahun 1990. Lalu disusul versi 4.0 pada tahun 1992 dan seterusnya.</p>
+    <p>Sejak saat itu Microsoft terus mengembangkan aplikasi MS Excel dan hampir setiap dua tahun sekali Microsoft merilis versi baru dengan menyajikan fitur yang baru. Sampai sekarang Microsoft masih terlihat konsisten untuk mengembangkan versi-versi terbarunya. Sampai Saat ini  Microsoft telah merilis versi terakhirnya yaitu MS Excel 2021</p>
+    <h3><strong>Versi-versi Microsoft Excel</strong></h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Tahun</th>
+                <th>Versi Microsoft Excel</th>
+                <th>Perubahan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1985</td>
+                <td>Versi Pertama</td>
+                <td>Hanya untuk Macintosh</td>
+            </tr>
+            <tr>
+                <td>1987</td>
+                <td>2.0</td>
+                <td>Versi ini mulai bisa digunakan untuk OS Windows</td>
+            </tr>
+            <tr>
+                <td>1990</td>
+                <td>3.0</td>
+                <td>Awal mula Toolbar dan fitur untuk menggambar pada Excel</td>
+            </tr>
+            <tr>
+                <td>1992</td>
+                <td>4.0</td>
+                <td>Awal mula adanya fitur autofill</td>
+            </tr>
+            <tr>
+                <td>1993</td>
+                <td>5.0</td>
+                <td>Sudah mendukung Visual Basic for Application (VBA)</td>
+            </tr>
+            <tr>
+                <td>1995</td>
+                <td>95</td>
+                <td>Mulai dijadikan satu paket bernama Microsoft Office 95</td>
+            </tr>
+            <tr>
+                <td>1997</td>
+                <td>97</td>
+                <td>Awal mula adanya Paper Clip Assistant sebagai pemandu kita dalam mengoperasikan aplikasi ini</td>
+            </tr>
+            <tr>
+                <td>2000</td>
+                <td>2000</td>
+                <td>Dirilis bersamaan dengan Windows Millenium / Windows ME</td>
+            </tr>
+            <tr>
+                <td>2002</td>
+                <td>2002</td>
+                <td>Tidak ada update yang signifikan</td>
+            </tr>
+            <tr>
+                <td>2003</td>
+                <td>2003</td>
+                <td>Tidak ada update yang signifikan</td>
+            </tr>
+            <tr>
+                <td>2007</td>
+                <td>2007</td>
+                <td>Awal mula menu Ribbon diterapkan dan beberapa perubahan yang signifikan pada tampilan</td>
+            </tr>
+            <tr>
+                <td>2010</td>
+                <td>2010</td>
+                <td>Sudah support 64 bit, kita bisa Preview ketika menggunakan Paste</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>2013</td>
+                <td>Beberapa fitur baru seperti Power View, Power Pivot dan 50 Functions baru</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>2016</td>
+                <td>Ada beberapa diagram baru, bisa link ke Visio, dll</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>2019</td>
+                <td>Pada versi ini fitur yang terbaru akan mulai diupdate secara otomatis bersamaan dengan adanya Windows Update</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>2021</td>
+                <td>Excel 2021 untukWindows memungkinkan Anda bekerja secara kolaboratif dengan orang lain dan menganalisis data dengan mudah dengan kemampuanExcel baru termasuk penulisan bersama, Larik Dinamis, XLOOKUP, dan fungsi LET.</td>
+            </tr>
+           
+        </tbody>
+    </table>
+    <br>
+    <h3><strong>Penutup</strong></h3>
 
-   
-</body>
-</html>
+    <p>Itulah sedikit ulasan mengenai Microsoft Excel mulai dari pengertiannya, fungsinya, awal mula sejarahnya dan versi-versi yang telah dirilis. Dengan mengetahui hal itu kita sebagai pengguna setidaknya bisa mengapresiasi tentang adanya aplikasi yang telah berjasa tersebut karena sudah membantu kita dalam memudahkan pekerjaan.</p>
+
+  </body>
+  </html>
