@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #9cdcfe;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <p>Saat melakukan perhitungan di ms excel terkadang angka yang dihasilkan muncul angka desimal atau angka di belakang koma. Hal ini sering ditemui ketika menghitung rata-rata sebuah nilai dengan memakai rumus average, di mana hasilnya bisa saja berupa angka desimal. Banyaknya jumlah angka di belakang koma juga tergantung dengan settingan excel di laptop atau komputer yang digunakan. Secara default excel akan menampilkan angka desimal hingga sebanyak 5 angka di belakang koma. Namun umumnya pengguna bisa mengatur format angka desimal tersebut sesuai keinginan melalui menu yang ada di excel, yakni format cells.</p>
+    <p>Bahkan pengguna juga bisa menghilangkan angka desimal tersebut sehingga menjadi bilangan yang bulat. Agar lebih jelasnya mari simak artikel yang membahas tentang cara mengatur format angka desimal di excel berikut!</p>
+    <h3><strong>Cara Mengatur Format Angka Desimal di Excel</strong></h3>
+    <ol>
+        <li>Buka aplikasi ms excel yang sudah terinstall di komputer atau laptop,</li>
+        <li>Siapkan data atau buat tabel angka desimalnya, misalnya saja tabel berisi rata-rata mata pelajaran siswa,</li>
+        <li>Blok seluruh sel yang ingin diatur format angka desimalnya,</li>
+        <li>Klik kanan pada mouse, setelah itu akan muncul beberapa opsi menu,</li>
+        <li>Pilih menu Format Cells, kemudian jendela format cells akan terbuka,</li>
+        <li>Klik pada tab menu Number,</li>
+        <li>Atur banyaknya angka desimal di belakang koma dengan mengisi kolom Decimal places sejumlah yang diinginkan, dalam hal ini kita memasukkan 2 angka desimal atau 2 angka di belakang koma,</li>
+        <li>Klik tombol OK, setelah itu angka desimal pada nilai rata-rata yang awalnya berjumlah 5 angka tadi akan langsung berubah menjadi 2 angka desimal saja.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_8.png" width="100%" height="" /></p>
+    <br>
+    <p>Kelebihan dalam mengatur format angka desimal melalui menu format cells adalah terdapat opsi untuk menambahkan separator dan memilih jenis angkanya (negative numbers). Maksimal jumlah angka desimal atau angka di belakang koma yang bisa diatur melalui menu format cells excel yakni mencapai 30 digit angka.</p>
+    <p>Selain melalui menu format cells, format angka desimal juga bisa diatur melalui menu toolbar yang ada di <strong>Home</strong>. Cara ini dikenal lebih cepat dan lebih ringkas dibanding lewat menu format cells.</p>
+    <p>Di bagian Number yang ada di menu Home klik menu <strong>Increase Decimal</strong> untuk menambah jumlah desimal, atau klik menu <strong>Decrease Decimal</strong> untuk mengurangi jumlah angka desimal pada sel.</p>
+</body>
+</html>

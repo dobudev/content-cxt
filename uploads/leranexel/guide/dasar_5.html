@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #9cdcfe;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <h2><strong>Jenis Tipe Data Pada Microsoft Excel dan Cara Inputnya</strong></h2>
+    <p>Dalam menginput data di MS Excel kita dapat memasukkan berbagai tipe data. Tidak sekedar teks atau angka saja, Microsoft Excel mampu mengenali tipe data lebih spesifik seperti tanggal, mata uang, waktu dan lainnya. Hal ini tentunya akan memudahkan kita dalam mengolah data tersebut.</p>
+    <p>Lalu ada berapa tipe data yang bisa dimasukkan dan dikenali oleh Microsoft Excel?</p>
+    <p>Sebenarnya tidak ada patokan yang pasti tentang berapa data tipe tersebut. Hal tersebut tergantung dari pengelompokannya. Ada yang menyebutkan bahwa Excel memiliki 3 jenis tipe data jika dikelompokkan menjadi data label, value dan formula. Namun pada materi belajar MS Excel ini kita akan lebih spesifik mengelompokkannya menjadi 7 tipe data berdasarkan fungsinya.</p>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_6.png" width="100%" height="" /></p>
+    <br>
+    <p><strong>Berikut ini adalah jenis tipe data pada MS Excel beserta penjelasannya.</strong></p>
+   <table>
+    <thead>
+        <tr>
+            <th>Tipe Data</th>
+            <th>Penjelasan Singkat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Character</strong> (Teks)</td>
+            <td>Segala macam karakter bisa berupa huruf, teks, angka atau string lain yang tidak untuk perhitungan aritmatika. Biasa juga disebut label.</td>
+        </tr>
+        <tr>
+            <td><strong>Numeric</strong> (Angka)</td>
+            <td>Segala macam numerik yang dapat digunakan dalam operasi aritmatika seperti bilangan bulat, desimal, pecahan dan persen.</td>
+        </tr>
+        <tr>
+            <td><strong>Date </strong>(Tanggal)</td>
+            <td>Tanggal dan waktu dalam berbagai format.</td>
+        </tr>
+        <tr>
+            <td><strong>Currency</strong> (Mata Uang)</td>
+            <td>Mata uang dari berbagai dunia seperti Rupiah, Dolar Amerika Serikat dan lainnya.</td>
+        </tr>
+        <tr>
+            <td><strong>Boolean</strong></td>
+            <td>Nilai benar atau salah (True/False).</td>
+        </tr>
+        <tr>
+            <td><strong>N/A</strong></td>
+            <td>Tipe data kosong saat sel tidak ada isinya.</td>
+        </tr>
+        <tr>
+            <td><strong>Formula</strong></td>
+            <td>Bisa berupa fungsi atau rumus untuk mengolah data.</td>
+        </tr>
+    </tbody>
+   </table>
+   <br>
+   <p><strong>Agar lebih mudah memahami setiap tipe data di atas maka mari kita bahas satu-persatu. Tentunya beserta cara menginputkannya di MS Excel.</strong></p>
+   <h3><strong>1. Character (Teks)</strong></h3>
+   <div class="colored-box">
+    <p>Character atau Teks merupakan jenis tipe data yang biasa juga disebut label atau string. Tipe data yang satu ini dapat berupa huruf, teks, angka dan semua karakter yang ada di keyboard. Ciri-ciri utamanya adalah string tidak dapat digunakan untuk perhitungan aritmatika. Secara default tipe data teks akan diformat rata kiri dalam Excel.</p>
+   </div>
+   <p><strong>Cara input tipe data karakter atau teks berupa huruf:</strong></p>
+   <div class="colored-box">
+    <p>Untuk memasukkan teks yang diawali huruf biasa maka cukup klik pada sel yang dituju. Ketikkan teks tersebut lalu tekan Enter maka secara otomatis teks akan rata kiri. Hal tersebut menunjukkan data tersebut bertipe string.</p>
+   </div>
+   <p>Seperti dijelaskan di atas bahwa tidak hanya huruf a sampai z. Teks juga dapat berupa angka. Misalnya untuk menginputkan nomor telepon yang diawali dengan angka 0 (Nol). Jika kita ketik nomor telepon secara langsung di Excel maka angka 0 tersebut akan hilang. Hal ini dikarenakan Excel menganggapnya sebagai numerik. Solusinya adalah dengan membuatnya menjadi teks.</p>
+   <p><strong>Cara menambahkan angka 0 di excel agar tidak hilang:</strong></p>
+   <div class="colored-box">
+    <p>Untuk menambahkan angka 0 pada MS Excel agar tidak hilang cukup dengan ketik tanda petik tunggal ‘ di depan angka 0 lalu tekan Enter.</p>
+   </div>
+   <p>Selain dengan cara tersebut bisa juga dengan mengatur format sel menjadi teks. Caranya adalah dengan klik pada sel yang ditempati lalu klik Kanan pada sel tersebut > klik <strong>Format Cells</strong> > pilih <strong>Text</strong> > klik <strong>OK</strong>.</p>
+
+   <h3><strong>2. Numeric (Angka)</strong></h3>
+   <div class="colored-box">
+    <p>Tipe data numerik atau angka merupakan data yang bisa digunakan dalam perhitungan aritmatika. Secara default tipe data numerik akan diformat rata kanan pada Excel. Ada 4 macam numerik yaitu bilangan bulat, bilangan desimal, bilangan pecahan dan persen.</p>
+   </div>
+   <h4><strong>Bilangan Bulat</strong></h4>
+   <p>Merupakan bilangan utuh yang biasa juga disebut dengan integer yang terdiri dari bilangan bulat negatif dan positif. Untuk menginputkannya cukup ketik angka bilangan bulat anda pada sel yang diinginkan. Maka secara otomatis angka tersebut akan rata kanan. Tentunya angka tersebut bisa dipakai dalam perhitungan aritmatika.</p>
+   <h4>Bilangan Pecahan<strong></strong></h4>
+   <p>Bilangan pecahan biasa juga disebut dengan fraction. Bilangan ini terdiri dari pembilang dan penyebut. Untuk menulisnya kita tidak bisa langsung menulis dengan garis miring seperti biasa karena akan berubah menjadi tanggal.</p>
+   
+   <p><strong>Cara menulis bilangan pecahan di Excel:</strong></p>
+   <p>Untuk menulis bilangan pecahan di Microsoft Excel ketik angka 0 terlebih dahulu lalu tekan Spasi. Kemudian ketik bilangan pecahan seperti biasanya. Lalu tekan Enter. Misalnya ingin memasukkan bilangan 2/3. Maka caranya adalah ketik 0 2/3 lalu tekan Enter.</p>
+
+   <h4><strong>Persen</strong></h4>
+   <p>Angka persen mudah ditulis dengan cara biasa. Kita hanya perlu memasukkan angka lalu diakhiri dengan tanda persen (%) maka secara otomatis akan dikenali sebagai persen.</p>
+
+   <h3><strong>3. Date (Tanggal)</strong></h3>
+   <div class="colored-box">
+    <p>Tipe data date digunakan untuk menyimpan tanggal. Namun pada materi ini kita juga memasukkan waktu pada jenis data ini. Ada 2 macam date yaitu short date (pendek) dan long date (panjang). Short date hanya menampilkan tanggal/bulan/tahun. Sedangkan long date akan menampilhan hari, tanggal bulan tahun.</p>
+   </div>
+   <p><strong>Cara input data tanggal di Excel:</strong></p>
+   <p>Untuk menulis tanggal pada MS Excel ketik dengan format tanggal/bulan/tahun misalnya 17/8/1945. Selain dengan garis miring, kita juga bisa menggunakan garis penghubung (-).</p>
+   <p><strong>Cara menulis waktu atau jam di MS Excel:</strong></p>
+   <p>Untuk menulis waktu kita hanya perlu menggunakan tanda titik sebagai pemisah antara jam dan menit. Format yang diketik adalah jam.menit.detik. Misalnya 14.00.00 artinya waktu tersebut adalah jam 2 siang.</p>
+
+   <h3><strong>4. Currency (Mata Uang)</strong></h3>
+   <div class="colored-box">
+    <p>Currency digunakan untuk menginputkan nilai uang pada kurs tertentu. Di Indonesia tentunya kita menggunakan mata uang Rupiah. Untuk menuliskannya di Excel kita hanya perlu mengetikkan Rp di depan angka. Pastikan huruf R kapital dan p kecil. Kemudian tekan Enter. Misalnya Rp12000. Maka secara otomatis tiap 3 angka akan ditambahkan tanda titik.</p>
+   </div>
+   <h3><strong>5. Boolean</strong></h3>
+   <div class="colored-box">
+    <p>Tipe data boolean merupakan data yang digunakan untuk nilai logika yang menunjukkan TRUE (benar) atau FALSE (salah). Untuk memasukkannya kita hanya perlu mengetik true lalu tekan Enter. Atau ketik false lalu tekan Enter. Penggunaannya akan dibahas pada materi lainnya.</p>
+   </div>
+   <h3><strong>6. N/A</strong></h3>
+   <div class="colored-box">
+    <p>Data tipe ini adalah data kosong atau blank yang menunjukkan nilai NULL. Terkadang kita membutuhkan nilai NULL (bukan nol) untuk keperluan fungsi logika. Pada sel yang tidak ada isinya akan bernilai NULL atau N/A.</p>
+   </div>
+   <h3>7. Formula</h3>
+   <div class="colored-box">
+    <p>Tipe data formula merupakan data yang menggunakan fungsi atau rumus. Data ini merupakan pengolahan dari sel lain. Untuk menuliskan formula perlu diawali dengan tanda sama dengan (=). Secara lengkapnya akan dibahas pada materi tersendiri.</p>
+   </div>
+
+   <h4><strong>penutup</strong></h4>
+   <p>Semua tipe data di atas memiliki fungsinya masing-masing sehingga perlu diketahui sebelum belajar lebih dalam.</p>
+
+</body>
+</html>

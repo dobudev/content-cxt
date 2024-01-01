@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            table, th, td {
+                border: 0;
+            }
+
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+
+            /* Memberikan warna pada kolom "Alamat" */
+            td:nth-child {
+                background-color: lightblue;
+            }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #9cdcfe;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #add8e6; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <h2><strong>Mengenal Apa Itu Row, Column, Cell dan Range di MS Excel</strong></h2>
+    <p>Berbeda dengan aplikasi MS Word yang lembar kerjanya hanya seperti kanvas atau kertas biasa yang polos, lembar kerja Ms Excel menampilkan halaman berbentuk table. Terdapat berbagai macam istilah dalam lembar kerja tersebut yang harus kita pahami terlebih dahulu. Mulai dari baris (Row) dan kolom (Column) sebagai komponen utama dalam worksheet tersebut.</p>
+    <p>Otomatis dengan adanya baris dan kolom pada lembar kerja maka terbentuklah yang namanya sel (Cell). Selain itu ada pula yang namanya Range. Mungkin bagi beberapa orang awam yang baru belajar tentang Ms Excel masih belum tahu dengan istilah Range tersebut.</p>
+    <p>Agar kita mengenal apa itu Row, Column, Cell dan juga Range, maka materi belajar MS Excel kali ini akan membahas satu-persatu mulai dari row.</p>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_5.png" width="100%" height="" /></p>
+    <br>
+    <h3><strong>Row (Baris)</strong></h3>
+    <div class="colored-box">
+        <p>Row atau baris dalam microsoft excel adalah deretan sel yang berurutan ke samping secara horizontal atau mendatar dari kiri ke kanan dan sebaliknya. Row ditandai dengan penamaan berupa angka mulai dari 1 hingga 1048576.</p>
+    </div>
+    <p>Maka dari itu di dalam lembar kerja Ms Excel, setiap barisnya diberi angka berurutan yang bisa kita lihat letaknya pada Row Headings di sisi kiri lembar kerja atau Worksheet. Fungsinya yaitu untuk memudahkan kita dalam membaca letak baris sebuah sel ketika kita mengoperasikannya.</p>
+    <p>Sedikit panduan dalam membaca baris pada Ms Excel yaitu kita bisa lihat angka yang berada pada sisi kiri tersebut. Seperti contoh baris pertama, yaitu terletak pada nomor satu dan melintang secara horizontal atau dari sisi kiri ke kanan. Baris kedua yaitu terletak pada nomor dua, dan seterusnya.</p>
+    <h3><strong>Colum (Kolom)</strong></h3>
+    <div class="colored-box">
+        <p>Colum atau kolom dalam MS Excel adalah deretan sel yang berurutan secara vertikal dari atas ke bawah atau sebaliknya. Pada lembar kerja Excel setiap kolomnya diberi penamaan berupa huruf abjad secara terurut pada Column Headings di sisi atas lembar kerja atau Worksheet. Fungsinya yaitu untuk memudahkan kita dalam membaca letak kolom disaat kita mengolah data di Ms Excel.</p>
+    </div>
+    <p>Cara membaca kolom pada Ms Excel yaitu lihatlah huruf abjad huruf kapital yang terletak pada sisi atas lembar kerja. Seperti contoh kolom pertama, letaknya berada di bawah huruf A lembar kerja dan melintang secara vertical. Kolom kedua, letaknya berada di bawah huruf B, dan seterusnya.</p>
+    <h3><strong>Cell (Sel)</strong></h3>
+    <div class="colored-box">
+        <p>Cell atau Sel dalam Microsoft Excel adalah bagian terkecil pada lembar kerja Excel yang merupakan pertemuan antara baris dan kolom. Fungsinya adalah sebagai tempat mengisi data, memasukkan karakter angka maupun teks dan juga memasukkan fungsi-fungsi pengolahan data. Ketika kita mengetik atau klik pada cell tersebut maka cell akan menjadi sel aktif yang ditandai dengan adanya garis kotak bercetak tebal di sekelilingnya.</p>
+    </div>
+    <h4><strong>Alamat Sel</strong></h4>
+    <p>Seperti halnya baris dan kolom, kita juga bisa mengetahui letak sel yang berada di dalam lembar kerja Ms Excel karena memiliki alamat sel atau Cell Address. Alamat sel merupakan gabungan dari lokasi kolom dan baris dari sel tersebut. Seperti yang kita ketahui bahwa lokasi kolom ditandai dengan huruf. Sedangkan lokasi baris ditandai dengan angka. Contohnya adalah sel B5. Berarti sel tersebut berada di kolom B pada baris ke-5. Atau B5 bisa juga disebut sebagai pertemuan dari kolom B dan baris ke-5.</p>
+
+    <h3><strong>RANGE</strong></h3>
+    <div class="colored-box">
+        <p>Range dalam excel adalah kumpulan cell yang telah dipilih atau disorot dalam sebuah worksheet. Range didefinisikan mulai dari cell paling kiri atas hingga cell paling kanan bawah. Misalnya range B2:D7. Range tersebut berarti dimulai dari cell B2 (kolom B baris ke-2) hingga cell D7 (kolom D baris ke-7).</p>
+    </div>
+    <p>Cara membuat sebuah range sangatlah mudah. Seperti yang dijelaskan dalam pengertian di atas, kita hanya perlu menyorot atau blok sel-sel yang diinginkan. Contohnya B2:D7 berarti kita hanya perlu klik pada cell B2 lalu tahan dan geser hingga cell D7.</p>
+
+
+
+</body>
+</html>

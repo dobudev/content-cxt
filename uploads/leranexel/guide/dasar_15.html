@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+        .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    ul{
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 10px;
+    }
+   
+   
+
+    </style>
+</head>
+<body>
+    <p>Ada beberapa cara dalam memilih Range pada lembar kerja Ms Excel. Diantaranya adalah dengan menggunakan mouse, menggunakan tombol Shift, menggunakan Mode Extension dan menggunakan kombinasi keyboard. Pada materi belajar ms excel kali ini kita akan membahas 4 cara tersebut.</p>
+    <h2><strong>Membuat Range Dengan Mouse</strong></h2>
+    <p>Cara yang pertama ini merupakan metode yang paling simple. Hal ini dikarenakan kita bisa memilih Range pada lembar kerja hanya cukup dengan menggunakan mouse atau dengan menggunakan teknik seperti memblok pada umumnya.</p>
+    <p><strong>Berikut ini adalah cara membuat range di MS Excel dengan Mouse.</strong></p>
+    <ol>
+        <li>Klik kiri dan tahan Mouse di salah satu sel yang ingin kita pilih Range-nya.</li>
+        <li>Kemudian dengan masih menahan klik kiri pada Mouse, seret Mouse berdasarkan Range yang ingin kita pilih hingga warna pada beberapa sel yang kita pilih menjadi abu-abu.</li>
+        <li>Jika sudah membuat range sesuai dengan keinginan kita, lepaskan klik kiri pada Mouse. Dengan begitu bisa kita lihat warna abu-abu yang tampil pada lembar kerja tersebut adalah Range yang telah kita pilih.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_18.png" width="100%" height="" /></p>
+    <br>
+    
+    <h2><strong>Memilih Range Dengan Tombol Shift</strong></h2>
+    <p>Cara yang kedua ini biasa dipakai oleh orang-orang yang suka menggunakan Keyboard atau tidak ingin menggunakan Mouse. Tentu saja ini akan terlihat lebih expert dibandingkan sebelumnya.</p>
+    <p><strong>Berikut adalah cara memilih range di Excel dengan tombol Shift.</strong></p>
+    <ol>
+        <li>Klik pada salah satu sel yang hendak kita pilih Range-nya.</li>
+        <li>Tekan tombol Shift pada Keyboard dan tahan.</li>
+        <li>Selagi kita menahan tombol Shift, pilih Range dengan cara menekan tombol arah kanan, kiri, atas atau bawah pada Keyboard sesuai dengan banyaknya Range yang ingin dipilih hingga sel yang telah kita pilih terblok dan bewarna abu-abu.</li>
+        <li>Jika dirasa sudah, lepaskan tombol Shift pada Keyboard untuk melihat keseluruhan Range yang telah kita pilih.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_19.png" width="100%" height="" /></p>
+    <br>
+    
+    <h2><strong>Membuat Range Dengan Mode Extension</strong></h2>
+    <p>Sama-sama memanfaatkan tombol Keyboard dalam memilih Range, cara ini hanya sedikit berbeda dengan sebelumnya. Pada cara sebelumnya kita harus menekan terus tombol Shift. Sedangkan pada cara ini kita tidak perlu menekan terus Shift melainkan hanya dengan sekali tekan F8 untuk mengaktifkan Mode Extension. Lalu kita bisa menekan tombol arah sesuai keinginan.</p>
+    <p><strong>Berikut adalah cara membuat range di Microsoft Excel dengan Mode Extension F8.</strong></p>
+    <ol>
+        <li>Klik pada sel awal yang ingin kita jadikan range.</li>
+        <li>Tekan F8 pada keyboard untuk mengaktifkan Mode Extension. Di sinilah letak perbedaan dibandingkan kita menggunakan cara yang sebelumnya. Pada cara sebelumnya kita harus menekan serta menahan tombol Shift sembari memilih Range yang kita inginkan. Pada Mode Extension ini kita tinggal tekan saja tombol F8 tanpa menahan tombol tersebut.</li>
+        <li>Lalu pilih sel-sel yang ingin kita gunakan sebagai Range. Pemilihan Range bisa dengan menggunakan tombol panah pada Keyboard atau bisa dengan klik kiri menggunakan mouse pada sel yang kita tuju.</li>
+        <li>Tekan kembali tombol F8 untuk menonaktifkan Mode Extension jika kita sudah selesai dalam memilih Range. Untuk bisa melihat status Mode Extension masih aktif atau tidaknya kita bisa melihatnya pada bar status yang terletak di pojok bawah sebelah kiri jendela Ms Excel.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_20.png" width="100%" height="" /></p>
+    <br>
+
+    <h2><strong>Memilih Range Dengan Kombinasi Keyboard</strong></h2>
+    <p>Apabila kita ingin memanfaatkan tombol keyboard secara maksimal dalam memilih Range, kita juga bisa melakukannya dengan beberapa kombinasi tombol. Untuk lebih jelasnya simak caranya di bawah ini!</p>
+    <ol>
+        <li>Klik pada sel yang dijadikan awal dari range.</li>
+        <li>Selanjutnya tekan dan tahan tombol Shift serta kombinasikan dengan tombol Keyboard lainnya untuk mulai memilih Range. Berikut beberapa kombinasi Keyboard yang bisa kita gunakan diantaranya yaitu: </li>
+       <p><strong>Shift + Arrow (Tanda panah):</strong> Untuk mulai memilih 1 sel menjadi Range menuju ke arah yang diinginkan.</p>
+       <p><strong>Shift + Home:</strong> Untuk memilih Range dari posisi sel sekarang hingga kolom pertama pada baris tersebut.</p>
+       <p><strong>Shift + Ctrl + Home:</strong> Untuk memilih Range dari posisi sel sekarang hingga sel paling pertama pada lembar kerja.</p>
+       <p><strong>Shift + Ctrl + End:</strong> Untuk membuat Range dari posisi sel aktif sekarang hingga sel paling akhir yang memiliki data.</p>
+       <p><strong>Shift + Spasi:</strong> Memilih range 1 baris.</p>
+       <p><strong>Shift + Ctrl + Spasi:</strong> Seluruh lembar kerja akan dipilih menjadi range.</p>
+       <p><strong>Shift + PageUp:</strong> Untuk mulai membuat Range menuju ke ke kolom paling atas yang sama sesuai dengan sel yang kita aktifkan.</p>
+       <p><strong>Shift + PageDown:</strong> Untuk mulai membuat Range menuju ke ke kolom paling bawah yang sama sesuai dengan sel yang kita aktifkan.</p>
+       <p><strong>Shift + Ctrl + Arrow (Tanda Panah) :</strong> Untuk memilih Range menuju ke sel paling akhir lembar kerja sesuai dengan tanda panah yang kita operasikan.</p>
+       <li>Lalu lepaskan tombol shift beserta tombol kombinasi untuk melihat hasil dari Range yang sudah kita pilih.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_21.png" width="100%" height="" /></p>
+    <br>
+    <p>Begitulah cara-cara dalam memilih atau membuat range pada lembar kerja MS Excel. Kita bebas memilih cara yang kita sukai karena pada dasarnya mempunyai fungsi yang sama yaitu untuk memilih Range. Dengan adanya bermacam cara tersebut bisa mempermudah dan mempercepat kita dalam membuat dokumen di Excel.</p>
+
+</body>
+</html>

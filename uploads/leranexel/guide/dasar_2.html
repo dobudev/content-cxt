@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            table, th, td {
+                border: 0;
+            }
+
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+
+            /* Memberikan warna pada kolom "Alamat" */
+            td:nth-child {
+                background-color: lightblue;
+            }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #9cdcfe;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    </style>
+</head>
+<body>
+    <h2><strong>Pengenalan Worksheet dan Workbook di MS Excel</strong></h2>
+    <p>Sebelum membahas lebih lanjut mengenai workbook dan worksheet, apakah kita sudah mengerti tentang perbedaan diantara keduanya? Tidak ada salahnya jika kita mempelajari perbedaannya terlebih dahulu. Sebelum memulai aktifitas untuk belajar menggunakan aplikasi Microsoft Excel. Agar kita tidak bingung saat belajar Microsoft Excel lebih jauh.</p>
+    <h3><strong>Pengertian Worksheet</strong></h3>
+    <p>Worksheet adalah sebuah lembar kerja yang terdiri dari kolom dan baris untuk melakukan pekerjaan mengolah data di dalam Microsoft Excel. Pada umumnya Worksheet memiliki nama default yaitu Sheet1, Sheet2, dan seterusnya. Nama tersebut bisa dilihat pada di sebelah kiri bawah aplikasi MS Excel.</p>
+    <h3><strong>Pengertian Workbook</strong></h3>
+    <p>Workbook adalah buku kerja yang berupa sebuah file MS Excel yang terdiri dari beberapa worksheet. Workbook bisa juga disebut sebagai file Microsoft Excel yang berekstensi xls atau xlsx.</p>
+     <p>Jadi antara workbook dan worksheet masih saling berkaitan. Workbook seperti keseluruhan pada buku berbentuk file Ms Excel. Sedangkan Worksheet adalah tiap-tiap lembaran halaman yang ada pada buku tersebut yang bisa kita edit secara suka-suka. Kita bisa ubah nama, menambahkan halaman dan menghapus worksheet tersebut.</p>
+     <h3><strong>Menambah Worksheet</strong></h3>
+     <p>Kita bisa menambahkan worksheet baru secara satu-persatu jika memang kita menginginkannya.</p>
+     <ol>
+        <li>Klik menu <strong>Home</strong> yang ada pada bagian Ribbon MS Excel.</li>
+        <li>Lihat pada bagian Cells, klik menu Insert sehingga akan muncul beberapa pilihan menu <strong>Insert</strong>.</li>
+        <li>Lalu klik <strong>Insert Sheet</strong> untuk menambahkan worksheet baru, maka otomatis sheet akan bertambah.</li>
+        <li>Cara lainnya yang lebih mudah yaitu kita bisa memanfaatkan tombol keyboard dengan cara menekan tombol <strong>Shift + F11</strong> secara bersamaan untuk menambahkan Worksheet baru.</li>
+        <li>Cara lain yang lebih cepat adalah dengan klik tanda plus di bagian bawah. Letaknya berada tepat disamping nama sheet awal kita sebagai cara alternatif lainnya.</li>
+     </ol>
+     <br>
+     <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_1%20A.png" width="100%" height="" /></p>
+     <br>
+     <h3><strong>Menghapus Worksheet</strong></h3>
+     <p>Jika kita telah membuat Worksheet baru, adakalanya kita ingin menghapus yang lainnya.</p>
+     <p><strong>Berikut adalah cara menghapus worksheet di MS Excel.</strong></p>
+     <ol>
+        <li>klik menu <strong>Home</strong></li>
+        <li>Pada bagian <strong>Cells</strong>, klik menu <strong>Delete</strong> sehingga akan muncul beberapa pilihan menu <strong>Delete</strong>.</li>
+        <li>Pilih <strong>Delete Sheet</strong> untuk mulai menghapus.</li>
+        <li>Cara lain yang bisa kita lakukan untuk menghapus worksheet yaitu kita tinggal klik kanan pada nama sheet yang ingin kita hapus. sehingga akan muncul beberapa pilihan.</li>
+        <li>Pilih <strong>Delete</strong> dan otomatis Worksheet tersebut akan terhapus.</li>
+     </ol>
+     <br>
+     <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_2%20A.png" width="100%" height="" /></p>
+     <br>
+     <h3><strong>Mengubah Nama Worksheet</strong></h3>
+     <p>Hal lain yang bisa kita lakukan adalah kita bisa mengubah nama default Worksheet MS Excel. Biasanya secara default adalah bernama <strong>Sheet1, Sheet2,</strong> dan seterusnya.</p>
+     <p><strong>Berikut adalah cara mengubah nama worksheet.</strong></p>
+     <ol>
+        <li>Klik kanan pada Worksheet yang ingin kita ubah namanya.</li>
+        <li>Pilih <strong>Rename</strong> sehingga nama sheet yang lama akan otomatis terblok dan muncul kursor yang menunjukkan bahwa sheet tersebut siap diganti namanya sesuai dengan yang kita inginkan.</li>
+        <li>Ketik nama yang diinginkan dan tekan <strong>Enter</strong> pada keyboard untuk mulai mengaplikasikan nama tersebut.</li>
+        <li>Cara lain yang lebih cepat adalah kita bisa merubah nama Worksheet dengan mengklik dua kali pada nama Worksheet yang ingin kita rubah.</li>
+        <li>Lalu ketika nama yang dinginkan dan tekan <strong>Enter</strong> jika sudah.</li>
+     </ol>
+     <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_3%20A.png" width="100%" height="" /></p>
+
+     <p>Itulah sedikit pengenalan mengenai Workbook dan juga Worksheet yang ada pada MS Excel. Serta beberapa hal yang bisa kita lakukan dengan Worksheet tersebut, seperti menambah, menghapus dan mengubah nama Worksheet.</p>
+
+   
+</body>
+</html>

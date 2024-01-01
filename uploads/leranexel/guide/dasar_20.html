@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <p>Pengguna baru aplikasi ms excel pasti tidak tahu bahwa kita bisa menggabungkan beberapa cell sekaligus hingga menjadi 1 kesatuan. Baik itu sel-sel yang terdiri dari beberapa kolom maupun sel yang terdiri dari beberapa baris. Hal ini biasanya sering dialami ketika pengguna ingin mengetikkan sebuah tulisan/karakter yang panjang ke dalam cell tapi tulisan terlihat terpotong karena keterbatasan ukuran cell.</p>
+    <p>Contoh ketika menulis judul tabel yang tergolong panjang, mengkategorikan header tabel, dan lain sebagainya. Salah satu fitur yang bisa diandalkan di excel ketika pengguna menghadapi masalah tersebut adalah dengan memanfaatkan fitur <strong>Merge & Center</strong>.</p>
+    <h3><strong>Cara Menggabungkan 2 Kolom (Cell) atau Lebih Menjadi 1 di Excel</strong></h3>
+    <ol>
+        <li>Buka aplikasi MS Excel,</li>
+        <li>Siapkan dokumen/data yang ingin digabungkan baik kolomnya, barisnya, atau selnya menjadi 1. Seperti pada contoh data nilai ujian susulan siswa berikut di mana judul dan header tabel tidak rapi,</li>
+        <li>Blok kolom atau cell yang ingin digabungkan menjadi 1, misalnya pada contoh di gambar bawah yakni C5 hingga F5 sesuai dengan panjang tabel,</li>
+        <li>Masuk ke menu Home excel,</li>
+        <li>Klik icon Merge & Center yang ada di dalam grup menu Alignment, maka sel pada judul tabel pertama tersebut akan digabung menjadi 1 Cell.</li>   
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_30.png" width="100%" height="" /></p>
+    <br>
+    <p>Kolom atau baris yang telah digabungkan agar menjadi 1 sel akan teridentikasi sebagai sel sesuai dengan sel awal pada saat kita memblok.</p>
+    <p>Misal pada contoh tersebut kita telah menggabungkan judul tabel, yakni NILAI MAPEL. Meski sudah digabung dari sel C5 hingga F5 maka sel tetap akan bernama sel C5.</p>
+    <p>Penggunaan fitur <strong>Merge & Center</strong> memang harus dilakukan baris per baris, atau kolom per kolom agar hasilnya tidak berantakan. Jadi kita harus memblok baris atau sel kemudian mengklik fitur <strong>Merge & Center</strong> setiap kali kita ingin menggabungkan deretan baris ataupun kolom.</p>
+    <p>Setelah mengklik menu <strong>Merge & Center</strong> maka biasanya tulisan di dalam sel akan otomatis ditempatkan di tengah-tengah sel atau menjadi center. Tapi untuk hasil dari penggabungan kolom kemungkinan posisi tulisan masih berada di rata bawah atau berada di posisi paling bawah sel.</p>
+    <p>Jika demikian maka kita bisa blok sel kemudian klik menu <strong>Middle Align</strong> yang ada tepat di atas menu <strong>Center</strong> satu grup dengan menu <strong>Alignment</strong> agar rata tulisan berada di tengah-tengah sel.</p>
+
+
+</body>
+</html>

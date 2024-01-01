@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <p>Di excel kita tentu bisa leluasa mengelola tabel termasuk dalam hal menyisipkan maupun menghapus baris dan kolom tabel jika memang ada bagian yang tidak diinginkan. Sebagai contoh terdapat sebuah tabel data yang di dalamnya memiliki jumlah baris sebanyak 6 baris. Lalu pada baris tersebut kita ingin menghapus salah satu baris sehingga hanya tersisa 5 baris saja. Maka kita tidak perlu satu persatu menghapus selnya karena ada cara yang mudah yakni kita tinggal memilih baris mana yang ingin dihapus.</p>
+    <p>Begitu juga jika kita ingin menghapus kolom pada tabel yang caranya juga tidak jauh berbeda. Selain mudah proses menghapus kolom dan baris excel juga tidak memerlukan formula/rumus tertentu.</p>
+    <p><strong>Supaya lebih jelasnya mari kita bahas langkah-langkahnya mulai dari kolom terlebih dahulu!</strong></p>
+    <h3><strong>Cara Menghapus Kolom di Excel</strong></h3>
+    <ol>
+        <li>Siapkan tabel data yang ingin dihapus kolomnya,</li>
+        <li>Arahkan kursor pada kolom huruf excel yang ingin dihapus hingga muncul tanda panah hitam mengarah ke bawah,</li>
+        <li>Klik kolom huruf tersebut untuk memblok kolom yang telah dipilih, misal pada contoh tabel berikut kita akan menghapus Nama Siswa  yang berada di kolom B,</li>
+        <li>Klik kanan pada kolom huruf B tersebut,</li>
+        <li>Pilih opsi Delete, maka kolom tersebut akan langsung terhapus.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_32B.png" width="100%" height="" /></p>
+    <br>
+    <p>Apabila kolom yang ingin dihapus berjumlah banyak maka kita tinggal aplikasikan cara tersebut ke kolom-kolom lain yang ingin dihapus.</p>
+    <p>Untuk menghapus kolom lebih dari dua kolom yang letaknya berdampingan juga bisa dilakukan sekaligus. Caranya tinggal blok kolom-kolom yang ingin dihapus, lalu pilih delete.</p>
+    <p>Metode lain untuk menghapus kolom dan baris selain dengan menggunakan klik kanan adalah dengan memanfaatkan menu Delete yang ada di menu Home atau tepatnya di dalam grup Cells.</p>
+    <h3><strong>Cara Menghapus Baris di Excel</strong></h3>
+    <ol>
+        <li>Buka aplikasi ms excel,</li>
+        <li>Siapkan lembar kerja berisi tabel yang ingin dihapus barisnya,</li>
+        <li>Tempatkan kursor pada nomor baris yang hendak dihapus hingga muncul tanda panah mengarah ke samping,</li>
+        <li>Klik kiri pada nomor baris tersebut sehingga baris akan terblok,</li>
+        <li>Klik kanan pada mouse,</li>
+        <li>Pilih Delete, maka baris yang telah dipilih tersebut akan langsung terhapus.</li>
+    </ol>
+    <p>Ketika menghapus sebuah baris yang letaknya di tengah-tengah tabel otomatis letak baris yang ada di bawahnya menyesuaikan naik ke atas sehingga baris satu dengan yang lain tidak putus.</p>
+    <p>Perlu diketahui bahwasannya kita tidak bisa semerta-merta menghapus baris atau kolom dengan hanya menekan tombol Del atau Delete pada keyboard saja.</p>
+    <p>Hal itu dikarenakan hanya akan menghapus isi dari baris maupun kolomnya saja bukan secara keseluruhan baris atau kolomnya.</p>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #9cdcfe;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+   <p>Menulis angka di excel memanglah mudah tapi untuk mengatur angkanya agar menjadi format yang diinginkan tidak bisa sembarangan. Misalnya saja dalam hal penulisan angka ribuan atau nominal uang 5000, bagaimana caranya agar angka tersebut memiliki titik sehingga menjadi 5.000?</p>
+   <p>Tentunya tanda titik sebagai penanda angka ribuan tersebut tidak ditulis secara manual/satu persatu karena akan merepotkan bila data yang ingin kita ubah berjumlah banyak. Maka dari itu excel menyediakan salah satu menu cepat yang bisa dimanfaatkan yaitu Comma Style, jadi setiap angka ribuan akan diberi tanda titik.</p>
+   <h2><strong>Cara Mengatur Format Angka Ribuan di Excel dengan Cepat</strong></h2>
+   <ol>
+    <li>Buka aplikasi ms excel yang sudah terinstall di laptop atau komputer,</li>
+    <li>Siapkan data atau tabel yang ingin diatur format angka ribuannya,</li>
+    <li>Blok area yang berisi angka untuk diatur formatnya atau klik huruf kolom yang ada di bagian atas worksheet excel,</li>
+    <li>Masuk ke menu Home excel,</li>
+    <li>Klik kiri satu kali menu Comma Style yang ada di bagian Number, setelah itu format angkanya akan berubah sehingga muncul tanda titik ribuan.</li>
+   </ol>
+   <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_7.png" width="100%" height="" /></p>
+   <br>
+   <p>Tujuan dari mengklik huruf kolom seperti pada contoh (C) adalah untuk memblok keseluruhan kolom sehingga nanti saat menulis angka di kolom kosong bawah formatnya akan langsung ikut berubah. Secara default menu comma style akan menampilkan angka desimal dengan tanda koma, jika tidak menginginkannya maka kita bisa menghilangkan tanda koma tersebut dengan mudah.</p>
+   <p>Untuk menghilangkan tanda koma pada angka yang muncul yakni dengan mengklik menu <strong>Decrease</strong> desimal yang juga ada di dalam bagian menu Number. Setiap mengklik satu kali menu tersebut maka angka desimal akan berkurang satu, klik sebanyak yang diinginkan untuk menghilangkan angka desimal pada tabel. Sebaliknya, jika ingin menambahkan angka desimal maka klik menu yang ada di sebelahnya yakni Increase Decimal, maka angka desimal akan bertambah sesuai dengan banyaknya yang kita klik.</p>
+   <div class="colored-box">
+    <p>Selain dengan menggunakan cara cepat di atas kita juga bisa memanfaatkan cara lain. Untuk menambahkan tanda pemisah ribuan ke data yang di lembaran kerja dilakukan di kotak dialog Format Cells. Tepatnya pada menu Number.</p>
+   </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <p>Pada umumnya laporan atau data yang diolah menggunakan ms excel hendaklah disajikan dengan semenarik mungkin demi kenyamanan pembaca. Maka dari itu excel telah menyediakan berbagai macam fitur yang bisa dimanfaatkan penggunanya untuk mempercantik suatu data, salah satunya dengan memberi warna pada cell/sel.</p>
+    <p>Dari sel yang awalnya bewarna putih dan terbilang membosankan berubah menjadi lebih menarik karena telah disisipkan warna di dalamnya. Untuk pemberian warna pada sel di excel sendiri bisa dilakukan dengan dua cara, yaitu secara manual dan otomatis.</p>
+    <p>Maksud dari pemberian warna secara otomatis tersebut adalah warna pada sel akan otomatis berubah sesuai dengan kondisi yang telah ditentukan sebelumnya. Agar lebih jelasnya mari kita bahas langsung langkah-langkahnya mulai dari yang manual terlebih dahulu!</p>
+    <h3><strong>Cara Memberi Warna pada Tabel Excel Manual</strong></h3>
+    <ol>
+            <li>Buka aplikasi ms excel yang ada di komputer atau laptop,</li>
+            <li>Buat tabel data baru di lembar kerja excel atau siapkan tabel data yang sudah dibuat untuk diberi warna pada selnya,</li>
+            <li>Pilih bagian sel atau blok (sorot) range yang ingin diberi warna,</li>
+            <li>Klik menu Home,</li>
+            <li>Klik tanda panah di sebelah icon bergambar gelas yang miring atau Fill Color pada bagian Font, setelah itu beberapa pilihan warna akan ditampilkan,</li>
+            <li>Pilih warna sesuai dengan yang diinginkan, misal Yellow untuk mengaplikasikan warna kuning pada sel.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_24.png" width="100%" height="" /></p>
+    <br>
+    <p>Apabila warna yang ingin diaplikasikan pada sel tidak sama/berbeda-beda maka kita harus memilih warnanya satu persatu dengan mengikuti cara seperti di atas.</p>
+    <p>Pengguna bisa memanfaatkan opsi More Colors pada menu Fill color tersebut untuk menemukan pilihan warna yang lebih lengkap lagi atau jika ingin memasukkan kode warna secara spesifik.</p>
+
+    <h3><strong>Cara Memberi Warna Otomatis di Excel dengan Conditional Formatting</strong></h3>
+    <ol>
+            <li>Buat terlebih dahulu atau siapkan tabel data yang selnya ingin diberi warna,</li>
+            <li>Blok kolom sel yang ingin diberi warna secara otomatis,</li>
+            <li>Klik menu Home,</li>
+            <li>Pilih Conditional Formatting,</li>
+            <li>Pilih opsi sesuai dengan bentuk atau nilai pada data yang telah kita blok, misal Highlight Cells Rules yang biasa digunakan untuk memberi warna pada nilai nominal/angka,</li>
+            <li>Pilih kriteria yang diinginkan, misal kita ingin memberi warna pada sel yang besar angkanya lebih dari nominal tertentu maka kita pilih Greater Than….,</li>
+            <li>Isikan angka patokannya misalnya yang ingin diberi warna adalah yang lebih dari 200 juta maka kita isikan 200000000,</li>
+            <li>Pilih format warna sesuai dengan keinginan pada kolom sebelah kanan, misal pilih Light Red Fill with Dark Red Text,</li>
+            <li>Klik OK maka angka yang lebih dari 200 juta pada sel otomatis akan berubah warnanya.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_25.png" width="100%" height="" /></p>
+    <br>
+    <p>Kelebihan dari memberi warna sel secara otomatis adalah ketika ada pembaruan data pada sel misal angka 150 juta diubah menjadi 250 juta, maka warnanya juga akan otomatis ikut berubah.</p>
+    <p>Fitur <strong>Conditional formatting</strong> juga berisi berbagai macam kriteria sesuai dengan kebutuhan pengguna. Di sana terdapat opsi Less than untuk nilai kurang dari, Between untuk nilai diantara, Equal to untuk yang memiliki nilai sama dengan tertentu, Text that contains untuk kondisi berdasarkan teks tertentu, Duplicate values jika ingin menampilkan data yang duplikat, dan lainnya.</p>
+    <p>Contoh lain pengguna bisa membuat memanfaatkan opsi data bar di dalam Conditional formatting untuk memberikan warna pada nilai yang berbeda sekaligus menampilkan datanya dalam bentuk bar.</p>
+</body>
+</html>

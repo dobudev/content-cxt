@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <p>Seperti yang kita tahu ms excel biasa digunakan untuk membantu mempermudah suatu pekerjaan terutama pekerjaan yang berhubungan dengan data dan angka. Selain itu ada beberapa hal dasar yang harus kita ketahui sebelum mempelajari lebih dalam tentang ms excel.</p>
+    <p>Salah satunya adalah bagaimana caranya untuk membuat sebuah tabel di excel. Manfaat dari adanya tabel tidak lain adalah untuk menjadikan data kita agar semakin mudah dibaca oleh orang lain. Di excel kita bisa membuat tabel melalui beberapa cara, antara lain melalui format cells atapun melalui menu Insert.</p>
+    <p>Kedua cara tersebut sama-sama mudah untuk dilakukan bagi siapa saja terutama bagi pemula yang baru belajar tentang ms excel. Supaya lebih jelas mari kita bahas langkah-langkahnya!</p>
+    <h3><strong>Cara Membuat Tabel di Excel melalui Format Cells</strong></h3>
+    <ol>
+        <li>Buka aplikasi ms excel yang ada di komputer atau laptop kita,</li>
+        <li>Siapkan data atau ketikkan data baru di lembar kerja yang akan dibuat tabelnya, misal kita akan membuat tabel dari data pegawai,</li>
+        <li>Blok bagian yang ingin dibuat tabel, seperti pada contoh kita blok cell A4 hingga cell D9,</li>
+        <li>Klik kanan pada bagian yang telah diblok tersebut,</li>
+        <li>Pilih Format Cells…, setelah itu jendela format cells akan terbuka,</li>
+        <li>Pilih tab menu Border,</li>
+        <li>Klik pada bagian Presets Outline dan juga Inside untuk membuat tabel pada bagian yang diinginkan,</li>
+        <li>Klik tombol OK, maka bagian yang telah kita blok tadi sudah menjadi tabel.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_22.png" width="100%" height="" /></p>
+    <br>
+    <p>Di dalam menu border yang ada pada format cells tersebut juga tersedia beberapa jenis garis yang bisa dipilih sesuai dengan keinginan.</p>
+    <p>Ada garis putus-putus, garis tebal, garis tipis, dan lain sebagainya. Warna garis pada tabel juga bisa kita ubah jika kita menginginkannya.</p>
+    <h3><strong>Cara Membuat Tabel di Excel dengan Cepat Melalui Insert</strong></h3>
+    <ol>
+        <li>Siapkan data atau ketikkan data baru yang ingin dibuat tabel, misalnya saja data peserta lomba 17 Agustus,</li>
+        <li>Blok bagian yang ingin dibuat tabel,</li>
+        <li>Klik menu Insert,</li>
+        <li>Pilih menu Table, setelah itu jendela Create Table akan terbuka,</li>
+        <li>Klik saja OK, maka tabel akan dibuat secara otomatis,</li>
+        <li>Rapikan tabelnya sesuai dengan keinginan, seperti merapikan lebar kolomnya, dan lain sebagainya.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_23.png" width="100%" height="" /></p>
+    <br>
+    <p>Tabel yang dibuat oleh excel secara otomatis tersebut temanya bisa diganti sesuai dengan keinginan dengan cara klik menu Table Design lalu pilih tema yang diinginkan pada bagian Table Styles.</p>
+    <p>Berbeda dengan membuat tabel secara manual membuat tabel melalui menu Insert adalah memiliki banyak kelebihan. Salah satunya saat kita menginput data baru di baris yang ada di bawahnya maka baris yang baru tersebut akan dibuat tabelnya secara otomatis tanpa harus membuat baris tabel lagi.</p>
+    <p>Begitu juga jika di dalam tabel ada formula atau rumus hasil perhitungan maka ketika di enter hasilnya akan muncul otomatis mengikuti pola perhitungan yang ada di baris atasnya.</p>
+</body>
+</html>

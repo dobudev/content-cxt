@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <p>Pernah berurusan dengan dokumen ms excel yang lebar kolom dan tinggi barisnya tidak rapi? Pasti kurang menarik untuk dilihat dan bisa menyebabkan seseorang menjadi malas bahkan bingung ketika membaca isi dokumen tersebut. Maka dari itu alangkah baiknya jika kita terlebih dahulu merapikan dokumen tersebut sebelum dikirim/diperlihatkan ke orang lain.</p>
+    <p>Cara merapikannya cukup mudah yakni dengan mengatur lebar kolom dan tinggi baris agar sama besar antar satu dengan yang lainnya. Tentunya kita tidak perlu satu persatu mengatur lebar kolom dan tinggi barisnya karena ada cara cepat yang bisa dilakukan.</p>
+    <p>Hal ini sangat membantu jika baris dan kolom yang ingin dirapikan berjumlah banyak. Nah, untuk lebih jelasnya mari kita bahas langkah-langkahnya!</p>
+    <h3><strong>Cara Mengatur Lebar Kolom dan Tinggi Baris pada Microsoft Excel Sama Besar</strong></h3>
+    <ol>
+        <li>Buka aplikasi ms excel yang telah diinstall di laptop atau komputer,</li>
+        <li>Siapkan dokumen/tabel data excel yang ukuran baris dan kolomnya ingin dibuat sama besar,</li>
+        <li>Arahkan kursor mouse pada baris awal tabel yang ingin diatur ukurannya hingga muncul tanda panah yang mengarah horizontal. Misal seperti pada contoh kita mengarahkan kursor mouse pada baris ke 7,</li>
+        <li>Klik kiri dan tahan mouse,</li>
+        <li>Drag hingga ke bagian baris terakhir yang ada di bawahnya, yakni hingga baris ke 11,</li>
+        <li>Lepaskan mouse jika semua baris sudah terblok,</li>
+        <li>Arahkan mouse pada garis pemisah yang ada di antara baris satu dengan yang lain, misal garis yang ada di antara baris ke 7 dan ke 8 hingga muncul icon seperti tanda plus pada mouse,</li>
+        <li>Klik dan tahan mouse,</li>
+        <li>Atur tinggi baris sesuai keinginan dengan cara drag mouse ke atas untuk memperpendek baris atau drag ke bawah untuk menambah ketinggian baris,</li>
+        <li>Lepaskan mouse jika sudah sesuai dengan ukuran yang diinginkan, setelah itu tinggi baris pada tabel akan sama besar,</li>
+        <li>Arahkan kursor mouse pada bagian kolom pertama excel untuk mengatur lebar kolom, yakni kolom C hingga muncul tanda panah yang mengarah ke bawah,</li>
+        <li>Klik dan tahan mouse,</li>
+        <li>Geser ke kanan hingga bagian kolom yang ingin disamakan ukurannya pada tabel ikut terblok, dalam hal ini sampai kolom F,</li>
+        <li>Lepaskan mouse,</li>
+        <li>Arahkan mouse pada garis yang terdapat di antara kolom pertama dengan kolom kedua hingga muncul icon mirip tanda panah pada mouse. Seperti contoh kita mengarahkan mouse pada garis yang ada di antara kolom C dengan kolom D,</li>
+        <li>Klik dan tahan mouse,</li>
+        <li>Atur lebar kolom dengan cara menggeser ke kanan atau ke kiri sesuai dengan lebar yang diinginkan,</li>
+        <li>Lepaskan mouse jika sudah, maka ukuran pada kolom satu dengan yang lain akan otomatis disamakan.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_29.png" width="100%" height="" /></p>
+    <br>
+    <p>Pada contoh tabel di atas sebelum dirapikan terdapat baris yang tingginya tidak beraturan, begitu juga kolomnya ada yang terlalu sempit dan ada yang terlalu lebar.</p>
+    <p>Setelah ukuran pada baris dan kolom dirapikan dengan cara diatur agar ukurannya sama besar membuat tabel tersebut menjadi terlihat lebih rapi dan nyaman ketika dibaca.</p>
+    <p>Apabila saat melepas mouse dan hasil yang didapatkan kurang memuaskan atau ukuran baik tinggi baris maupun lebar kolom tidak sesuai yang diinginkan, maka kita bisa mengulangi cara tersebut</p>
+
+
+
+</body>
+</html>

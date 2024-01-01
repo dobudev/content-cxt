@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <p>Tampilan pada lembar kerja excel bukanlah polosan melainkan ada kotak-kotak kecil atau yang biasa disebut dengan sel. Dengan adanya sel-sel tersebut pengguna menjadi lebih mudah ketika hendak membuat tabel di dalam lembar kerja excel. Meski begitu banyak yang belum sadar bahwa untuk membuat sebuah tabel yang layak kita terlebih dahulu diharuskan membuat garis-garis atau border pada tabel.</p>
+    <p>Fungsi dari border tersebut juga berperan sebagai pembatas antar kolom sehingga memudahkan pembaca dalam memahami isi tabel. Kabar baiknya ms excel juga telah menyediakan opsi bagi pengguna untuk bisa membuat border secara otomatis.</p>
+    <p>Opsi tersebut bisa kita manfaatkan jika kita sedang berurusan dengan data yang jumlahnya banyak. Oleh karena itu mari simak langkah-langkahnya!</p>
+    <h3><strong>Cara Membuat Garis atau Border Pada Microsoft Excel</strong></h3>
+    <ol>
+        <li>Buka aplikasi ms excel yang telah diinstall di komputer atau laptop,</li>
+        <li>Isikan kolom data baru atau siapkan data yang akan dibuat garis/bordernya, misal data berisi nama dan tanggal lahir yang terbagi menjadi dua kolom,</li>
+        <li>Blok pada bagian kolom yang akan dibuat border,</li>
+        <li>Klik menu Home yang ada pada deretan menu ribbon excel,</li>
+        <li>Arahkan kursor pada bagian tanda panah yang ada di sebelah icon bergambar kotak-kotak (boder) excel,</li>
+        <li>Klik tanda panah atau icon Border tersebut, setelah itu akan muncul beberapa opsi border berdasarkan penempatan-nya,</li>
+        <li>Pilih opsi border sesuai dengan keinginan, misal pilih All Borders jika ingin membuat border pada keseluruhan kolomnya.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_26.png" width="100%" height="" /></p>
+    <br>
+    <p>Ketika kita mengarahkan kursor pada Icon tanda panah tersebut dan muncul keterangan No border menandakan bahwa bagian yang kita blok tidak mempunyai border. Keterangan tersebut akan berubah dengan sendirinya seiring dengan ada atau tidaknya border pada sel yang kita blok.</p>
+    <p>Di dalam menu border tersebut terdapat berbagai macam tools yang bisa dimanfaatkan seperti tools untuk mengubah jenis border, menambahkan warna border, hingga mengatur ketebalan border.</p>
+    <h3><strong>Cara Membuat Border Otomatis Dengan Cepat dan Mudah</strong></h3>
+    <ol>
+        <li>Buka aplikasi ms excel,</li>
+        <li>Siapkan data yang ingin dibuat border secara otomatis, misal data lahir siswa,</li>
+        <li>Isikan kolom judul dan header pada data baru yang akan dibuat garis/bordernya,</li>
+        <li>Blok keseluruhan kolom berisi data yang akan dibuat border,</li>
+        <li>Tekan tombol <strong>Shift+Ctrl+Tanda panah bawah</strong> pada keyboard secara bersamaan untuk memblok kolom hingga ke bawah secara otomatis,</li>
+        <li>Klik menu <strong>Home</strong>,</li>
+        <li>Klik menu <strong>Conditional Formatting</strong>,</li>
+        <li>Pilih <strong>Manage Rules</strong>…, kemudian jendela rules manager akan terbuka,</li>
+        <li>Klik tombol <strong>New Rule</strong>…, kemudian akan muncul beberapa tipe rule yang bisa dipilih,</li>
+        <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_27.png" width="100%" height="" /></p>
+        <br>
+        <li>Pilih Use a formula to determine which cells to format,</li>
+        <li>Isikan formula <strong>=$B4&lt;&gt;""</strong> pada kolom Format values where this formula is true,</li>
+        <li>Klik tombol <strong>Format</strong>,</li>
+        <li>Klik pada tab menu <strong>Border</strong>,</li>
+        <li>Klik pada bagian yang diinginkan, misal klik Outline jika ingin membuat border di pinggiran sel,</li>
+        <li>Klik tombol <strong>OK</strong>,</li>
+        <li>Klik tombol <strong>OK</strong> sekali lagi, setelah itu kita akan melihat rule baru yang baru saja dibuat,</li>
+        <li>Klik tombol <strong>OK</strong>,</li>
+        <li>Isikan data dengan cara mengetik seperti biasa pada kolom nama dan tanggal lahir, misal kita mengisi nama siswa, yakni Yono,</li>
+        <li>Tekan tombol Enter, maka secara otomatis border pada baris tersebut akan muncul,</li>
+        <li>Lanjutkan pengisian data pada baris selanjutnya.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_28.png" width="100%" height="" /></p>
+    <br>
+    <p>Sesuaikan formula dengan sel yang dijadikan rules pada data kita. Seperti halnya contoh tersebut yakni <strong>=$B4</strong> yang menandakan bahwa sel B4 adalah posisi awal sel yang dipilih.</p>
+    <p>Setiap kali kita mengisi data atau karakter di dalam sel nama maupun tanggal lahir maka border akan otomatis muncul.</p>
+    <p>Begitu juga sebaliknya ketika isi/karakter daripada sel tersebut dihapus maka border juga akan otomatis ikut terhapus secara otomatis.</p>
+
+
+</body>
+</html>

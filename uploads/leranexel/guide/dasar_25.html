@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <p>Seringkali orang-orang menggunakan aplikasi microsoft excel untuk mengolah data dengan cepat dan mudah terutama bagi para pemula yang belum menguasai excel sepenuhnya. Teruntuk pemula yang ingin membuat form di excel dan belum tahu apa itu <strong>VBA (Visual Basic for Application)</strong> ataupun memahami macro hal itu tidak masalah.</p>
+    <p>Sebab di aplikasi excel terdapat fitur untuk membuat form secara simple tanpa memerlukan sebuah script atau koding. Di dalam pekerjaan input data form bertujuan untuk membantu pengguna dalam hal melihat record data supaya lebih mudah ditemukan dan dikelola.</p>
+    <p>Itulah alasan kenapa beberapa orang memutuskan untuk membuat sebuah form dalam mengolah data khususnya jika data yang diolah jumlahnya besar. Agar lebih jelas mari kita bahas langsung ke langkah-langkahnya.</p>
+    <h3><strong>Cara Membuat Form di Excel tanpa Koding</strong></h3>
+    <ol>
+        <li>Buka ms excel yang sudah terinstall di laptop atau komputer,</li>
+        <li>Siapkan sebuah tabel berisi judul-judul kolom yang akan dibuat menjadi form, misal judul kolom terdiri dari Nomor ID, Nama, Jabatan, dan Departemen.</li>
+        <li>Atur ketebalan font, lebar kolom, dan lain sebagainya sesuai dengan kebutuhan,</li>
+        <li>Blok judul kolom tersebut jika sudah,</li>
+        <li>Klik menu Insert,</li>
+        <li>Pilih menu Table, setelah itu kotak dialog Create Table akan terbuka,</li>
+        <li>Centang pada bagian My table has headers,</li>
+        <li>Klik Ok, maka table akan langsung dibuat,</li>
+        <li>Atur style/tampilan tabel sesuka kita,</li>
+        <li>Klik pada bagian Tell me what you want to do yang ada di sebelah deretan menu Ribbon Ms excel untuk mencari menu form,</li>
+        <li>Ketikkan Form pada kotak pencarian, setelah itu hasil pencarian akan dimunculkan,</li>
+        <li>Klik menu Form pada hasil pencarian tersebut, kemudian jendela form akan terbuka dan otomatis akan langsung muncul form berisi judul kolom/tabel yang telah dibuat,</li>
+        <li>Isi data form pada tabel tersebut, baik Nomor ID, Nama, Jabatan, maupun Departemen sesuai dengan yang dibutuhkan,</li>
+        <li>Klik tombol New untuk memasukkan data-data yang selanjutnya,</li>
+        <li>Lakukan input data hingga selesai,</li>
+        <li>Klik tombol Close jika data sudah selesai dimasukkan semua,</li>
+        <li>Jangan lupa simpan dokumen ms excel yang telah dibuat tersebut.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_38.png" width="100%" height="" /></p>
+    <br>
+    <p>Kamu juga bisa mencari data yang sudah dimasukkan ke dalam form sesuai dengan kriteria yang diinginkan melalui tombol Criteria. Contohnya jika pengguna ingin mencari data berdasarkan nomor ID maka klik Criteria, masukkan ID yang ingin dicari, kemudian klik tombol Find Prev maka hasil pencarian data form akan dimunculkan.</p>
+    <p>Data yang sudah dimasukkan juga bisa diedit kapanpun saat dibutuhkan melalui tombol yang sama yakni tombol Criteria. Caranya cari terlebih dahulu data yang akan diedit, kemudian saat muncul hasil pencariannya tinggal ubah bagian data yang ingin diedit, klik tombol New jika sudah, maka otomatis data akan diperbarui.</p>
+    <h5><strong>Penutup</strong></h5>
+    <p>Untuk membuat sebuah form di excel sebenarnya tidak sesulit yang dibayangkan, dengan menggunakan cara di atas pengguna sudah bisa membuat form excel tanpa harus menguasai koding. Tak hanya membuat form baru saja pengguna juga bisa mencari data yang telah dimasukkan ke dalam form maupun mengedit sebuah data apabila ada kesalahan saat menginput data pada form excel.</p>
+</body>
+</html>

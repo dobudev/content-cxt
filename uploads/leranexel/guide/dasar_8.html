@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 14px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            padding: 10px; /* Ruang dalam box */
+            border-radius: 5px; /* Sudut bulat */
+            margin: 10px 0; /* Jarak luar box */
+    }
+
+    </style>
+</head>
+<body>
+    <p>Setiap tulisan yang kita masukkan ke dalam sel excel secara default akan otomatis terformat menjadi text. Baik itu angka maupun huruf semua dinilai sama oleh excel jika belum diatur formatnya, termasuk saat kita menginput tanggal. Meskipun tanggal yang kita masukkan berbentuk angka tapi sebenarnya excel mengenal tanggal tersebut sebagai format teks.</p>
+    <p>Maka dari itu alangkah baiknya jika kita bisa memformat tanggal yang benar agar mendapatkan hasil output yang lebih optimal. Contohnya seperti mengubah format text ke dalam tanggal, mengganti format tanggal sesuai keinginan, dan mengubah format tanggal ke text.</p>
+    <p>Cara memformat tanggal yang benar adalah melalui menu Format cells. Agar lebih jelasnya mari kita bahas langkah-langkahnya!</p>
+    <h3><strong>Cara Mengubah Format Tanggal di Excel</strong></h3>
+    <ol>
+        <li>Buka aplikasi excel yang sudah terinstall di laptop atau komputer,</li>
+        <li>Buka data yang diinginkan atau buat tabel berisi tanggal lahir yang ingin diatur format tanggalnya,</li>
+        <li>Copy semua kolom tanggal lahir yang ada di data tersebut,</li>
+        <li>Buka aplikasi notepad,</li>
+        <li>Paste-kan tanggal lahir tersebut ke dalam notepad untuk sementara,</li>
+        <li>Siapkan sel/kolom kosong yang ingin kita ubah format tanggal lahir tersebut ke dalam format tanggal,</li>
+        <li>Klik kanan pada kolom kosong tersebut,</li>
+        <li>Pilih Format Cells, setelah itu jendela format cells akan terbuka,</li>
+        <li>Masuklah ke dalam tab Date,</li>
+        <li>Pilih tipe tanggal yang diinginkan pada bagian Type,</li>
+        <li>Klik tombol OK, maka kolom kosong yang pada awalnya masih berformat text sudah terformat ke dalam format tanggal,</li>
+        <li>Copy semua tanggal yang ada di notepad,</li>
+        <li>Paste-kan ke dalam kolom kosong yang sudah diganti formatnya tersebut. Dengan begitu tanggal akan ditampilkan sesuai tipe tanggal yang dipilih dan sudah diubah ke dalam format tanggal yang sebenarnya,</li>
+        <li>Copy kolom tanggal tersebut untuk kita ubah menjadi tipe atau format tanggal yang lain,</li>
+        <li>Paste-kan ke dalam kolom/sel yang diinginkan,</li>
+        <li>Klik kanan dan pilih menu Format Cells…</li>
+        <li>Masuk ke dalam tab Custom,</li>
+        <li>Pilih atau ketikkan kode format tanggal pada bagian kolom Type sesuai keinginan, dalam hal ini adalah dd mmm yyyy,</li>
+        <li>Klik tombol OK, setelah itu tampilan format tanggal tersebut sudah berhasil diubah ke dalam bentuk yang lain,</li>
+        <li>Klik pada sel kosong yang digunakan sebagai tempat untuk mengubah kembali format tanggal ke dalam format teks,</li>
+        <li>Ketikkan rumus <strong>=TEXT(alamat_sel_data;"dd mmmm yyyy"),</strong></li>
+        <li>Tekan tombol enter pada keyboard,</li>
+        <li>Pilih Yes jika muncul kotak dialog konfirmasi dari ms excel, kemudain akan muncul tanggal dengan format yang sudah menjadi text,</li>
+        <li>Drag dan drop untuk mengaplikasikan rumus tersebut ke sel-sel yang ada dibawahnya.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/dasar_9.png" width="100%" height="" /></p>
+    <br>
+    <p><strong>E5</strong> di dalam rumus tersebut merujuk pada sel berformat tanggal yang ingin diubah menjadi format text. Sesuaikan saja dengan sel yang ada pada data kita masing-masing. Sedangkan di dalam tanda petik adalah kode format tanggal yang ingin ditampilkan, contoh lain yang bisa kita masukkan antara lain <span class="attribute">dd/mmm/yyyy, dd-mm-yy,</span> dan seterusnya.</p>
+    <p>Jika sudah diubah ke dalam format teks maka tanggal tersebut sudah tidak bisa dimanipulasi lagi layaknya format tanggal pada umumnya. Artinya kita tidak bisa menggunakannya untuk menjumlahkan tanggal, mengurangi tanggal, seperti halnya menghitung umur, dan lain sebagainya.</p>
+    <h4><strong>Penutup</strong></h4>
+    <p>Ms excel telah memberikan kemudahan bagi para penggunanya untuk mengatur format tanggal agar sesuai dengan yang diinginkan, baik itu mengubahnya ke dalam format text, maupun sebaliknya. Ada banyak manfaat dan kelebihan yang didapatkan jika kita mengatur format tanggal yang kita input. Seperti mengubah bentuk atau tipe tanggalnya, termasuk untuk keperluan menghitung umur.</p>
+</body>
+</html>
