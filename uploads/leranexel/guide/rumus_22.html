@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="colored-box">
+        <p>Fungsi CHOOSE adalah fungsi yang digunakan untuk menampilkan salah satu argumen di Microsoft Excel dari beberapa argumen yang telah dibuat menggunakan nilai index atau angka sesuai urutan argumennya. Fungsi ini hampir sama dengan dengan rumus VLOOKUP. Hanya saja di CHOOSE kita bisa mengambil argumen dan mengganti urutannya sesuai dengan pilihan kita.</p>
+    </div> <br>
+    <p>Dengan adanya fungsi CHOOSE ini kita bebas menentukan argumen sesuai yang kita buat. Contoh kegunaanya seperti membuat form atau dokumen serupa lainnya yang menyertakan input argumen.</p>
+
+    <h3><strong>Bentuk Fungsi CHOOSE di MS Excel</strong></h3>
+    <p>Format penulisan rumus fungsi CHOOSE adalah:</p>
+
+    <div class="html-box">
+        =<span class="attribute">CHOOSE</span>(AngkaUrutan;Argumen1;Argumen2;…)
+    </div> <br>
+    <ol>
+        <li>CHOOSE: Merupakan nama fungsi atau rumus untuk memilih argumen yang dibuat.</li>
+        <li>AngkaUrutan: Berupa angka sesuai urutan argumen yang hendak ditampilkan.</li>
+        <li>Argumen1: Berisi argumen pertama yang berbentuk karakter teks/angka.</li>
+        <li>Argumen2: Berisi argumen kedua yang berbentuk karakter teks/angka.</li>
+    </ol>
+
+    <p>Argumen yang kita isikan bisa berbentuk karakter teks maupun angka. Jika karakter berupa teks maka gunakan tandap petik dua (“). Angka urutan harus sesuai dengan banyaknya argumen yang kita masukkan. Jika pengambillan argumen berbeda dengan angka yang dimasukkan maka akan terjadi error.</p>
+    <p>Seumpama kita memasukan 2 argumen berbentuk teks, maka angka urutannya berupa angka 1 atau angka 2. Sesuaikan dengan argumen mana yang ingin kita ambil dan kita tampilkan. Kita juga bisa mereferensikan sel yang terdapat angka pada bagian AngkaUrutan maupun sel yang berisi argumen jika memang sudah ada di tabel data kita.</p>
+
+    <h4><strong>Cara Menggunakan Fungsi CHOOSE pada Excel</strong></h4>
+    <p>Letakkan kursor pada sel di mana kita ingin menampilkan hasil dari fungsi CHOOSE ini. Kemudian ketikkan <span class="tag">=CHOOSE(AngkaUrutan;Argumen1;Argumen2;…)</span>. Pada bagian AngkaUrutan isikan angka sesuai dengan urutan argumen yang ingin kita tampilkan. Lalu ketikkan teks/angka kita pada Argumen1 untuk urutan pertama. Lalu Argumen2 untuk urutan kedua.</p>
+    <p>Begitu juga jika ada argumen-argumen yang lainnya. Ingat selalu gunakan tanda petik dua untuk argumen teks. Tekan Enter untuk menampilkan hasilnya. Jika ingin mengganti untuk menampilkan argumen yang lain tinggal ganti angka pada AngkaUrutan sesuai dengan urutan argumen yang ingin kita tampilkan.</p>
+    <p>Agar lebih lengkapnya mari kita simak contoh menggunakan rumus CHOOSE berikut.</p>
+
+
+    <h3><strong>Contoh Penggunaan Rumus Fungsi CHOOSE di Excel</strong></h3>
+    <h6><strong>Menggunakan Fungsi CHOOSE dengan Memasukkan Teks Secara Manual</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_22%20A.png" width="100%" height="" /></p>
+    <br>
+
+    <p>Misal kita ingin menampilkan argumen-argumen teks yang kita buat secara manual dengan memanfaatkan fungsi CHOOSE. Maka bentuk penulisannya seperti pada contoh berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">CHOOSE</span>(2;"Pertama";"Kedua";"Ketiga")
+    </div> <br>
+    <p>Pada fungsi tersebut kita memasukkan angka 2. Karena kita ingin mengambil teks “Kedua” yang memang posisi argumennya berada pada urutan kedua untuk kita tampilkan ke dalam sel. Tekan Enter untuk menampilkan hasilnya. Jika kita ingin menampilkan argumen yang lain maka kita tinggal mengganti angka urutan tersebut dengan angka sesuai urutan argumen yang ingin ditampilkan.</p>
+
+    <h4><strong>Menggunakan Rumus CHOOSE Dengan Mereferensikan Sel Pada Tabel Data</strong></h4>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_22%20B.png" width="100%" height="" /></p>
+    <br>
+
+    <p>Bagaimana jika kita sudah mempunyai data yang berisi angka dan argumen yang ingin kita gunakan sebagai acuan. Maka kita bisa gunakan rumus CHOOSE dengan mereferensikan sel pada data tersebut.</p>
+    <p>Berikut contoh penulisan rumus CHOOSE dengan menggunakan referensi sel:</p>
+    <div class="html-box">
+        =<span class="attribute">CHOOSE</span>(B2;$C$9;$C$10;$C$11;$C$12;$C$13)
+    </div> <br>
+
+    <p>Pada fungsi di atas kelihatan panjang, padahal strukturnya sama saja. Hanya saja argumen/sel yang kita referensikan kita ubah menjadi sel absolut agar tidak berubah ketika kita meng-copy fungsinya. Sehingga B2 adalah sel yang berisikan angka. Dalam data tersebut yaitu isi dari kolom “Peringkat” yang ingin kita jadikan acuan angka untuk urutan argumen nantinya.</p>
+    <p>Sedangkan sel-sel <span class="tag">$C$9;$C$10;$C$11;$C$12;$C$13</span> adalah bentuk absolut dari sel C9 hingga sel C13. Di mana terdapat teks yang berada di kolom “Kategori”. Untuk merubah sel biasa menjadi sel absolut kita bisa menekan tombol F4 setiap kita memasukkan satu-persatu selnya. Atau tekan tombol Ctrl lalu klik dan tarik ke bawah sesuai dengan isi kolomnya.</p>
+    
+    <div class="colored-box">
+    <p>Itulah materi mengenai fungsi CHOOSE untuk menampilkan argumen yang telah kita buat berdasarkan urutannya. Tentu kita bisa mengkombinasikan rumus CHOOSE dengan fungsi yang lain yang telah dipelajari pada materi Excel. Seperti rumus IF di Excel, COUNTIF, untuk membantu memudahkan kita dalam mengerjakan hal-hal yang lebih kompleks lagi.</p>
+    </div>
+
+    
+</body>
+</html>

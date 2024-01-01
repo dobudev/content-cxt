@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <div class="colored-box">
+        <p>Fungsi UPPER pada Excel adalah fungsi yang dipakai untuk mengubah huruf kecil menjadi huruf besar (kapital). Sedangkan fungsi LOWER adalah fungsi yang dipakai untuk mengubah huruf besar/kapital menjadi huruf kecil.</p>
+    </div><br>
+    <p>Kedua fungsi tersebut bisa kita manfaatkan ketika kita berurusan dengan data mentah, di mana huruf-huruf pada sel tidak sama. Lalu kita ingin merapikannya dengan fungsi UPPER atau fungsi LOWER.</p>
+    <h3><strong>Bentuk Fungsi UPPER dan LOWER di Microsoft Excel</strong></h3>
+    <p>Format penulisan fungsi UPPER adalah sebagai berikut:</p>
+
+    <div class="html-box">
+        =<span class="attribute">UPPER</span>(Teks)
+    </div><br>
+    <ol>
+        <li>UPPER: Merupakan nama fungsi untuk mengubah huruf kecil menjadi huruf besar/kapital.</li>
+        <li>Teks: Berisi teks yang ingin kita rubah hurufnya menjadi huruf besar semua.</li>
+    </ol>
+    <p>Sedangkan format penulisan fungsi LOWER juga hampir sama, tinggal kita rubah nama fungsinya menjadi:</p>
+    <div class="html-box">
+        =<span class="attribute">LOWER</span>(Teks)
+    </div><br>
+    <ol>
+        <li>LOWER: Merupakan nama fungsi untuk mengubah huruf kecil menjadi huruf besar/kapital.</li>
+        <li>Teks: Berisi teks yang ingin kita rubah hurufnya menjadi huruf besar semua.</li>
+    </ol>
+
+    <p>Kedua fungsi tersebut memang dikhususkan untuk karakter berformat teks. Jadi tidak bisa digunakan untuk angka, kecuali referensi sel di mana terdapat teks yang ingin kita rubah huruf besar kecilnya.</p>
+    <p>Jumlah maksimal yang bisa kita masukkan ke dalam setiap fungsi hanyalah 1 teks/sel. Jadi baiknya setiap teks atau setiap sel kita aplikasikan satu formula, kita bisa copy fungsinya dengan cara drag sel. Sayangnya kita tidak bisa merubah huruf besar-kecil di sel/tempat terdapat sumber teksnya secara langsung (tidak bisa di-replace). Sehingga kita harus tempatkan hasilnya ke dalam sel lain.</p>
+
+    <h4><strong>Cara Menggunakan Rumus Fungsi UPPER & LOWER di MS Excel</strong></h4>
+    <p>Klik pada sel di mana kita ingin mengubah besar kecil huruf pada sel yang berisikan teks di excel dengan fungsi UPPER atau LOWER. Ketikkan fungsi <span class="tag">=UPPER(Teks)</span> jika kita ingin mengubah huruf kecil menjadi huruf besar semua. Atau ketik fungsi <span class="tag">=LOWER(Teks)</span> jika ingin sebaliknya, mengubah huruf besar menjadi huruf kecil semua.</p>
+    <p>Kemudian masukkan teksnya pada bagian (Teks) atau bisa dengan mereferensikan sel yang berisi teks untuk kita ubah besar kecil hurufnya. Lalu tekan Enter pada keyboard untuk melihat hasilnya. Kita juga bisa menyalin fungsi tersebut untuk diaplikasikan pada sel yang lain apabila ingin merubah besar kecil huruf pada sel yang lainnya.</p>
+
+    <h4><strong>Contoh Penggunaan Fungsi UPPER dan LOWER di MS Excel</strong></h4>
+    <h6><strong>Mengubah Teks Menjadi Huruf Besar (Kapital) Dengan Fungsi UPPER</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_25%20A.png" width="100%" height="" /></p>
+    <br>
+    <p>Semisal kita ingin mengubah teks pada sel kita menjadi berhuruf besar semua (huruf kapital). Maka kita bisa gunakan fungsi UPPER dengan penulisan fungsinya seperti contoh berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">UPPER</span>(A2)
+    </div><br>
+    <p>Pada penulisan fungsi tersebut kita mereferensikan sel A2 di mana terdapat teks yang ingin kita ubah menjadi huruf besar semua. Tekan tombol Enter untuk melihat hasilnya. Setelah itu kita bisa mengklik sel lalu drag ke bawah untuk kita copy fungsinya ke sel yang lain agar sel-sel tersebut menjadi huruf besar semua.</p>
+
+
+    <h6><strong>Mengubah Teks Menjadi Huruf Kecil Semua Dengan Fungsi LOWER</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_25%20B.png" width="100%" height="" /></p>
+    <br>
+    <p>Sebaliknya, jika kita ingin mengubah teks menjadi huruf kecil semua, maka tinggal kita gunakan fungsi LOWER. Berikut penulisan fungsinya:</p>
+    <div class="html-box">
+        =<span class="attribute">LOWER</span>(B2)
+    </div><br>
+
+
+    <p>Disitu kita mereferensikan sel B2 di mana terdapat teks yang awalnya berhuruf besar semua untuk kita ubah menjadi kecil. Maka hasilnya teks akan berubah menjadi kecil. Lalu kita bisa salin fungsinya untuk diaplikasikan ke sel-sel lain untuk diubah hurufnya menjadi kecil semua.</p>
+    <div class="colored-box">
+    <p>Demikian materi mengenai fungsi UPPER dan LOWER untuk mengubah teks/huruf menjadi besar semua. Atau kebalikannya, mengubah huruf menjadi huruf kecil. Ada lagi fungsi PROPER yang juga berperan dalam merubah besar kecilnya huruf pada teks. Untuk penjelasan lebih lengkapnya akan kita bahas di topik belajar MS Excel lainnya.</p>
+    </div>
+
+    
+</body>
+</html>

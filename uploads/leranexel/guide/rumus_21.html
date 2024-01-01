@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="colored-box">
+        <p>Fungsi NOT adalah fungsi yang digunakan untuk membalikkan nilai logika di Microsoft Excel. Dalam hal ini yang awalnya bernilai TRUE akan menjadi FALSE, begitu juga sebaliknya. Fungsi ini bisa kita gunakan khususnya apabila kita sudah menggunakan fungsi logika lain untuk menghasilkan nilai TRUE/FALSE seperti NOT atau fungsi OR. Lalu ingin membalikkan hasil dari fungsi tersebut.</p>
+    </div><br>
+    <p>Biasanya fungsi ini dimanfaatkan oleh para admin atau analis untuk mengevaluasi atau merevisi hasil dari suatu nilai logika. Kemudian membalikkan hasilnya agar sesuai dengan yang dikehendaki.</p>
+    <h3><strong>Bentuk Fungsi NOT di Microsoft Excel</strong></h3>
+    <p>Format penulisan rumus NOT adalah sebagai berikut:</p>
+
+    <div class="html-box">
+        =<span class="attribute">NOT</span>(Logika)
+    </div> <br>
+
+    <ol>
+        <li>NOT: Merupakan nama rumus untuk membalikkan nilai dari suatu logika.</li>
+        <li>Logika: Merupakan bentuk logika yang ingin dibalik niilainya.</li>
+    </ol>
+
+    <p>Logika yang dimaksud adalah nilai TRUE atau FALSE. Jadi jika kita mengaplikasikan fungsi dengan memasukkan logika nilai TRUE maka hasilnya yang muncul adalah logika nilai FALSE dan sebaliknya. Banyaknya jumlah logika yang dapat dimasukkan ke dalam fungsi NOT hanyalah satu logika saja. Jika kita memasukkan logika lebih dari satu ke dalam fungsi tersebut maka hasilnya akan error.</p>
+    <p>Agar penulisan fungsinya lebih cepat kita bisa mereferensikan sel di mana terdapat nilai TRUE/FALSE. Mungkin dari hasil fungsi logika yang telah kita aplikasikan sebelumnya. Ada kondisi di mana jika kita memasukkan angka-angka tertentu ke dalam bagian logika fungsi maka angka tersebut akan dikenal sebagai nilai TRUE/FALSE.</p>
+    <p>Angka 0 atau yang kurang dari itu nilainya FALSE. Sehingga hasilnya nanti dibalik menjadi nilai TRUE. Lalu angka yang lebih dari 0 seperti 1 dikenal sebagai TRUE, sehingga hasilnya dibalik menjadi FALSE.</p>
+
+    <h3><strong>Cara Menggunakan Fungsi NOT di MS Excel</strong></h3>
+    <p>Letakkan kursor pada sel di mana kita ingin memunculkan hasil pembalikan logika menggunakan fungsi NOT. Kemudian katikkan fungsi NOT dengan format =NOT(Logika). Masukkan logika yang kita inginkan pada bagian (Logika). Caranya kita bisa mereferensikan sel yang di dalamnya terdapat nilai logika seperti TRUE/FALSE.</p>
+    <p>Tekan Enter pada keyboard untuk mengaplikasikannya. Sehingga jika kita memasukkan logika TRUE maka akan menjadi FALSE dan jika bernilai FALSE akan dibalik menjadi TRUE. Tarik sel kebawah untuk menyalin fungsi yang sudah kita aplikasikan ke dalam sel lain yang ada di bawahnya bila perlu.</p>
+    <p>Agar lebih jelas perhatikan beberapa contoh menggunakan fungsi NOT berikut.</p>
+
+    <h3><strong>Contoh Penggunaan Rumus NOT di MS Excel</strong></h3>
+    <p><strong>Membalikkan Nilai Logika (True/False) dengan Fungsi Not</strong></p>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_21%20A.png" width="100%" height="" /></p>
+    <br>
+
+    <p>Semisal kita sudah memiliki hasil nilai logika pada data kita berupa TRUE/FALSE dan ingin membalikkan hasil tersebut. Maka kita tinggal menggunakan fungsi NOT seperti contoh penulisannya berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">NOT</span>(D2)
+    </div> <br>
+
+    <p>Di dalam penulisan fungsi NOT tersebut kita mereferensikan sel D2 di mana sudah terdapat nilai logika di dalamnya. Atau dari hasil pengaplikasian fungsi yang lain. Tekan Enter sehingga otomatis nilai logika akan dibalik. Lalu kita bisa tarik ke bawah untuk menyalin sel agar kita aplikasikan ke baris yang ada di bawahnya.</p>
+
+    <h6><strong>Mengkombinasikan Fungsi NOT Dengan Fungsi IF</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_21%20B.png" width="100%" height="" /></p>
+    <br>
+    <p>Contoh kali ini masih ada kaitannya dengan contoh sebelumnya. Misal kita ingin lebih informatif lagi untuk menentukan pengganti kata nilai logika TRUE/FALSE tersebut menjadi Lulus/Gagal. Maka kita bisa mengkombinasikan rumus NOT ini dengan rumus IF di Excel sehingga penulisan fungsinya seperti contoh berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">IF(NOT(D2)</span>;"Lulus";"Gagal")
+    </div> <br>
+
+    <p>Pada penulisan fungsi tersebut kita memasukkan fungsi NOT ke dalam fungsi IF. Di mana sel D2 adalah berisi nilai logika yang masih mentah atau berupa TRUE, yang sebenarnya adalah “Lulus”. Sehingga nanti kita membalikkan nilai logika yang berupa TRUE atau Lulus menjadi Gagal. Dan nilai logika FALSE yang berarti “Gagal” dibalik menjadi Lulus. Ingat, ini cuman perumpaamaan fungsi saja.</p>
+    <p>Tekan enter untuk melihat hasilnya. Tinggal kita salin fungsi yang sudah muncul hasilnya tersebut untuk diaplikasikan ke baris sel yang ada di bawahnya.</p>
+    
+    <div class="colored-box">
+    <p>Itulah penjelasan mengenai fungsi NOT di mana penulisan fungsinya sangat sederhana. Tetapi bisa menyelesaikan pekerjaan-pekerjaan kita dari yang dasar hingga yang kompleks. Apalagi jika kita sudah bisa mengkombinasikan fungsi tersebut dengan fungsi-fungsi yang lain yang telah kita pelajari dari materi belajar MS Excel lainnya. Seperti salah satunya yang sudah kita contohkan, yaitu fungsi IF.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+   
+</body>
+</html>

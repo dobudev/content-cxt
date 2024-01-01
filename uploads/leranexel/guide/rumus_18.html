@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <div class="colored-box">
+        <p>TRIM adalah fungsi pada Microsoft Excel yang digunakan untuk menghilangkan spasi berlebih di Excel. Terkadang kita mendapati data dengan teks-teks pada sel yang bentuknya tidak beraturan. Biasanya terdapat spasi ganda atau berlebihan.</p>
+    </div> <br>
+    <p>Rumus fungsi TRIM umum digunakan untuk merapikan teks tersebut. Sehingga data terlihat rapi dan mudah untuk diolah atau dianalisa. Contoh profesi yang biasa menggunakan rumus ini seperti admin, programmer, dan analis.</p>
+
+    <h3><strong>Bentuk Fungsi TRIM di MS Excel</strong></h3>
+    <p>Format penulisan rumus fungsi TRIM di Microsoft Excel adalah sebagai berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">TRIM</span>(Teks)
+    </div><br>
+    <ol>
+        <li>TRIM: Merupakan nama rumus untuk menghapus spasi berlebih pada teks.</li>
+        <li>Teks: Merupakan teks yang ingin dihapus spasi berlebihnya.</li>
+    </ol>
+    <p>Supaya lebih efisien kita bisa mereferensikan sel ke dalam rumus di mana terdapat teks yang berisi spasi berlebih. Secara default, rumus TRIM akan menyisakan satu spasi saja jika ada spasi berlebihan di antara dua teks dalam satu sel. Dan keseluruhan spasi yang berada di awal dan di akhir data akan terhapus.</p>
+    <p>Perlu diketahui bahwa hasil dari rumus tersebut bukan berformat teks tetapi berbentuk formula. Jadi kita tidak bisa sembarangan mengeditnya, karena jika dilakukan maka akan terjadi kesalahan/error.</p>
+
+    <h4><strong>Cara Menghilangkan Spasi di Excel dengan Fungsi TRIM</strong></h4>
+    <p>Klik kursor pada sel di mana ingin menempatkan hasil dari rumus fungsi TRIM untuk menghilangkan spasi berlebih. Ketikkan rumus TRIM dengan format <span class="tag">=TRIM(Teks)</span>. Masukkan teks yang ingin kita hapus spasi berlebihnya pada bagian (Teks). Atau kita bisa mereferensikan selnya secara langsung.</p>
+    <p>Tekan tombol Enter pada keyboard untuk melihat hasil dari penghapusan spasi lebih pada sel yang sudah kita referensikan tadi. Agar lebih jelas perhatikan beberapa contoh menggunakan rumus TRIM berikut.</p>
+
+    <h4><strong>Contoh Penggunaan Fungsi TRIM dI MS Excel</strong></h4>
+    <h6><strong>Menghapus Spasi Berlebih yang Berada di Antara Dua Teks</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_18%20A.png" width="100%" height="" /></p>
+    <br>
+
+    <p>Semisal kita mendapat suatu data dari rekan kita dan ingin merapikan teks yang memiliki spasi berlebihan di antara dua teks. Gunakan rumus TRIM dengan penulisan rumusnya sebagai berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">TRIM</span>(B4)
+    </div><br>
+    <p>Pada rumus tersebut kita mereferensikan sel B4 yaitu tempat di mana terdapat spasi lebih. Dengan begitu kelebihan spasi akan otomatis dirubah menjadi satu spasi dengan menggunakan fungsi TRIM.</p>
+    <p>Setelah itu kita bisa mengaplikasikan rumus tersebut pada sel lain atau baris di bawahnya dengan cara tarik ke bawah sel yang sudah kita munculkan hasilnya terlebih dahulu. </p>
+    
+    <h6><strong>Menghapus Spasi Berlebih yang Berada di Awal dan di Akhir Teks</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_18%20B.png" width="100%" height="" /></p>
+    <br>
+    <p>Selain itu kita juga bisa menggunakan rumus TRIM untuk menghapus spasi berlebih pada awal, maupun di akhir data kita. Penulisan rumusnya yaitu:</p>
+    <div class="html-box">
+        =<span class="attribute">TRIM</span>(B4)
+    </div><br>
+
+    <p>Jika kita lihat susunan rumusnya memang sama. Bedanya pada contoh ini kita aplikasikan underlined atau garis bawah pada teks agar bisa melihat posisi spasinya terletak di awal atau di akhir teks. Di situ juga kita sertakan kolom tambahan untuk mengetahui Jumlah Karakter teks yang ada di dalam sel dengan memanfaatkan fungsi <strong>LEN</strong>.</p>
+    <p>Karena spasi juga termasuk karakter, maka jumlah karakternya juga ikut bertambah. Sebelum mengaplikasikan rumusnya kita bisa cek jumlah karakter dengan fungsi LEN.</p>
+    <p>Inilah gunanya memakai fungsi TRIM untuk menghilangkan spasi berlebih pada data kita. Tentunya tanpa perlu repot menghapus spasi secara manual karena sangat tidak efektif untuk dilakukan. </p>
+    <p>Kita juga bisa mengkombinasikan rumus TRIM ini dengan rumus-rumus lain seperti LEFT, RIGHT untuk menghapus spasi di posisi tertentu. Atau dengan rumus yang lain yang telah kita pelajari pada materi belajar Microsoft Excel lain sesuai dengan kebutuhan kita.</p>
+
+
+
+
+
+
+
+   
+</body>
+</html>

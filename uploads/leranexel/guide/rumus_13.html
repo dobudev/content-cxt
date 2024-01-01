@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <div class="colored-box">
+        <p>RAND adalah rumus untuk membuat angka random atau acak pada Microsoft Excel. Angka yang muncul nantinya meliputi angka lebih dari 0 hingga kurang dari angka 1. Sedangkan RANDBETWEEN adalah rumus yang digunakan untuk membuat bilangan acak dalam rentang tertentu. Sesuai dengan angka yang kita masukkan ke dalam fungsi tersebut.</p>
+    </div>
+    <p>Keduanya bisa disebut dengan Random Generator atau pembuat angka acak di MS Excel. Biasanya dipakai untuk keperluan suatu audit, sampling, atau sekedar untuk mengumumkan pemenang undian.</p>
+
+    <h3><strong>Bentuk Rumus RAND Dan RANDBETWEEN Di Excel</strong></h3>
+    <p>Pada dasarnya format penulisan rumus RAND adalah sebagai berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">RAND</span>()
+    </div><br>
+    <p><span class="tag">RAND: Merupakan nama rumus untuk mengacak angka diantara angka 0 hingga 1.</span></p>
+
+    <p>Rumus RAND tersebut terlihat sangat simple karena memang tidak memiliki argumen. Jadi kita tidak bisa mereferensikan sel ataupun Range. Kita hanya bisa mengatur batasan angka tertentu dengan menambahkan tanda bintang lalu disusul angka dibelakangnya, seperti pada rumus berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">RAND</span>()*10
+    </div><br>
+    <p>Dari rumus di atas mempunyai arti bahwa kita akan mengacak angka antara 0 hingga angka 10. Sehingga angka yang muncul nantinya adalah angka 0 hingga 10.</p>
+    <p>Sedangkan format penulisan rumus RANDBETWEEN adalah sebagai berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">RANDBETWEEN</span>(AngkaTerkecil;AngkaTerbesar)
+    </div><br>
+    <ol>
+        <li>RANDBETWEEN: Merupakan nama rumus untuk mengacak angka sesuai dengan rentang angka yang kita masukkan,</li>
+        <li>AngkaTerkecil: Merupakan angka terkecil yang ingin kita acak,</li>
+        <li>AngkaTerbesar: Merupakan angka terbesar yang ingin kita acak,</li>
+    </ol>
+    <p>Kedua rumus tersebut akan menghasilkan angka acak sesaat ketika kita mengaplikasikannya. Perlu diketahui juga bahwa hasil angkanya akan selalu berubah setiap kita mengaplikasikan rumusnya lagi. Angka yang dihasilkan dari kedua rumus tersebut kemungkinan bisa terjadi duplikasi, atau terdapat angka yang ganda/sama.</p>
+
+
+    <h4><strong>Cara Membuat Angka Random/Acak dengan Rumus RAND dan RANDBETWEEN di MS Excel</strong></h4>
+    <p>Letakkan kursor di sel lembar kerja tempat kita ingin menghasilkan angka acak. Lalu ketikkan rumus dengan format <span class="tag">=RAND()</span> untuk mencari angka acak diantara angka 0 hingga 1. Atau ketik rumus <span class="tag">=RANDBETWEEN(AngkaTerkecil;AngkaTerbesar)</span> untuk mencari angka acak dengan rentang angka yang bisa kita sesuaikan.</p>
+    <p>Masukkan angka yang dikehendaki untuk rumus <strong>RANDBETWEEN</strong>, kemudian tekan <strong>ENTER</strong> pada keyboard untuk melihat hasilnya. Supaya lebih jelas dalam menggunakan rumus <strong>RAND</strong> dan <strong>RANDBETWEEN</strong>, simak contohnya berikut.</p>
+
+    <h5><strong>Contoh Penggunaan Rumus RAND dan RANDBETWEEN</strong></h5>
+    <h6><strong>Membuat Angka Acak dengan Menggunakan Rumus RAND</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_13%20A.png" width="100%" height="" /></p>
+    <br>
+    <p>Kita tahu bahwa rumus RAND sifatnya terbatas dan secara default akan mengacak dengan batasan di angka 0 hingga angka 1 saja. Maka dari itu pada contoh kali ini, kita akan mencoba mengacak angka dimulai dari angka 0 hingga angka 5. Sehingga rumusnya adalah sebagai berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">RAND</span>()*5
+    </div><br>
+    <p>Masukkan rumus tersebut pada sel yang ingin ditampilkan hasil angka acaknya. Tekan ENTER untuk melihat hasilnya. Kita bisa meng-copy rumus tersebut dengan cara click and drag atau seret ke bawah jika ingin mengaplikasikannya pada sel yang lain. </p>
+
+    <h6><strong>Membuat Bilangan Acak dengan Rumus RANDBETWEEN</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_13%20B.png" width="100%" height="" /></p>
+    <br>
+    <p>Sedikit berbeda dengan rumus RAND, rumus RANDBETWEEN lebih leluasa dalam menentukan batasan terkecil dan terbesar angkanya. Kita akan mencoba menentukan rentang angka yang akan kita acak, semisal antara angka 10 hingga 50. Sehingga penulisan rumusnya seperti pada contoh berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">RANDBETWEEN</span>(10;50)
+    </div><br>
+
+    <p>Masukkan angka terkecil dan angka terbesar ke dalam rumus. Gunakan tanda titik koma atau pemisah di antara angka tersebut. Lalu tekan ENTER untuk meilhat hasil acak sesuai angka yang kita masukkan. Kita harus tahu jika ingin meng-copy rumus untuk diaplikasikan pada sel lainnya. Maka angka yang muncul otomatis ikut berubah karena meng-copy sama dengan mengaplikasikan rumusnya kembali.</p>
+    <p>Jika kita ingin mengacak angka dengan ketentuan yang lebih spesifik lagi maka kita harus mengkombinasikan dengan rumus lainnya. Seperti rumus VLOOKUP, INT dan rumus lainnya, tentu bisa kita elaborasikan lagi dengan rumus yang telah kita bahas dalam materi belajar Excel yang lainnya.</p>
+
+
+
+
+
+
+
+
+        
+       
+
+</body>
+</html>

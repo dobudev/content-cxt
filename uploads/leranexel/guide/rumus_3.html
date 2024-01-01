@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #149ac7; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                border-radius: 5px;
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <p>VLOOKUP adalah rumus yang digunakan untuk mencari suatu data dari data tabel sesuai dengan kolomnya atau secara vertikal di MS Excel. Fungsi ini sangat berguna apabila kita memiliki tabel referensi yang berisikan data. Sedangkan kita ingin mengambil beberapa data tersebut untuk ditaruh di tabel lainnya.</p>
+    <p>Contoh penggunaan rumus VLOOKUP kita bisa mengetahui harga barang berdasarkan nama barang yang ada di dalam tabel. Bisa digunakan juga untuk mencari nama mahasiswa berdasarkan nomor mahasiswa. Pada tutorial belajar MS Excel ini kita akan membahas lengkap mulai dari bentuk, cara menggunakan hingga contohnya.</p>
+    <h4><strong>Bentuk Rumus VLOOKUP</strong></h4>
+    <p><strong>Bentuk atau format penulisan rumus VLOOKUP adalah:</strong></p>
+    <div class="html-box">
+        =<span class="attribute">VLOOKUP</span>(DataYangDicari;RangeTabel;KolomKe;KondisiPencarian)
+    </div><br>
+    <p><strong>Penjelasan</strong></p>
+    <ol>
+        <li><strong>VLOOKUP</strong>: Merupakan nama fungsi atau rumus untuk mencari data secara vertikal,</li>
+        <li><strong>DataYangDicari;</strong>: Merupakan data acuan/sel dari kolom pertama yang ingin dicari,</li>
+        <li><strong>RangeTabel;</strong>: Merupakan referensi Range dari tabel dengan data acuan di kolom awal tabel,</li>
+        <li><strong>KolomKe;</strong>: Berbentuk angka berdasarkan kolom keberapa dari tabel yang dicari,</li>
+        <li><strong>KondisiPencarian</strong>: Bisa berbentuk TRUE atau angka “1” untuk mencari data yang mendekati, bisa juga berbentuk FALSE atau angka “0” untuk pencarian yang sama persis.</li>
+    </ol>
+    <p>Jika hasilnya muncul <strong>#N/A</strong> maka dipastikan terdapat kesalahan atau ketidakcocokan baik itu pada data atau referensi range. Bisa juga kondisi pencarian yang kita masukkan tidak ditemukan.</p>
+
+    <h4><strong>Cara Menggunakan Rumus VLOOKUP di Microsoft Excel</strong></h4>
+    <p>Sebelumnya pastikan terdapat tabel yang digunakan sebagai data untuk mereferensikan range nantinya. Lalu ikuti langkah-langkah berikut:</p>
+    <ol>
+        <li>Klik pada sel yang ingin kita tampilkan hasil pencariannya sesuai dengan header tabel kita.</li>
+        <li>Masukkan rumusnya dengan mengetik rumus berikut: <strong>=VLOOKUP(DataYangDicari;RangeTabel;KolomKe;KondisiPencarian)</strong></li>
+        <li>Selanjutnya masukkan sel pada <strong>DataYangDicari</strong> di kolom pertama tabel data.</li>
+        <li>Lalu pada <strong>RangeTabel</strong>; blok range tabel tanpa perlu memblok judul tabelnya dan tekan <strong>F4</strong> pada keyboard untuk menjadikan sel range tersebut menjadi absolut.</li>
+        <li>Isikan angka sesuai dengan kolom tabel pada KolomKe; dihitung dari sisi kiri ke kanan tabel.</li>
+        <li>Terakhir ketikkan <strong>TRUE</strong> atau angka “1” untuk mencari data yang mendekati, ketik <strong>FALSE</strong> atau angka “0” jika ingin metode pencarian yang sama persis.</li>
+    </ol>
+
+    <h4><strong>Rumus VLOOKUP Beda Sheet</strong></h4>
+    <p>Rumus fungsi VLOOKUP juga bisa digunakan pada sheet yang berbeda. Caranya adalah cukup tambahkan nama sheet di depan RangeTabel dengan diikuti tanda seru <strong>!</strong>. Jika di tulis maka rumusnya akan menjadi <span class="tag">=VLOOKUP(DataYangDicari;<strong>NamaSheet!</strong>RangeTabel;KolomKe;KondisiPencarian)</span></p>
+    <p>Agar lebih mudah dipahami mari kita simak contoh menggunakan fungsi VLOOKUP.</p>
+    <h4><strong>Contoh Penggunaan Rumus Fungsi VLOOKUP di MS Excel</strong></h4>
+    <h6>Mencari Harga Berdasarkan Nama Produk</h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_3%20A.png" width="100%" height="" /></p>
+    <br>
+    <p>Semisal kita ingin mencari harga berdasarkan nama produk. Tinggal kita referensikan range dari tabel sesuai contoh yang berisi data lengkap produknya. Kemudian kita tulis rumusnya:</p>
+    <div class="html-box">
+        =<span class="attribute">VLOOKUP</span>(A12;$A$2:$C$6;2;0)
+    </div><br>
+    <p>Dari situ sel <strong>A12</strong> adalah sel acuan yang terdapat di kolom pertama tabel. Lalu <strong>$A$2:$C$6</strong> adalah range yang diambil dari tabel data. Kemudian 2 adalah posisi kolom untuk Harga per item. Dan <strong>0</strong> adalah kondisi pencariannya <strong>FALSE</strong> karena kita mencocokkan nama produk yang sama persis.</p>
+    <p>Nah, jika kita mengganti nama <strong>Nasi Bebek</strong> menjadi <strong>Nasi Goreng</strong> maka <strong>Harga per item</strong> akan berubah. Tentunya perubahan akan mengikuti nama produknya sesuai dengan tabel data di atas.</p>
+    <p>Drag kebawah untuk mengetahui harga per item untuk nama produk yang lain. Lanjutkan mencari data yang diinginkan kolom yang lain dengan menulis rumusnya kembali. Semisal untuk mencari kuantitas produk atau dengan copy rumusnya. Lalu ganti kolomnya menjadi 3 untuk direferensikan ke kolom ketiga tabel. Begitu juga untuk kolom-kolom selanjutnya.</p>
+
+    <h5><strong>Mengkombinasikan VLOOKUP dengan Formula Lain di Excel</strong></h5>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_3%20B.png" width="100%" height="" /></p>
+    <br>
+    <p>Lalu bagaimana bila kita ingin mengkombinasikan fungsi VLOOKUP dengan formula lain? Apakah bisa? Jawabannya tentu bisa.</p>
+    <p>Seperti contoh yang kita ambil dari hasil percobaan rumus VLOOKUP sebelumnya. Kali ini kita ingin mencari harga total barang yang dipesan sesuai dengan banyaknya. Logikanya kita harus mengkalikan <strong>Harga per item</strong> dengan jumlah barangnya atau <strong>Qty</strong>. Dengan menggunakan cara ini kita bisa melakukan perkalian tanpa perlu mengkalikan secara manual.</p>
+    <p>Caranya kita tulis kembali rumusnya. Lalu tambahkan formula perkalian yaitu tanda bintang *. Kemudian referensikan sel mana yang ingin kita kalikan. Tekan <strong>Enter</strong> untuk melihat hasilnya.</p>
+
+    <h5><strong>Contoh Penggunaan VLOOKUP Beda Sheet</strong></h5>
+    <p>Misalkan tabel referensi berada di sheet dengan nama Sheet2. Maka rumus pada contoh sebelumnya akan menjadi:</p>
+    <div class="html-box">
+        =<span class="attribute">VLOOKUP</span>(A12;<strong>Sheet2!</strong>$A$2:$C$6;2;0)
+    </div><br>
+    <p>Nah, pastikan nama sheet sesuai dengan apa yang telah ditulis di formula. Lihat juga penggunaan fungsi lainnya misalnya <strong>Rumus IF di Excel</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

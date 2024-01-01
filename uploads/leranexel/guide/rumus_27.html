@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <div class="colored-box">
+        <p>Fungsi NOW adalah salah satu fungsi untuk menampilkan waktu/tanggal sekarang atau sesaat ketika fungsi ini diaplikasikan pada sel Ms Excel. Dengan adanya fungsi NOW kita tidak perlu lagi memasukkan tanggal secara manual. Kita hanya perlu gunakan fungsi tersebut untuk memunculkan waktu saat ini di lembar kerja excel.</p>
+    </div><br>
+    <p>Biasanya fungsi NOW seringkali digunakan oleh admin atau accounting untuk menampilkan tanggal di laporan keuangan harian. Tidak menutup kemungkinan juga digunakan oleh profesi-profesi lainnya.</p>
+    <h3><strong>Bentuk Fungsi NOW di MS Excel</strong></h3>
+    <p>Format penulisan fungsi NOW adalah sebagai berikut:</p>
+
+    <div class="html-box">
+        =<span class="attribute">NOW</span>()
+    </div><br>
+    <p>Jika kita menuliskan fungsi seperti di atas maka hasil default outputnya atau yang keluar yaitu berupa tanggal berformat dd/mm/yyyy. Lalu disusul dengan jam dan menit pada saat fungsi tersebut diaplikasikan. Namun jangan khawatir, kita bisa mengganti tampilan format tanggalnya menjadi sesuai keinginan kita. Bisa berupa tanggal berformat short date, long date, atau yang lainnya.</p>
+    <p>Fungsi NOW tidak akan otomatis diperbarui atau selalu berganti tanggal dengan sendirinya. Hanya saja pada saat kita mengaplikasikan fungsi tersebut, atau ketika kita memperbarui fungsi tersebut.</p>
+
+    <h3><strong>Cara Menggunakan Fungsi NOW di MS Excel</strong></h3>
+    <p>Taruh kursor pada sel tempat di mana kita ingin memunculkan tanggal dan waktu saat ini dengan fungsi NOW. Lalu ketikkan fungsinya <span class="tag">=NOW()</span>. Tekan tombol Enter pada keyboard. Maka saat itu juga akan muncul hasilnya berupa tanggal dan waktu saat ini (Sesaat ketika kita menekan tombol Enter).</p>
+    <p>Mari kita simak contoh berikut agar lebih jelas dalam memahami fungsi NOW tersebut.</p>
+
+    <h4><strong>Contoh Penggunaan Fungsi NOW di Microsoft Excel</strong></h4>
+    <h6><strong>Menampilkan Waktu Saat Ini dengan Fungsi NOW</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_27%20A.png" width="100%" height="" /></p><br>
+    
+
+    <p>Semisal kita ingin menampilkan waktu/tanggal saat ini untuk dimunculkan ke dalam data tabel kita. Maka kita tinggal gunakan fungsi NOW dengan menuliskan fungsinya seperti contoh berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">NOW</span>()
+    </div><br>
+    <p>Pada penulisan fungsi tersebut kita tinggal menulis fungsinya tanpa tambahan argumen apapun. Dan ketika kita menekan tombol enter untuk mengaplikasikannya, maka akan langsung muncul waktunya. Apabila kita mengklik dua kali pada sel yang sudah muncul waktunya tersebut dan kita tekan tombol enter kembali, maka waktu akan berubah atau muncul waktu yang baru lagi.</p>
+
+    <h6><strong>Menggabungkan Fungsi NOW dengan Rumus Lainnya</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_27%20B.png" width="100%" height="" /></p><br>
+    <p>Misalnya kita butuh untuk menampilkan waktu/tanggal dengan tambahan jumlah hari tertentu. Maka kita juga bisa memanfaatkan fungsi NOW ini. Tinggal ikuti saja contoh penulisan fungsinya berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">NOW</span>()+B3
+    </div><br>
+
+    <p>Dalam contoh penulisan fungsi tersebut kita menuliskan fungsi NOW dengan tambahan tanda plus (+) setelah tanda kurung. Lalu mereferensikan sel B3 di mana di dalam sel tersebut terdapat angka. Karena kita ingin menambahkan tanggal saat ini dengan angka yang ada di dalam sel yang kita referensikan. Angka tersebut akan terakumulasi ke dalam hari sehingga tanggal/hari akan bertambah.</p>
+    <p>Setelah itu kita juga bisa menyalin fungsi tersebut untuk diaplikasikan ke sel-sel lain yang ada di bawahnya. Otomatis fungsi NOW akan menyesuaikan dengan angka pada tiap-tiap selnya.</p>
+    <div class="colored-box">
+    <p>Demikian pembahasan mengenai fungsi NOW yang digunakan untuk memunculkan waktu saat ini (real time) ke dalam sel lembar kerja Ms Excel. Ada beberapa fungsi lain yang mirip dan kegunaanya hampir sama yaitu untuk menampilkan waktu lebih spesifik. Diantaranya seperti fungsi HOUR, MINUT, SECOND, dan masih banyak lagi. Kita akan membahasnya pada materi MS Excel lainnya.</p>
+    </div>
+
+
+</body>
+</html>

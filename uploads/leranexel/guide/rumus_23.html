@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <div class="colored-box">
+        <p>Fungsi LEFT adalah fungsi yang digunakan untuk mengekstrak/mengambil beberapa karakter yang terletak dari sebelah kiri sel pada Microsoft Excel. Sedangkan fungsi RIGHT adalah fungsi yang digunakan untuk mengekstrak/mengambil karakter dari sebelah kanan sel.</p>
+    </div><br>
+    <p>Biasanya fungsi ini digunakan oleh editor atau admin untuk menyeleksi beberapa informasi saja dari data sel yang berisi banyak informasi. Contoh penggunaanya ketika kita mempunyai data berupa alamat lengkap namun ingin mengambil nomor kode posnya saja. Atau untuk mengambil nama depan dari data yang berisikan nama lengkap.</p>
+
+    <h3><strong>Bentuk Fungsi LEFT dan RIGHT di MS Excel</strong></h3>
+    <p>Format penulisan fungsi LEFT adalah sebagai berikut:</p>
+
+    <div class="html-box">
+        =<span class="attribute">LEFT</span>(Teks;UrutanKarakter)
+    </div><br>
+    <ol>
+        <li>LEFT: Merupakan nama fungsi untuk mengambil beberapa karakter dimulai dari sebelah kiri sel.</li>
+        <li>Teks: Berisi teks atau informasi yang ingin kita ambil sebagaian karakternya.</li>
+        <li>UrutanKarakter: Berisi urutan angka yang ingin diambil sebagain informasinya, urutan dihitung mulai dari jumlah karakter/string paling kiri.</li>
+    </ol>
+
+    <p>Sedangkan format penulisan fungsi RIGHT juga hampir sama, tinggal kita rubah nama fungsinya menjadi:</p>
+    <div class="html-box">
+        =<span class="attribute">RIGHT</span>(Teks;UrutanKarakter)
+    </div><br>
+    <ol>
+        <li>RIGHT: Merupakan nama fungsi untuk mengambil beberapa karakter dimulai dari sebelah kanan sel.</li>
+        <li>Teks: Berisi teks atau informasi yang ingin diambil sebagaian karakternya.</li>
+        <li>UrutanKarakter: Berisi urutan angka yang ingin kita ambil sebagain informasinya, urutan dihitung mulai dari jumlah karakter/string paling kanan.</li>
+    </ol>
+
+    <p>Pada bagian Teks, kita bisa mereferensikan sel yang terdapat informasi yang ingin diambil sebagaian informasi tersebut secara langsung. Karakter yang dihitung tidak melulu berupa teks huruf/angka. Namun bisa berupa tanda baca seperti koma, titik, buka kurung, tutup kurung dan lain sebagainya.</p>
+    
+    <h4><strong>Cara Menggunakan Fungsi LEFT dan RIGHT di Microsoft Excel</strong></h4>
+     <p>Letakkan kursor pada sel di mana kita ingin menampilkan hasil pengambilan beberapa informasi menggunakan fungsi LEFT atau RIGHT. Ketikkan fungsi <span class="tag">=LEFT(Teks;UrutanKarakter)</span> jika kita ingin mengambil beberapa informasi yang berada di sisi kiri sel.</p>
+     <p>Atau ketikkan fungsi <span class="tag">=RIGHT(Teks;UrutanKarakter)</span> jika kita ingin mengambil sebagaian informasi yang berada pada sisi kanan sel. Kemudian masukkan teks dengan mereferensikan sel yang berisi informasi yang ingin kita ambil sebagain informasinya. Lalu pada UrutanKarakter isikan angka sesuai dengan urutan karakternya.</p>
+    <p>Lalu tekan Enter pada keyboard untuk menampilkan hasilnya. Kita juga bisa menyalin fungsi tersebut untuk diaplikasikan pada baris yang lain yang ada di bawahnya dengan cara men-drag sel ke bawah.</p>
+    <p>Agar lebih jelasnya dalam menggunakan rumus LEFT ataupun RIGHT, simak contohnya berikut.</p>
+
+    <h4><strong>Contoh Penggunaan LEFT dan RIGHT di MS Excel</strong></h4>
+    <h6><strong>Mengambil Sebagaian Karakter dengan Fungsi LEFT</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_23%20A.png" width="100%" height="" /></p>
+    <br>
+    <p>Semisal kita mempunyai data berupa nama-nama lengkap dan ingin mengambil nama depannya saja. Maka kita gunakan fungsi LEFT untuk mulai mengambil karakter dari sebelah kiri teks. Sebelumnya hitung dulu berapa jumlah karakter yang ingin kita ambil dari sebelah kiri, jika sudah maka tulis fungsinya berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">LEFT</span>(A2;6)
+    </div><br>
+    <p>Pada fungsi tersebut kita mereferensikan sel A2 yang berupa nama lengkap. Sedangkan angka 6 adalah jumlah karakter huruf pada teks yang ingin kita ambil dari sebelah kiri atau nama depannya. Kita bisa copy fungsi tersebut dengan drag sel ke bawah untuk diaplikasikan ke sel yang ada di bawahnya. Tapi pastikan banyaknya karakter yang diambil sama jumlahnya agar tidak terjadi error.</p>
+
+
+    <h6><strong>Mengambil Sebagaian Karakter Dengan Fungsi RIGHT</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_23%20B.png" width="100%" height="" /></p>
+    <br>
+    <p>Misalnya kita memiliki data alamat lengkap pelangga lalu kita ingin mengambil kodeposnya saja. Kita bisa gunakan fungsi RIGHT karena kodepos biasanya terletak di akhir teks atau sebelah kanan sel. Sehingga penulisan fungsinya seperti pada contoh berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">RIGHT</span>(A2;5)
+    </div><br>
+    <p>Di dalam fungsi tersebut kita mereferensikan sel A2 yang berisi alamat lengkap. Kemudian isikan angka 5 sesuai dengan banyaknya karakter atau digit kodepos yang kita ambil dari kanan tersebut. Salin fungsi yang hasilnya sudah muncul lebih dulu agar bisa kita aplikasikan ke sel-sel lain pada baris di bawahnya dengan cara tarik dan drag sel ke bawah.</p>
+
+    <div class="colored-box">
+        <p>Demikian materi mengenai fungsi LEFT dan RIGHT untuk mengambil sebagaian karakter pada sel. Terutama jika karakter tersebut terletak di sisi kanan atau di sisi kiri sel.</p>
+    </div>
+
+
+
+  
+
+</body>
+</html>

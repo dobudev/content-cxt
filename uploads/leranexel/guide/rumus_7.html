@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                border-radius: 5px;
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <p>Rumus Rank merupakan rumus untuk mencari peringkat atau ranking berdasarkan angka-angka yang ada dari sebuah data di Microsoft Excel. Dengan rumus ini kita juga dapat mengatur urutan peringkat. Ada 2 jenis peringkat yaitu descending (peringkat kecil ke peringkat terbesar) dan ascending (peringkat terbesar ke terkecil).</p>
+    <p>Contoh penggunaanya seperti untuk mengetahui ranking siswa berdasarkan nilai ujiannya. Bisa juga untuk mengetahui ranking penjualan sales dalam dunia industri atau marketing dan lainnya.</p>
+    <h4><strong>Bentuk Rumus RANK di Excel</strong></h4>
+    <p>Bentuk dasar atau format dari penulisan rumus RANK untuk mencari ranking adalah sebagai berikut:</p>
+
+    <div class="html-box">
+        =<span class="attribute">RANK</span>(Angka1;ReferensiSel;[BentukTampilan])
+    </div><br>
+    <p><strong>Penjelasan:</strong></p>
+    <ol>
+        <li><strong>RANK</strong>: Merupakan nama rumus untuk mencari peringkat/ranking.</li>
+        <li><strong>Angkal1</strong>: Merupakan angka acuan sebagai bahan pencarian peringkat/ranking.</li>
+        <li><strong>ReferensiRange</strong>: Merupakan referensi range di mana semua angka harus dimasukkan.</li>
+        <li><strong>[BentukTampilan]</strong>: Pilihan tampilan peringkat yang sifatnya opsional, yaitu berbentuk angka “0” (Descending) atau “1” (Ascending).</li>
+    </ol>
+    <p>Descending adalah mengurutkan peringkat dari nilai terkecil ke nilai terbesar. Sedangkan ascending adalah mengurutkan peringkat dari yang terbesar ke yang terkecil. Jika pilihan bentuk tampilan tidak diisi atau dibiarkan kosong maka secara default hasil peringkat akan ditampilkan secara <i>descending</i>.</p>
+
+    <h4><strong>Cara Membuat Ranking di Excel dengan Rumus RANK</strong></h4>
+    <p>Sebelumnya siapkan data berisi angka-angka atau nilai-nilai yang ingin dicari rankingnya. Lalu ikuti langkah-langkah berikut:</p>
+    <ol>
+        <li>Klik sel yang ingin kita tampilkan rankingnya.</li>
+        <li>Ketikkan rumus ranking dengan format <span class="tag">=RANK(Angka1;ReferensiRange;[BentukTampilan])</span>.</li>
+        <li>Masukkan salah satu nilai pada Angka1 atau bisa dengan langsung mereferensikan sel yang ingin dicari rankingnya.</li>
+        <li>Selanjutnya pada ReferensiRange blok range di mana terdapat semua angka/nilai. Jangan lupa tekan tombol F4 pada keyboard untuk merubah sel-sel tersebut menjadi absolut.</li>
+        <li>Isikan angka 0 untuk Descending atau 1 untuk Ascending pada [BentukTampilan] agar hasil tampilan ranking sesuai dengan yang diharapkan.</li>
+        <li>Tekan Enter pada keyboard untuk mulai melihat hasilnya,</li>
+    </ol>
+
+    <p>Untuk lebih jelasnya simak contoh penggunaan rumus ranking berikut.</p>
+    <h4><strong>Contoh Penggunaan Rumus Ranking</strong></h4>
+    <h6><strong>Mencari Ranking di Excel dari Peringkat Terkecil ke Peringkat Terbesar</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_7%20A.png" width="100%" height="" /></p>
+    <br>
+    <p>Misal kita ingin mencari nilai siswa dan ingin mengurutkan peringkatnya dari yang terkecil ke terbesar (descending). Maka bentuk rumusnya seperti contoh berikut:</p>
+
+    <div class="html-box">
+        =<span class="attribute">RANK</span>(B3;$B$3:$B$7;0)
+    </div><br>
+    <p>Sel <strong>B3</strong> adalah sel acuan yang terdapat suatu nilai/angka didalamnya. Dan <strong>;$B$3:$B$7</strong> adalah range dari keseluruhan nilai siswa dan sudah dijadikan sel absolut dengan menekan tombol <strong>F4</strong>.</p>
+    <p>Angka 0 adalah angka untuk merubah bentuk tampilan ranking secara descending. Sehingga hasil rankingnya nanti menampilkan peringkat dari yang terkecil ke yang terbesar. Jika setelah salah satu ranking sudah muncul, tinggal klik dan tarik (drag) mouse ke bawah pada pojok kanan bawah sel untuk menampilkan hasil ranking siswa lainnya. </p>
+
+    <h6><strong>Mengurutkan Ranking di Excel dari Peringkat Terbesar ke yang Terkecil</strong></h6>
+    <p>Sebaliknya, jika kita ingin mengurutkan peringkatnya dari yang terbesar ke terkecil (ascending), maka bentuk rumusnya menjadi:</p>
+    
+    <div class="html-box">
+        =<span class="attribute">RANK</span>(B3;$B$3:$B$7;1)
+    </div><br>
+
+    <p>Pada sel B3 adalah referensi sel acuan yang terdapat nilai/angka. Dan ;$B$3:$B$7 adalah range dari seluruh nilai siswa dan sudah berbentuk absolut. Angka 1 adalah angka untuk merubah bentuk tampilan ranking secara ascending.</p>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_7%20B.png" width="100%" height="" /></p>
+    <p>Sesudah salah satu ranking muncul, pada pojok kanan bawah sel tersebut kita klik dan tarik (drag) mouse ke bawah untuk menampilkan hasil ranking siswa-siswa lainnya. </p>
+
+    <h4><strong>Penutup</strong></h4>
+    <p>Sebenarnya ada beberapa bentuk rumus ranking yang lebih baru lagi dan kegunaanya lebih spesifik lagi. Seperti rumus RANK.EQ dan rumus RANK.AVG. Namun ada beberapa kekurangan dari rumus rank tersebut. Salah satunya jika kita menemui nilai yang sama, maka hasil rankingnya pun akan sama dan akan ada ranking yang dihilangkan.</p>
+
+    <p>Agar ranking-nya tidak sama maka harus dikombinasikan dengan rumus yang lain seperti COUNTIF dan lain sebagainya. Ada beberapa langkah lagi yang memang sedikit kompleks. Maka dari itu kita akan bahas di materi tutorial MS Excel tersendiri agar lebih mudah memahaminya.</p>
+
+
+
+
+
+
+
+
+
+
+ 
+
+</body>
+</html>

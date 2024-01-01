@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #569cd6;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+    .colored-box {
+            background-color: #98f5e1; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                border-radius: 5px;
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <p>Rumus <strong>IF</strong> dipakai untuk membandingkan logika terhadap nilai tertentu. Hasilnya akan menampilkan nilai tersebut dalam bentuk TRUE jika sesuai, atau dalam bentuk FALSE jika nilainya tidak sesuai. Dengan rumus fungsi IF kita bisa membandingkan logika yang kita masukkan. Lalu Microsoft Excel akan memproses logika tersebut berdasarkan kondisi yang ada. Kemudian menampilkan nilai/hasil akhir yang didapat.</p>
+    <P>Dalam prakteknya, rumus formula IF bisa digunakan jika kita ingin membandingkan siswa berprestasi atau tidaknya dengan memanfaatkan nilai ujian/nilai rapor tiap siswa. Contoh lain kita bisa mengkategorikan posisi/jabatan karyawan hanya berdasarkan Nomor ID karyawan pada suatu perusahaan dan lain sebagainya</P>
+    <h3><strong>Bentuk Rumus IF</strong></h3>
+    <p>Bentuk atau format penulisan rumus IF adalah sebagai berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">IF</span>(LogikaYangDiuji;Nilai_JikaSesuai;Nilai_JikaTidakSesuai)
+    </div>
+    <p>Dari kerangka rumus yang telah ditulis di atas, berikut kita bedah lagi penjelasan lebih rincinya mengenai rumus diatas:</p>
+    <ul>
+        <li><strong>IF</strong>: Merupakan nama fungsi atau rumus untuk membandingkan logika</li>
+        <li><strong>LogikaYangDiuji</strong>: Merupakan argumen dalam bentuk karakter atau logika yang kita masukkan dan nantinya akan mempengaruhi hasil.</li>
+        <li><strong>Nilai_JikaSesuai</strong>: Merupakan nilai yang akan ditampilkan jika hasilnya sesuai berdasarkan argumen dari LogikaYangDiuji atau bisa dikatakan bernilai <strong><i>TRUE</i></strong>.</li>
+        <li><strong>Nilai_JikaTidakSesuai</strong>: Merupakan nilai yang akan ditampilkan jika hasilnya tidak sesuai berdasarkan argumen dari LogikaYangDiuji atau bisa dikatakan bernilai <strong><i>FALSE</i></strong>.</li>
+    </ul>
+    <h3>Cara Menggunakan Rumus IF di Excel</h3>
+    <div class="colored-box">
+        <p>Letakkan kursor pada sel yang ingin dijadikan tempat hasil dari perhitungan rumus IF. Kemudian ketikkan rumus dengan format <strong>=IF(LogikaYangDiuji;Nilai_JikaSesuai;Nilai_JikaTidakSesuai)</strong> di mana semua alamat sel, nilai, maupun angka dimasukkan ke dalam kurung. Khusus huruf berikan tanda petik, contoh “Benar”, atau “Salah”, kemudian tekan Enter pada keyboard untuk melihat hasilnya.</p>
+    </div>
+    <p>Agar lebih jelasnya simak beberapa contoh berikut.</p>
+    <h2><strong>Contoh Penggunaan Rumus IF di MS Excel</strong></h2>
+    
+    <h5><strong>1. Penggunaan Rumus Fungsi IF Sederhana pada MS Excel</strong></h5>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_1%20A.png" width="100%" height="" /></p>
+    <br>
+    <p>Misalnya kita akan mengkategorikan suatu pesanan yang terdiri dari makanan dan minuman berdasarkan dari nilai atau harganya. Maka kita cukup menggunakan fungsi IF seperti biasa dengan memasukkan referensi selnya serta logika yang kita inginkan, lalu masukkan nilainya yaitu nilai TRUE-nya “Makanan”, sedangkan nilai FALSE-nya “Minuman”. Berikut contoh penulisannya:</p>
+        <div class="html-box">
+            =<span class="attribute">IF</span>(D7>20000;"Makanan";"Minuman")
+        </div>
+    <p>Disitu bisa kita lihat referensi sel yang dimasukkan terhadap LogikaYangDiuji dengan menggunakan tanda lebih dari > dan harga yang ingin kita masukkan, juga nilai TRUE dan FALSE-nya.</p>
+    <p>Jadi cara membaca rumus tersebut ialah harga item yang lebih dari 20000 bernilai TRUE dan akan masuk Makanan, selain itu bernilai FALSE, yaitu Minuman.</p>
+    <p>Salin rumus yang telah ditulis dengan Fill Handle atau drag ke bawah untuk mengaplikasikan rumus tersebut ke dalam sel yang lain-nya secara otomatis. Lihat juga rumus dasar seperti Penjumlahan, Pengurangan, Perkalian & Pembagian di Excel.</p>
+    
+    <h5><strong>2. Penggunaan Rumus IF Bertingkat pada Microsoft Excel</strong></h5>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_1%20B.png" width="100%" height="" /></p>
+    <br>
+    <p>Penulisan fungsi if pada MS Excel bisa digunakan sebanyak 7 tingkatan. Jadi kita bisa memasukkan nama fungsinya yaitu IF sebanyak 7x dalam sekali penulisan bila memang diperlukan. Kabarnya pada aplikasi Microsoft Excel versi terbaru kita bisa memasukkan fungsi IF sebanyak 64x tingkatan, jadi kita bisa bayangkan betapa banyaknya logika perbandingan yang dapat dimasukkan.</p>
+    <p>Rumus IF bertingkat digunakan jika terdapat lebih dari 2 ketentuan nilai semisal untuk mengkategorikan nilai siswa. Bagi siswa yang nilainya 0-50 masuk dalam kategori Kurang, nilai 51-75 masuk kategori Cukup, dan nilai 76-100 kategorinya Bagus. Berikut penulisan rumusnya:</p>
+    <div class="html-box">
+        =<span class="attribute">IF</span>(C2&lt;=50;"Kurang";IF(C2&lt;=75;"Cukup";"Bagus"))
+    </div>
+    <p>Bisa kita lihat dalam rumus tersebut terdapat 2 IF bertingkat karena ada lebih dari 2 logika. Pada IF pertama kita referensikan sel yang ada nilai siswanya kurang dari sama dengan 50, bernilai “Kurang”.</p>
+    <p>Lalu tulis rumus IF kedua, jangan lupa gunakan tanda buka kurung setiap kali menuliskan nama rumusnya, masukkan referensi selnya beserta nilai TRUE nya yaitu “Cukup”,</p>
+    <p>Untuk nilai yang terakhir kita tidak perlu menuliskan IF kembali, langsung tulis nilai FALSEnya yaitu “Bagus”. Kemudian disusul dengan tutup kurung sebanyak buka kurung yang telah kita masukkan tadi, dalam contoh tersebut terdapat 2 tanda kurung.</p>
+    <p>Itulah pembahasan mengenai fungsi IF beserta contohnya baik itu IF sederhana hingga contoh mengenai rumus IF bertingkat. Jika kita ingin bisa menggunakan fungsi IF hingga bertingkat-tingkat. Sebaiknya kita mulai belajar sedikit demi sedikit dari tingkatan yang kecil lama kelamaan menuju ke tingkatan yang lebih tinggi.</p>
+
+</body>
+</html>

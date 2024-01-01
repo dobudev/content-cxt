@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+
+    <p>Pekerjaan yang berhubungan dengan angka tentu bisa saja diselesaikan dengan mudah dan cepat menggunakan aplikasi ms excel, termasuk dalam hal pembulatan angka. Rumus Excel round, round up, dan rounddown adalah rumus yang dapat dimanfaatkan bagi pengguna yang ingin membulatkan angka di excel.</p>
+    <p>Rumus-rumus tersebut memungkinkan pengguna untuk membulatkan angka ke bilangan bulat terdekat baik itu membulatkan angka ke atas ataupun sebaliknya, yakni membulatkan angka ke bawah. Sehingga tampilan data berupa angka-angka yang awalnya berantakan bisa dihitung secara konsisten dan lebih akurat.</p>
+    <p>Selain itu rumus round up dan rounddown dapat digunakan untuk membulatkan angka dengan kriteria pembulatan yang telah ditentukan tergantung kebutuhan masing-masing pengguna. Supaya lebih jelasnya mari kita bahas lengkap mengenai rumus round, roundup dan rounddown excel mulai dari Round terlebih dahulu!</p>
+
+    <h3><strong>Rumus Round pada Excel</strong></h3>
+    <div class="html-box">
+        =<span class="attribute">ROUND</span>(Angka;BanyaknyaDigit)
+    </div><br>
+    <p>Di dalam tanda kurung rumus tersebut terdapat 2 kriteria yang pertama adalah Angka, yakni berisi angka atau sel yang ingin dibulatkan. Kedua adalah BanyaknyaDigit yang bisa kita masukkan sesuai dengan keinginan perihal berapa jumlah digit yang ingin ditampilkan di belakang koma.</p>
+
+
+    <h5><strong>Cara Membulatkan Angka di Excel dengan Rumus ROUND</strong></h5>
+    <ol>
+        <li>Buka aplikasi ms excel,</li>
+        <li>Siapkan data excel yang ingin dibulatkan angkanya,</li>
+        <li>Klik pada sel yang ingin digunakan sebagai tempat untuk menampilkan hasil pembulatan angka tersebut, sebagai contoh kita akan membulatkan nilai pada data siswa,</li>
+        <li>Ketikkan rumusnya yakni <span class="tag">=round(D6;0)</span>, artinya kita ingin membulatkan angka yang ada pada sel D6 dengan tanpa menuliskan banyaknya digit di belakang koma,</li>
+        <li>Tekan tombol enter pada keyboard, maka hasil pembulatan akan langsung dimunculkan.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_29%20.png" width="100%" height="" /></p><br> 
+
+    <p>Rumus round di excel adalah rumus yang bisa dipakai untuk membulatkan angka ke dalam jumlah digit yang diinginkan sesuai dengan hukum matematika yang berlaku.</p>
+    <p>Seperti yang kita ketahui jika angka di belakang koma kurang dari sama dengan 5 maka secara metematika angka tersebut akan dibulatkan ke bawah. Sedangkan apabila angka yang berada di belakang koma lebih dari sama dengan 5 maka angka akan dibulatkan ke atas.</p>
+
+    <h3><strong>Rumus Roundup Excel</strong></h3>
+    <div class="html-box">
+        =<span class="attribute">ROUNDUP</span>(Angka;BanyaknyaDigit)
+    </div><br>
+    <p>Struktur penulisan rumus roundup hampir sama dengan rumus round yakni terdapat bagian Angka yang ingin dibulatkan. Lalu pada bagian BanyaknyaDigit masukkan berapa digit yang ingin diitampilkan sebagai hasil pembulatan angka tersebut.</p>
+
+    <h5><strong>Cara Membulatkan Angka ke Atas di Excel dengan Rumus ROUNDUP</strong></h5>
+    <ol>
+        <li>Buka aplikasi ms excel,</li>
+        <li>Buka data yang ingin dibulatkan dengan menggunakan rumus ROUNDUP,</li>
+        <li>Klik pada sel untuk menampilkan hasil pembulatannya,</li>
+        <li>Ketikkan rumus seperti pada contoh berikut, <span class="tag">=ROUNDUP(D6;0)</span>, yang berarti kita ingin membulatkan angka yang ada pada sel D6 tanpa perlu menampilkan banyaknya angka setelah tanda koma,</li>
+        <li>Tekan tombol enter pada keyboard, maka angka akan dibulatkan ke atas.</li>
+    </ol>
+    <p>Berbeda dengan rumus round yang akan membulatkan suatu angka sesuai hukum matematika pada rumus roundup digunakan untuk membulatkan angka ke atas tanpa melihat berapa jumlah angkanya. Sebagaimana contoh di atas dari nilai yang awalnya 85,4 menjadi 86 setelah dibulatkan ke atas karena rumus roundup tidak mengikuti hukum matematika yang berlaku.</p>
+
+    
+    <h3><strong>Rumus ROUNDDOWN di Microsoft Excel</strong></h3>
+    <div class="html-box">
+        =<span class="attribute">ROUNDDOWN</span>(Angka;BanyaknyaDigit)
+    </div><br>
+    <p>Begitu juga dengan rumus rounddown yang memiliki bentuk penulisan yang hampir sama yakni terdapat bagian Angka sebagai tempat untuk memasukkan angka yang ingin dibulatkan. Serta terdapat bagian BanyaknyaDigit sebagai tempat untuk memasukkan berapa jumlah digit angka di belakang koma yang ingin ditampilkan.</p>
+
+    <h5><strong>Cara Membulatkan Angka ke Bawah di Excel dengan Rumus ROUNDDOWN</strong></h5>
+    <ol>
+        <li>Buka ms excel,</li>
+        <li>Buka data excel berisi angka yang ingin dibulatkan ke bawah dengan menggunakan rumus ROUNDDOWN,</li>
+        <li>Pilih sel yang ingin dijadikan tempat untuk menampilkan hasil pembulatan ke bawah,</li>
+        <li>Ketikkan rumus seperti pada contoh berikut, <span class="tag">=ROUNDDOWN(D6;0)</span> untuk membulatkan angka yang ada di dalam sel D6, sedangkan angka 0 ditulis karena kita tidak ingin ada angka desimal atau angka di belakang koma setelah pembulatan,</li>
+        <li>Tekan tombol enter pada keyboard untuk melihat hasilnya.</li>
+    </ol>
+
+    <p>Hasil pembulatan yang ditampilkan pada contoh di atas sekilas memiliki hasil pembulatan yang sama seperti halnya pada rumus round biasa. Namun jangan salah mengartikan karena rumus round biasa dengan rumus rounddown memiliki perbedaan dalam hal cara membulatkan angka.</p>
+    <p>Sekali lagi pada rumus round pembulatan angkanya mengikuti hukum matematika, yakni jika angka di belakang koma kurang dari 5 maka angkanya akan dibulatkan ke bawah, begitu juga sebaliknya.</p>
+
+    <h4><strong>Penutup</strong></h4>
+    <div class="colored-box">
+        <p>Ketiga rumus tersebut merupuakan rumus yang berguna untuk membulatkan angka di excel. Masing-masing rumus memang memiliki cara yang berbeda dalam membulatkan angka. Secara penulisan ketiganya memiliki bentuk yang sama yakni sama-sama mengandung susunan Angka maupun Banyaknya digit jika ingin menampilkan hasil pembulatan sesuai dengan keinginan kamu.</p>
+    </div>
+
+</body>
+</html>

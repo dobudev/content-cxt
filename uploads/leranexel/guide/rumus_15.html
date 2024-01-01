@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <div class="colored-box">
+        <p>Fungsi TEXT di Excel adalah fungsi yang digunakan untuk mengubah format angka menjadi format teks sesuai dengan yang diinginkan. Dengan rumus ini memungkinkan kita untuk menggabungkan format angka dengan format teks atau menampilkannya ke dalam bentuk tertentu.</p>
+    </div> <br>
+    <p>Kegunaan dari rumus TEXT ini biasanya dipakai oleh orang yang ingin mengubah suatu format seperti tanggal ke dalam bentuk hari. Selain itu kita juga bisa menyederhanakan angka desimal dan lain sebagainya. Nah pada pembahasan materi Microsoft Excel ini kita akan mengulas cara penggunaan dan contohnya.</p>
+    <h3><strong>Bentuk Fungsi TEXT</strong></h3>
+    <p>Format penulisan fungsi TEXT tersebut adalah:</p>
+    <div class="html-box">
+        =<span class="attribute">TEXT</span>(NilaiAngka;”Format”)
+    </div> <br>
+    <ol>
+        <li>TEXT: Merupakan nama fungsi untuk mengubah format angka menjadi format teks,</li>
+        <li>NilaiAngka: Merupakan angka yang ingin kita ubah formatnya,</li>
+        <li>Format: Merupakan bentuk/format yang nantinya ingin ditampilkan,</li>
+    </ol>
+    <p>Pada bagian format tersebut Ms Excel memiliki kode tertentu sebagai input-nya. Kode format dari rumus TEXT harus menyesuaikan dengan format yang ingin kita ubah. Setiap format mempunyai masukan kode sendiri-sendiri, sehingga kode format untuk angka berbeda dengan kode format untuk tanggal.</p>
+
+    <p>Kode format untuk angka mempunyai bentuk antara lain:</p>
+    <ol>
+        <li>“0” bentuk format yang menampilkan banyaknya digit angka sesuai masukan kita.</li>
+        <li>“#” penggunaan-nya hampir sama dengan 0 yaitu menampilkan banyaknya digit.</li>
+        <li>“.” Bentuk tanda yang biasa digunakan untuk angka ribuan (dalam uang).</li>
+        <li>“,” Bentuk tanda yang biasa digunakan untuk angka desimal.</li>
+    </ol>
+
+    <p>Sedangkan kode format untuk tanggal mempunyai bentuk sebagai berikut:</p>
+    <ol>
+        <li>d: Berbentuk angka dari suatu hari. Contoh: 1, 26, 30.</li>
+        <li>dd: Berbentuk 2 digit angka dari hari. Contoh: 01, 05, 12.</li>
+        <li>ddd: Berbentuk singkatan dari nama hari. Contoh: Sen, Rab, Jum, Sab.</li>
+        <li>dddd: Berbentuk nama lengkap dari hari. Contoh: Senin, Rabu, Jumat, Sabtu.</li>
+        <li>m: Berbentuk angka dari suatu bulan. Contoh: 1, 6, 12.</li>
+        <li>mm: Berbentuk 2 digit angka dari bulan. Contoh: 01, 03, 09.</li>
+        <li>mmm: Berbentuk singkatan dari nama bulan. Contoh: Jan, Apr, Nop.</li>
+        <li>mmmm: Berbentuk nama lengkap bulan. Contoh: Januari, April, Nopember.</li>
+        <li>mmmmm: Berbentuk inisial nama bulan. Contoh: J, A, N.</li>
+        <li>yy: Berbentuk tahun hanya dengan 2 digit saja yang ditulis. Contoh: 45, 93, 20.</li>
+        <li>yyyy: Berbentuk tahun dengan penulisan lengkapnya. Contoh: 1945, 1993, 2020.</li>
+    </ol>
+
+    <p>Jadi kita harus menuliskan kodenya dengan wajib menggunakan tanda petik. Serta memasukkannya ke dalam bagian ”Format”) sesuai dengan bentuk yang diinginkan. Kita bisa bebas mengkombinasikan kode-kode tersebut sesukanya agar hasilnya menjadi sesuai dengan bentuk/format yang ingin kita tampilkan.</p>
+    <h4><strong>Cara Menggunakan Fungsi TEXT pada Microsoft Excel</strong></h4>
+    <p>Klik pada sel di mana kita ingin menampilkan hasilnya sesuai dengan format yang akan kita ubah. Ketikkan fungsi TEXT dengan format <span class="tag">=TEXT(NilaiAngka;”Format”)</span>. Masukkan NilaiAngkaatau bisa juga dengan mereferensikan sel yang didalamnya terdapat angka yang ingin diubah formatnya.</p>
+    <p>Kemudian ketikkan kodenya pada bagian Format perhatikan penulisaan tanda petiknya. Serta pastikan formatnya sudah sesuai dengan yang ada pada bagian NilaiAngka. Tekan Enter jika sudah.</p>
+    <p>Agar lebih jelasnya simak beberapa contoh menggunakan rumus fungsi TEXT berikut.</p>
+
+    <h5><strong>Contoh Penggunaan Fungsi TEXT di Microsoft Excel</strong></h5>
+    <h6><strong>Menyederhanakan Angka Desimal Dengan Fungsi TEXT</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_15%20A.png" width="100%" height="" /></p>
+    <br>
+    <p>Misalnya kita ingin menyederhanakan angka desimal yang digit dibelakang komanya lebih banyak menjadi lebih sedikit. Maka penulisan fungsinya seperti pada contoh berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">TEXT</span>(B4;"0,00")
+    </div> <br>
+    <p>Pada contoh tersebut kita mereferensikan sel B4 di mana terdapat NilaiAngka yaitu angka desimal. Sebelum menggunakan rumus TEXT kita melihat ada 3 angka di belakang koma.</p>
+    <p>Lalu kita masukkan kode angka sesuai dengan bentuk yang kita inginkan pada bagian Format. Semisal hanya 2 angka saja yang ingin kita tampilkan, maka kita gunakan kode angka nol sesuai dengan banyaknya digit angka dan penggunaan koma sehingga menjadi “0,00“.</p>
+    <p>Tekan Enter untuk melihat hasilnya, sehingga angkanya pun akan otomatis dibulatkan, dari 3 angka di belakang koma menjadi 2 angka di belakang koma.</p>
+
+
+
+    <h5><strong>Mengubah Format Pada Tanggal Dengan Memanfaatkan Fungsi TEXT</strong></h5>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_15%20B.png" width="100%" height="" /></p>
+    <br>
+    <p>Apabila kita ingin mengubah format tanggal ke dalam bentuk yang kita inginkan, maka tinggal kita gunakan saja fungsi TEXT. Seperti contoh fungsi berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">TEXT</span>(B4;"dddd")
+    </div> <br>
+
+    <p>Sel B4 merupakan tempat di mana terdapat format tanggal yang akan kita ubah ke format sesuai dengan keinginan kita. Dalam hal ini kita akan mengambil nama hari-nya saja. Maka penulisan kodenya yaitu “dddd” yang berarti kita akan menampilkan nama hari secara lengkap. Sehingga nama hari pada tanggal tersebut jatuh pada hari Kamis. </p>
+    <p>Ada baiknya bila kita menghafal mengenai kode-kode yang berkaitan dengan fungsi text tersebut. Semakin banyak kode yang kita ketahui, semakin banyak pula bentuk/format teks yang bisa kita ubah. Dengan demikian kita tidak perlu khawatir untuk mengubah suatu format angka ke dalam format MS Excel yang kita inginkan.</p>
+
+
+
+
+</body>
+</html>

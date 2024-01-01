@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #83f389; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <div class="colored-box">
+        <p>Rumus FIND di Microsoft Excel adalah rumus yang digunakan untuk mencari urutan string atau huruf pada suatu teks di suatu sel. Perbedaan huruf besar dan kecil pada teks akan mempengaruhi hasil (Case sensitive). Sedangkan rumus SEARCH hampir sama, yaitu untuk mencari urutan string/huruf pada suatu teks. Tetapi tanpa membeda-bedakan huruf besar atau kecil teks yang dicari (Not case-sensitive).</p>
+    </div> <br>
+    <p>Kegunaan kedua rumus tersebut sama-sama berguna untuk menyelesaikan pekerjaan yang spesifik. Terutama pada data-data yang kompleks seperti keperluan analis, programmer atau yang lainnya.</p>
+    <h3><strong>Bentuk Rumus FIND & SEARCH di Microsoft Excel</strong></h3>
+    <p>Pada dasarnya format penulisan rumus FIND adalah sebagai berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">FIND</span>(TeksYangDicari;SumberTeks;StartPencarian)
+    </div><br>
+
+    <ol>
+        <li>FIND: Merupakan rumus untuk mencari urutan huruf/string pada suatu teks yang kita tentukan, besar kecil huruf berpengaruh (Case sensitive).</li>
+        <li>TeksYangDicari: Merupakan teks yang ingin kita cari urutan string-nya,</li>
+        <li>SumberTeks: Merupakan sumber teks yang mempengaruhi hasil pencarian urutan string.</li>
+        <li>StartPencarian: Berupa angka di mana kita akan mulai pencarian. Sifatnya opsional, jika kita tidak mengisi bagian ini maka pencarian akan dimulai dari awal karakter/string pada teks.</li>
+    </ol>
+
+    <p>Sedangkan format penulisan rumus SEARCH adalah sebagai berikut:</p>
+    <div class="html-box">
+        =<span class="attribute">SEARCH</span>(TeksYangDicari;SumberTeks;StartPencarian)
+    </div><br>
+   
+    <ol>
+        <li>SEARCH: Merupakan rumus untuk mencari urutan huruf atau string pada suatu teks yang kita tentukan, besar kecil huruf tidak berpengaruh (Not case-sensitive).</li>
+        <li>TeksYangDicari: Merupakan teks yang ingin kita cari urutan string-nya.</li>
+        <li>SumberTeks: Merupakan sumber teks yang mempengaruhi hasil pencarian urutan string.</li>
+        <li>StartPencarian: Berupa angka di mana kita akan mulai pencarian. Sifatnya opsional, jika kita tidak mengisi bagian ini maka pencarian akan dimulai dari awal karakter/string pada teks.</li>
+    </ol>
+    <p>Selain ada perbedaan terhadap huruf besar dan kecil, keduanya mempunyai respon yang berbeda pula pada penggunaan tanda wildcard. Seperti tanda bintang (*), tanda tanya (?), dan tanda gelombang (~).</p>
+    <p>Pada rumus FIND tidak bisa digunakan, artinya apabila ada tanda wildcard pada teks maka hasil rumusnya akan error. Sebaliknya, pada rumus SEARCH tanda wildcard bisa digunakan ketika kita mencari suatu teks yang mengandung tanda tersebut. </p>
+
+    <h3><strong>Cara Menggunakan Rumus FIND & SEARCH di MS Excel</strong></h3>
+    <p>Pertama letakkan kursor di sel tempat kita ingin mencari urutan string pada teks kita. Lalu ketikkan rumus dengan format <span class="tag">=FIND(TeksYangDicari;SumberTeks;StartPencarian)</span> bila ingin mencari urutan huruf pada teks yang sensitif terhadap huruf besar dan kecil. Atau ketik rumus <span class="tag">=SEARCH(TeksYangDicari;SumberTeks;StartPencarian)</span> jika ingin tanpa memperhatikan huruf besar dan kecilnya.</p>
+    <p>Masukkan TeksYangDicari dan juga SumberTeks ke dalam rumus tersebut. Pastikan pada bagian TeksYangDicari mengandung salah satu string yang berasalah dari SumberTeks. Isikan angka sesuai dengan urutan perhitungan string sebagai awal mulai pencarian jika kita menginginkannya. Tekan Enter untuk menampilkan hasilnya.</p>
+
+    <h3><strong>Contoh Penggunaan Rumus FIND & SEARCH di Excel</strong></h3>
+    <h6><strong>Mencari Urutan Huruf dengan Rumus FIND</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_17%20A.png" width="100%" height="" /></p>
+    <br>
+    <p>Semisal kita ingin mencari urutan string dengan memerhatikan besar-kecil hurufnya. Maka gunakanlah rumus FIND seperti contoh penulisan rumus berikut:</p>
+
+    <div class="html-box">
+        =<span class="attribute">FIND</span>(C4;B4)
+    </div><br>
+    <p>Pada tabel data kita ingin mencoba mencari urutan string nama-nama tersebut. Kebetulan tulisan yang terkandung dalam teks berbentuk huruf kecil semua. Sel C4 merupakan bagian TeksYangDicari karena kita ingin mencari salah satu string yang kita tentukan yang ada di dalam nama-nama tersebut.</p>
+    <p>Sedangkan sel B4 merupakan SumberTeks tempat/sel di mana berfungsi sebagai acuan teks yang ingin kita cari stringnya. Tekan Enter jika sudah, dan kita juga bisa menyalin rumusnya dengan teknik drag sel ke bawah untuk melihat hasil sel pada baris yang lainnya.</p>
+
+
+    <h6><strong>Mencari Urutan Huruf dengan Rumus SEARCH</strong></h6>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/rumus_17%20B.png" width="100%" height="" /></p>
+    <br>
+    <p>Misalnya lagi kita ingin mencari string tanpa memerhatikan huruf besar/kecil pada teks. Maka kita gunakan saja rumus SEARCH. Sehingga penulisan rumusnya seperti contoh berikut:</p>
+
+
+    <div class="html-box">
+        =<span class="attribute">SEARCH</span>(C4;B4)
+    </div><br>
+    <p>Pada contoh tersebut terlihat teks yang ada di dalam data mempunyai huruf besar dan kecil serta nampak tidak beraturan. Sehingga kita memanfaatkan rumus SEARCH agar pencarian lebih mudah. Sel C4 adalah bagian TeksYangDicari yang sudah kita tentukan apa yang ingin kita cari pada kolom tabel tersebut.</p>
+    <p>Kemudian pada sel B4 adalah SumberTeks atau sel tempat di mana berisikan nama-nama yang berhuruf besar dan kecil tidak beraturan. Tekan tombol Enter untuk mengaplikasikan rumusnya, lalu salin rumusnya dengan men-drag sel ke bawah untuk melihat hasil sel yang lain. </p>
+    <p>Sebaiknya pahami betul perbedaan kedua rumus tersebut karena meski mempunyai fungsi yang hampir sama tapi perbedaanya sangat mencolok. Maka dari itu sesuaikan saja dengan kebutuhan kita.</p>
+
+
+</body>
+</html>
