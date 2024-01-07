@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #baffba; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <p>Kegunaan dari header di sebuah tabel excel amatlah penting untuk memudahkan kita dalam memahami isi dari tabel tersebut. Problem yang sering terjadi terkait dengan header tabel di excel adalah pada saat kita scrolling tabel ke bagian bawah terutama jika tabelnya panjang. Tidak sedikit yang mengeluhkan mengenai header tabel yang hilang akibat scrolling tadi sehingga mempersulit dalam hal pembacaan data pada tabel.</p>
+    <p>Ada sebuah tips yang bisa dilakukan untuk mengatasi hal tersebut yakni dengan membuat header menjadi tidak bergerak saat discroll. Jadi yang bergerak hanyalah isi tabelnya saja sedangkan header akan tetap dimunculkan meskipun kita melakukan scrolling tabel.</p>
+    <p>Maka dari itu kita bisa memanfaatkan menu Freeze Panes di excel untuk membuat header tidak bergerak. Agar lebih jelasnya mari kita bahas langkah-langkahnya!</p>
+
+    <h3><strong>Cara Membuat Header Tidak Bergerak Ketika di Scroll di Excel (Freeze Panes)</strong></h3>
+    <ol>
+        <li>Buka aplikasi ms excel yang sudah terinstall di komputer atau laptop,</li>
+        <li>Siapkan table data yang ingin dibuat headernya agar tidak bergerak ketika discroll,</li>
+        <li>Sorot/letakkan kursor pada baris tepat di bawah header tabel, seperti pada contoh kita sorot salah satu baris yang letaknya tepat di bawah header tabel,</li>
+        <li>Klik tab menu View yang ada di deretan tab menu Excel,</li>
+        <li>Klik menu Freeze Panes yang ada di bagian grup menu Window, kemudian akan ada 3 opsi Freeze Panes yang muncul,</li>
+        <li>Pilih opsi yang pertama, yakni Freeze Panes,</li>
+        <li>Cobalah scroll-scroll tabel ke bawah, jika berhasil maka header tabel tidak akan ikut bergerak ketika discroll.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/lanjutan_11A.png" width="100%" height="" /></p><br> 
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/lanjutan_11B.png" width="100%" height="" /></p><br> 
+
+    <p>Untuk mengembalikannya atau menghilangkan efek freeze panes tersebut maka kita bisa masuk lagi ke menu View, klik menu Freeze Panes, lalu pilih Unfreeze Panes. Tak hanya header tabel saja melainkan kita juga bisa bebas memilih baris mana yang ingin dibuat tidak bergerak saat discroll. Caranya tinggil letakkan kursor pada baris yang diinginkan.</p>
+    <p>Ingat sebelum mengakses menu freezes panes baris yang disorot adalah baris yang ikut bergerak saat discroll, jadi pastikan memilih barisnya secara benar agar header tidak ikut bergerak.</p>
+    <p>Jika posisi header tabel berada di baris paling atas lembar kerja excel maka kita bisa langsung memilih opsi menu Freeze Top Row untuk membuat header teratas tabel tidak bergerak. Sehingga tidak perlu lagi menyorot/meletakkan kursor pada baris yang ingin dibekukan. Selain itu terdapat pula opsi Freeze First Column untuk membuat kolom pertama pada tabel tidak bergerak.</p>
+
+    <h4><strong>Penutup</strong></h4>
+    <div class="colored-box">
+        <p>Setelah memahami artikel di atas maka kita tidak perlu khawatir lagi ketika menemui tabel/data dengan jumlah baris yang banyak karena kita bisa membuat header tidak bergerak pada saat discroll. Berkat adanya menu Freeze Panes di excel proses penulisan dan pembacaan tabel semakin mudah. Selain itu terdapat beberapa opsi Freeze Panes yang bisa dimanfaatkan sesuai dengan kebutuhan.</p>
+    </div>
+
+</body>
+</html>

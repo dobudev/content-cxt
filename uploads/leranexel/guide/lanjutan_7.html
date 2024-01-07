@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #baffba; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <p>Beberapa dari kita mungkin sudah tahu tentang bagaimana cara membuat nomor urut di excel. Umumnya ada satu cara yang seringkali dipakai oleh para pengguna excel yakni dengan mendrag atau menarik mouse ke bawah untuk membuat nomor urut pada sebuah kolom.</p>
+    <p>Cara tersebut memang tergolong mudah dan cepat tapi bagaimana jika nomor urut yang diinginkan jumlahnya ratusan bahkan ribuan? Mungkin kita akan kesulitan ketika mendrag mouse ke bawah. Oleh sebab itu excel menyediakan 4 cara lain yang bisa kita praktekkan untuk membuat nomor urut. Diantaranya adalah dengan memanfaatkan rumus, melalui menu fill, lewat sequence, dan juga menggunakan row.</p>
+    <p>Setiap cara tentu memiliki kelebihan dan kekurangan masing-masing. Agar lebih jelas maka mari kita bahas mulai dari yang paling mudah!</p>
+
+
+    <h3><strong>Dengan Menarik Menggunakan Mouse</strong></h3>
+    <ol>
+        Siapkan data yang ingin diberi nomor urut di Excel,
+        Ketikkan angka 1 di cell yang diinginkan,
+        Ketik angka 2 tepat di bawah cell angka 1 tersebut,
+        Blok kedua sel tersebut baika angka 1 dan angka 2,
+        Arahkan mouse ke bagian pojok kanan bawah sel yang berisi angka 2 hingga muncul tanda plus,
+        Klik dan tahan mouse,
+        Tarik ke bawah sampai baris keberapa yang kita inginkan,
+        Lepaskan mouse maka nomor urut akan langsung muncul.
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/lanjutan_7A.png" width="100%" height="" /></p><br> 
+
+    <p>Langkah tersebut paling mudah dipraktekkan dan cocok digunakan untuk membuat nomor urut dengan jumlah yang tidak terlalu panjang, misal 1-15 atau 1-50 baris.</p>
+    <p>Bisa saja dipakai untuk membuat nomor urut yang panjang namun kita pasti akan sedikit kesulitan ketika mendrag mouse ke bawah.</p>
+
+
+    <h3><strong>Dengan Menggunakan Rumus</strong></h3>
+    <ol>
+        <li>Buka aplikasi ms excel,</li>
+        <li>Siapkan data yang akan diberi nomor,</li>
+        <li>Ketikkan angka 1 di sel yang diinginkan, misal di sel B2,</li>
+        <li>Ketikkan rumus di sel yang ada di bawahnya, yakni sel B3 dengan rumus =B2+1,</li>
+        <li>Tekan enter pada keyboard, maka angka 2 akan muncul pada sel tersebut,</li>
+        <li>Arahkan mouse pada bagian pojok kanan bawah sel hingga muncul tanda panah,</li>
+        <li>Klik dan tahan mouse,</li>
+        <li>Drag mouse ke bawah hingga baris yang diinginkan,</li>
+        <li>Lepaskan mouse untuk menampilkan nomor urutnya.</li>
+    </ol>
+    <p>Dengan rumus tersebut artinya kita menambahkan angka 1 di setiap selnya jadi semakin ke bawah angka pada selnya akan semakin besar karena bertambah 1 angka. Gunakan cara ini jika ingin membuat nomor urut dengan jarak/selisih angka tertentu. Misal dari angka 1 ke 3 dengan menambahkan angka 2 sehingga hasilnya adalah angka 1,3,5,7, dan seterusnya.</p>
+
+    <h3><strong>Dengan Memanfaatkan Menu Fill</strong></h3>
+    <ol>
+        <li>Buka aplikasi ms excel,</li>
+        <li>Siapkan data yang akan diberi nomor urut,</li>
+        <li>Ketikkan angka 1 pada sel yang diinginkan,</li>
+        <li>Masuklah ke dalam tab menu Home ms excel,</li>
+        <li>Klik menu Fill yang ada di bagian grup Editing,</li>
+        <li>Pilih Series.., kemudian jendela series akan terbuka,</li>
+        <li>Pilih Columns di bagian Series in untuk membuat nomor urut pada kolom,</li>
+        <li>Pilih Liniear pada bagian Type untuk membuat nomor urut dengan pola yang sama atau tidak berubah-ubah,</li>
+        <li>Masukkan urutan angka yang diinginkan pada bagian Step value, misal angka 1,</li>
+        <li>Masukkan nomor urut terakhir pada bagian Stop value, misal angka 25,</li>
+        <li>Tekan tombol OK, maka nomor utur akan otomatis muncul yakni angka 1 hingga angka 25.</li>
+    </ol>
+    <p>Melalui menu Fill inilah pengguna bisa membuat nomor urut secara masif atau dengan jumlah baris yang banyak, misal dari angka 1 ke 1000.</p>
+    <p>Selain itu cara ini juga bisa digunakan untuk membuat nomor urut dengan selisih tertentu, misal selisih 5 angka antara nomor urut 1 dengan nomor berikutnya sehingga menjadi 1, 6,11,16, dan seterusnya.</p>
+
+    <h3><strong>Dengan Mengunakan Sequence</strong></h3>
+    <ol>
+        <li>Buka aplikasi excel yang ada di komputer,</li>
+        <li>Pilih sel yang ingin dibuat nomor urut,</li>
+        <li>Ketikkan rumus =sequence(JumlahBaris), misal untuk membuat nomor urut 1 hingga 1000 maka ketikkan =sequence(1000),</li>
+        <li>Tekan tombol enter pada keyboard untuk melihat hasilnya.</li>
+    </ol>
+
+    <p>Selain itu sequence juga bisa digunakan untuk membuat nomor urut dengan kriteria tertentu seperti misalnya rumus =sequence(JumlahBaris,JumlahKolom,NomorUrutAwalan,Kelipatan). Contoh pengaplikasikan rumus tersebut ketika ingin membuat nomor urut berjumlah 1000 baris di 1 kolom saja dengan nomor urut awal 10 dan kelipatan 20, maka rumusnya =sequence(1000,1,10,20),</p>
+    <p>Metode sequence tersebut sementara ini hanya tersedia di ms office 365 saja, untuk office versi yang lama seperti ms office 2019 ataupun office 2021 masih belum tersedia.</p>
+    <p>Jika rumus sequence tersebut dimasukkan di versi office yang lama maka hasilnya tentu akan error, maka dari itu kita harus menyesuaikan dengan versi office (excel) yang digunakan.</p>
+
+    <h3><strong>Dengan Menggunakan Row</strong></h3>
+    <ol>
+        <li>Buka aplikasi excel,</li>
+        <li>Siapkan data yang akan dibuat nomor urut,</li>
+        <li>Pilih sel yang ingin diberi nomor urut, misal pada sel C2,</li>
+        <li>Ketikkan rumus =ROW()-1, maka nomor urut awal yakni angka 1 akan muncul,</li>
+        <li>Arahkan mouse di pojok kanan bawah sel yang berisi angka 1 tersebut hingga muncul tanda plus,</li>
+        <li>Drag dan drop mouse ke bawah sesuai dengan berapa banyak barisnya,</li>
+        <li>Lepaskan mouse maka nomor urut akan langsung ditampilkan,</li>
+    </ol>
+
+    <p>Kenapa ada minus 1 yang disematkan dibelakang rumus tersebut? Hal itu untuk mengurangi 1 angka dikarenakan rumus row akan otomatis menyesuaikan dengan urutan/baris sel yang dipilih. Misalnya kita memilih sel C2 lalu menuliskan rumus row saja yakni ROW(), maka nomor urut awal akan keluar angka yang sama dengan urutan barisnya, yakni baris kedua sehingga yang muncul adalah 2.</p>
+
+    <p>Rumus row tersebut memiliki kelebihan bisa mempertahankan nomor urut secara otomatis apabila ada penambahan baris baru tanpa mengurangi nomor urut/turun ke bawah.</p>
+
+
+    <h3><strong>Penutup</strong></h3>
+    <div class="colored-box">
+        <p>Membuat nomor urut di excel memanglah mudah terutana jika urutan nomornya sederhana atau tidak banyak. Tapi bagaimana jika nomornya banyak dan butuh pengurutan dengan kriteria tertentu? Maka dari itu tidak ada salahnya kita memahami metode lain untuk membuat nomor urut di excel selain menggunakan mouse seperti melalui menu fill, memanfaatkan rumus, sequence, dan juga row.</p>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

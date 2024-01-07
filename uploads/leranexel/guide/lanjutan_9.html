@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #baffba; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <p>Pernahkah kita berurusan dengan data excel yang isinya daftar nama tapi nama-namanya tidak urut abjad atau masih acak-acakan? Lalu apa yang harus dilakukan jika kita disuruh mengurutkan nama tersebut agar urut sesuai abjad? Tentu hal itu akan memakan waktu lama jika kita mengurutkan nama-namanya satu persatu atau secara manual.</p>
+    <p>Maka dari itu di excel kita bisa memanfaatkan fitur sort untuk mengurutkan data abjad secara otomatis agar sesuai dengan kriteria urutan yang diinginkan. Baik itu sesuai urutan abjad atau kebalikannya, tak hanya itu saja fitur ini juga bisa digunakan untuk mengurutkan nilai/angka dari besar ke kecil ataupun sebaliknya.</p>
+    <p>Proses mengurutkan data abjad maupun angka tidaklah sulit. Untuk mengurutkan data menggunakan menu Data lalu pilih toolbar Sort pada grup Sort & Filter. Agar lebih jelas mari kita bahas langkah-langkahnya!</p>
+
+    <h3><strong>Cara Mengurutkan Data Abjad atau Nama di Excel</strong></h3>
+    <ol>
+        <li>Siapkan data excel yang akan diurutkan berdasarkan abjad misalnya nama,</li>
+        <li>Blok keseluruhan isi tabel tanpa perlu memblok header kolomnya, seperti pada contoh kita blok baris pada sel <strong>A7</strong> hingga <strong>A10</strong>,</li>
+        <li>Klik tab menu <strong>Data</strong>,</li>
+        <li>Klik menu <strong>Sort</strong> yang ada di bagian grup <strong>Sort & Filter</strong>, setelah itu jendela Sort akan terbuka,</li>
+        <li>Pilih kolom yang akan diurutkan berdasarkan abjad pada bagian <strong>Sort by</strong>, dalam hal ini kita akan mengurutkan Nama sehingga kita pilih <strong>Column B</strong>,</li>
+        <li>Pilih Cell Values pada bagian <strong>Sort On</strong>,</li>
+        <li>Pilih <strong>A to Z</strong> pada bagian <strong>Order</strong> jika ingin mengurutkan abjad berdasarkan urutan alfabet dari <strong>A ke Z</strong>,</li>
+        <li>Klik tombol <strong>OK</strong>, maka nama-nama atau isi daripada kolom B akan diurutkan berdasarkan huruf abjad.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/lanjutan_9A.png" width="100%" height="" /></p><br> 
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/lanjutan_9B.png" width="100%" height="" /></p><br> 
+
+    <p>Apabila kita ingin mengurutkan data di excel berdasarkan nama dari huruf Z maka kita tinggal ganti pilihan Ordernya menjadi Z to A di bagian menu Sort. Abaikan kolom NO atau nomor pada tabel tersebut setelah kita mengurutkan data karena pasti nomor urut akan menjadi acak.</p>
+    <p>Seteleh proses mengurutkan data selesai maka kita tinggal hapus nomor urut pada kolom nomor tersebut lalu buatlah nomor urut baru sesuai dengan artikel yang telah kita buat sebelumnya.</p>
+
+    <h3><strong>Cara Mengurutkan Angka di Excel</strong></h3>
+    <ol>
+        <li>Buka aplikasi excel,</li>
+        <li>Siapkan data berisi angka yang akan diurutkan di excel,</li>
+        <li>Blok isi tabel tanpa perlu memblok judul atau header tabel, misal kita menggunakan data yang sama seperti sebelumnya,</li>
+        <li>Masuk ke menu <strong>Data</strong>,</li>
+        <li>Klik menu <strong>Sort</strong> yang ada di bagian <strong>Sort & Filter</strong>, setelah itu jendela sort akan terbuka,</li>
+        <li>Pilih kolom yang akan diurutkan, misal kita ingin mengurutkan kolom rata-rata pada gambar di atas dari yang terbesar hingga yang terkecil, maka pilih Column G pada bagian Sort by,</li>
+        <li>Pilih <strong>Cell Values</strong> pada bagian <strong>Sort On</strong>,</li>
+        <li>Pilih kriteria urutannya, dalam hal ini kita ingin mengurutkan angka dari yang nilainya paling besar ke nilai yang paling rendah atau terkecil, maka pilih <strong>Largest to Smallest</strong>  pada bagian Order,</li>
+        <li>Klik tombol <strong>OK</strong> untuk melihat hasilnya, dengan demikian nilai rata-rata pada kolom G akan otomatis diurutkan dari yang terbesar ke yang terkecil.</li>
+    </ol>
+
+    <p>Sebaliknya, jika kita ingin mengurutkan kriteria nilai angka tersebut dari yang terkecil ke yang terbesar maka pilih Smallest to Largest pada bagian Order. Selain melalui tab menu Data kita juga bisa mengakses jendela Sort dengan cara klik kanan pada mouse kemudian pilih menu Custom Sort…</p>
+    <h3><strong>Penutup</strong></h3>
+
+    <div class="colored-box">
+        <p>Ketika menjumpai data excel berisi angka maupun abjad yang tidak urut maka kita tidak perlu lagi khawatir karena kita bisa mengurutkan data abjad dan angka dengan cara yang mudah serta cepat. Kriteria urutannya juga bisa diatur sesuai keinginan baik itu urut abjad atau sebaliknya untuk mengurutkan data abjad, maupun dari besar ke kecil untuk mengurutkan angka, ataupun sebaliknya.</p>
+    </div>
+
+</body>
+</html>

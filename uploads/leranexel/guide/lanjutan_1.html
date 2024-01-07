@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+            padding:0.5em;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #a5a5a5; /* Warna latar belakang header */
+    }
+    /* Warna kulit zebra pada baris ganjil */
+    tr:nth-child(odd) {
+        background-color: #ebebeb;
+    }
+    /* Warna kulit zebra pada baris genap */
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    .html-box {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0,5px;
+        color: #abb2bf; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+                border-radius: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+
+            }
+
+            .html-box code {
+                color: #abb2bf; /* Warna teks dalam tag <code> */
+            }
+
+            .tag {
+                color: #e06c75; /* Warna tag HTML */
+            }
+
+            .attribute {
+                color: #d19a66; /* Warna atribut HTML */
+            }
+
+            .value {
+                color: #98c379; /* Warna nilai atribut HTML */
+            }
+
+            .comment {
+                color: #5c6370; /* Warna komentar HTML */
+                font-style: italic;
+            }
+            .tag {
+        color: #000000;
+        background-color: #d8d8d8;
+    }
+
+    .attribute {
+        color: #019b15;
+    }
+
+    .text {
+        color: #d4d4d4;
+    }
+
+    .comment {
+        color: #6a9955;
+        font-style: italic;
+    }
+
+    .keyword {
+        color: #dcdcaa;
+    }
+
+    .operator {
+        color: #d4d4d4;
+    }
+
+    .selector {
+        color: #d7ba7d;
+    }
+
+    .punctuation {
+        color: #d4d4d4;
+    }
+
+    .string {
+        color: #ce9178;
+    }
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+  
+
+    li::before {
+        content: counter(item);
+        counter-increment: item;
+        background-color: #14c759; /* Warna biru muda */
+        border-radius: 50%;
+        color: white;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .colored-box {
+            background-color: #baffba; /* Warna latar belakang biru muda */
+            border-radius: 5px; /* Sudut bulat */
+            
+                padding: 10px;
+                margin: 0,5px;
+                color: #000000; /* Warna teks */
+                font-size: 16px; /* Ukuran teks */
+                line-height: 1.5; /* Jarak antar baris */
+                word-wrap: break-word; /* Pecah kata */
+            
+
+            
+    }
+
+    </style>
+</head>
+<body>
+    <div class="colored-box">
+        <p>Semua hal yang berkaitan dengan angka hampir bisa dikerjakan di aplikasi excel termasuk dalam hal mengitung umur seseorang. Pekerjaan menghitung umur ini seringkali dilakukan khususnya bagi pegawai administrasi yang bertugas untuk merekap data karyawan, data siswa, dan lain sebagainya.</p>
+    </div><br>
+    <p>Jika hal itu dilakukan secara manual atau tanpa bantuan ms excel pastinya akan memakan waktu dan tidak efektif apalagi jika data yang dihitung berjumlah banyak. Bentuk perhitungan yang bisa diterapkan di excel juga bervariasi tergantung kebutuhan, entah itu cukup menghitung tahun usia-nya saja, atau bahkan lengkap dengan hari dan bulannya. Memang ada beberapa rumus yang bisa digunakan untuk tujuan yang sama yakni menghitung usia di excel.</p>
+    <p>Rumus menghitung umur di excel adalah <span class="tag">=ROUNDDOWN(YEARFRAC(SEL_TANGGAL_LAHIR;NOW();0);0)</span> untuk tahunnya saja. Dan <span class="tag">=DATEDIF(C5;NOW();"Y")&" Thn "&DATEDIF(C5;NOW();"YM")&" Bln "&DATEDIF(C5;NOW();"MD")&" Hari"</span> untuk lengkap hari, bulan dan tahun. Agar lebih jelasnya mari kita bahas mulai dari yang sederhana terlebih dahulu!</p>
+
+    <h3><strong>Cara Menghitung Umur di Excel di Excel Tahunnya Saja</strong></h3>
+    <ol>
+        <li>Buka aplikasi excel,</li>
+        <li>Buat atau siapkan tabel data yang berisi nama-nama orang beserta tanggal lahirnya untuk menghitung umur di excel,</li>
+        <li>Tempatkan kursor pada sel yang ingin digunakan untuk menampilkan umurnya,</li>
+        <li>Ketikkan rumus ini <span class="tag">=YEARFRAC(SEL_TANGGAL_LAHIR;NOW();0)</span> pastikan sudah mengganti SEL_TANGGAL_LAHIR sesuai alamat sel target misalnya pada contoh gambar di bawah adalah C5 maka menjadi <span class="tag">=YEARFRAC(C5;NOW();0)</span></li>
+        <li>Tekan tombol enter, maka umur dalam bentuk tahun akan ditampilkan dan biasanya hasilnya memiliki koma di belakang,</li>
+        <li>Hapus angka dibelakang koma yang jika tidak diinginkan dengan cara mengedit rumusnya dan menambahkan sebuah rumus yakni <strong>ROUNDDOWN</strong>, lalu tambahkan angka nol di belakang sehingga rumusnya menjadi <span class="tag">=ROUNDDOWN(YEARFRAC(SEL_TANGGAL_LAHIR;NOW();0);0)</span></li>
+        <li>Tekan tombol enter pada keyboard,</li>
+        <li>Pilih OK jika muncul kotak dialog peringatan, maka umur akan langsung digenapkan sehingga tidak ada lagi tanda koma di belakangnya,</li>
+        <li>Arahkan kursor di pojok kanan bawah sel pada hasil umur yang ditampilkan tersebut,</li>
+        <li>Drag ke bawah untuk menyalin rumusnya dan menampilkan umur semua nama pada data tersebut secara otomatis.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/lanjutan_1A.png" width="100%" height="" /></p><br> 
+    <p>Sebelum menggunakan rumusnya jangan lupa untuk mengubah format data tanggal lahir yang telah dibuat ke dalam bentuk format date baik itu short date ataupun long date. Caranya yakni blok semua kolom tanggal lahir yang telah diketik, klik menu Home, klik kolom bertanda panah atau Number format pada bagian Number, dan pilih format Short date atau Long date.</p>
+
+    <h3><strong>Cara Mencari Umur di Excel Lengkap Hari, Bulan, Tahun dengan Rumus</strong></h3>
+    <ol>
+        <li>Buka aplikasi excel,</li>
+        <li>Siapakan tabel data yang ingin dihitung umurnya di excel,</li>
+        <li>Klik pada sel yang ingin digunakan sebagai tempat hasil perhitungan umurnya,</li>
+        <li>Ketikkan rumus seperti pada contoh berikut <span class="tag">=DATEDIF(C5;NOW();"Y")&" Thn "&DATEDIF(C5;NOW();"YM")&" Bln "&DATEDIF(C5;NOW();"MD")&" Hari"</span>,</li>
+        <li>Tekan tombol enter jika sudah, maka hasil perhitungan umurnya akan ditampilkan,</li>
+        <li>Klik dan tahan pada pojok kanan bawah sel hasil perhitungan umurnya,</li>
+        <li>Drag ke bawah untuk mengaplikasikan rumusnya pada sel-sel lain yang ada di bawahnya.</li>
+    </ol>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/lanjutan_1B.png" width="100%" height="" /></p><br> 
+
+    <p>Rumus DATEDIF bisa digunakan untuk menghitung umur selain memakai rumus YEARFRAC. Sedangkan NOW digunakan untuk menghitung sebuah nilai berdasarkan tanggal sekarang atau hari ini. Sel C5 pada rumus tersebut bertujuan untuk mengambil yang ada di kolom tanggal lahir milik karyawan yang bernama Joni.</p>
+    <p><img alt="" src="https://raw.githubusercontent.com/dobudev/content-cxt/main/uploads/leranexel/image/lanjutan_1C.png" width="100%" height="" /></p><br> 
+
+    <p>Terdapat singkatan pada rumus di atas yakni Y, YM, dan MD yang memiliki arti antara lain Y untuk menampilkan perhitungan tahun, YM untuk menampilkan bulan, dan MD untuk menampilkan hari. Selain itu ada tambahan kata yang disisipkan untuk memperjelas umurnya seperti pada rumus tersebut yaitu Thn, Bln dan Hari yang bisa diganti dengan kata lain sesuai kebutuhan. </p>
+
+    <h4><strong>Penutup</strong></h4>
+    <p>Tidak hanya satu rumus saja yang bisa dipakai untuk menghitung umur di excel melainkan ada dua bahkan lebih diantaranya adalah rumus YEARFRAC dan DATEDIF. Pengguna juga bisa memilih hasil perhitungan umur di excel menggunakan rumus tersebut, baik untuk menampilkan angka tahunnya saja atau lebih lengkap lagi yakni beserta bulan dan harinya.</p>
+
+
+
+
+</body>
+</html>
